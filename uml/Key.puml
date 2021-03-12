@@ -2,10 +2,14 @@
 class Key {
     + {static} StaticPublicField : int = 0
     + PublicField : int = 0
+    # {static} StaticProtectedField : int = 0
+    # ProtectedField : int = 0
     - {static} _staticPrivateField : int = 0
     - _privateField : int = 0
     + PublicMethod() : int
     + {static} StaticPublicMethod() : int
+    # {static} StaticProtectedMethod() : int
+    # ProtectedMethod() : int
     - PrivateMethod() : int
     - {static} StaticPrivateMethod() : int
 }
