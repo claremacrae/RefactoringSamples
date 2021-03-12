@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.Extract.After
+﻿namespace RefactoringSamples.After.Extract
 {
     public class ExtractSuperclassBase
     {
