@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Extract.Before
 {
-    public class ExtractClassBefore
+    public class ExtractClass
     {
         private int _concept1;
         private int _concept2;

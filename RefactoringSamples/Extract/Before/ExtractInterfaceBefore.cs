@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Extract.Before
 {
-    public class ExtractInterfaceBefore
+    public class ExtractInterface
     {
         int method1()
         {

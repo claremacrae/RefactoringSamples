@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Extract.Before
 {
-    public class ExtractFieldStaticBefore
+    public class ExtractFieldStatic
     {
         public static void LongMethod()
         {

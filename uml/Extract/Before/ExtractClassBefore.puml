@@ -1,5 +1,5 @@
 @startuml
-class ExtractClassBefore {
+class ExtractClass {
     - _concept1 : int
     - _concept2 : int
     + Concept1Function() : int

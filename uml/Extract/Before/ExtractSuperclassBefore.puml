@@ -1,5 +1,5 @@
 @startuml
-class ExtractSuperclassBefore {
+class ExtractSuperclass {
     method1() : int
     method2() : int
 }
