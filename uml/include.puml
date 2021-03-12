@@ -2,7 +2,7 @@
 !include .\\Encapsulate\EncapsulateField.p.\
 !include .\\Extract\ExtractFieldStaticAfter.p.\
 !include .\\Extract\ExtractFieldStaticBefore.p.\
-!include .\\Extract\ExtractInterface.p.\
+!include .\\Extract\ExtractInterfaceAfter.p.\
 !include .\\Extract\ExtractInterfaceBefore.p.\
 !include .\\Extract\ExtractSuperclass.p.\
 !include .\\Keys\FullKey.p.\
