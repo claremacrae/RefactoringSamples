@@ -1,5 +1,5 @@
 @startuml
-class ExtractFieldBefore {
+class ExtractField {
     + LongMethod() : void
 }
 @enduml
