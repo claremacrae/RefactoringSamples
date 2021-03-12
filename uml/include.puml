@@ -1,9 +1,9 @@
 @startuml
 !include .\\EncapsulateField.p.\
-!include .\\ExtractClass.p.\
-!include .\\ExtractClassAfter.p.\
-!include .\\ExtractField.p.\
-!include .\\ExtractFieldStatic.p.\
+!include .\\Extract\ExtractClass.p.\
+!include .\\Extract\ExtractClassAfter.p.\
+!include .\\Extract\ExtractField.p.\
+!include .\\Extract\ExtractFieldStatic.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
