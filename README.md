@@ -82,6 +82,47 @@ becomes
 
 ![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
 
+<!-- snippet: RefactoringSamples/Before/Extract/ExtractFieldStatic.cs -->
+<a id='snippet-RefactoringSamples/Before/Extract/ExtractFieldStatic.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Extract
+{
+    public class ExtractFieldStatic
+    {
+        public static void LongMethod()
+        {
+            int thing1;
+            int thing2;
+            int thing3;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractFieldStatic.cs#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Extract/ExtractFieldStatic.cs -->
+<a id='snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs'></a>
+```cs
+namespace RefactoringSamples.After.Extract
+{
+    public class ExtractFieldStatic
+    {
+        private static int _thing1;
+        private static int _thing2;
+        private static int _thing3;
+
+        public static void LongMethod()
+        {
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
 #### Extract Class
 
 ![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
@@ -89,6 +130,68 @@ becomes
 becomes
 
 ![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
+
+<!-- snippet: RefactoringSamples/Before/Extract/ExtractClass.cs -->
+<a id='snippet-RefactoringSamples/Before/Extract/ExtractClass.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Extract
+{
+    public class ExtractClass
+    {
+        private int _concept1;
+        private int _concept2;
+
+        public int Concept1Function()
+        {
+            return _concept1;
+        }
+
+        public int Concept2Function()
+        {
+            return _concept2;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractClass.cs#L1-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Extract/ExtractClass.cs -->
+<a id='snippet-RefactoringSamples/After/Extract/ExtractClass.cs'></a>
+```cs
+namespace RefactoringSamples.After.Extract
+{
+    public class Concept1
+    {
+        private int _concept1;
+
+        public int Concept1Function()
+        {
+            return _concept1;
+        }
+    }
+
+    public class Concept2
+    {
+        private int _concept2;
+
+        public int Concept2Function()
+        {
+            return _concept2;
+        }
+    }
+
+    public class ExtractClass
+    {
+        private readonly Concept1 _concept1 = new Concept1();
+        private readonly Concept2 _concept2 = new Concept2();
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Extract/ExtractClass.cs#L1-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 #### Extract Superclass
 
@@ -99,6 +202,56 @@ becomes
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
 
+<!-- snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs -->
+<a id='snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Extract
+{
+    public class ExtractSuperclass
+    {
+        int method1()
+        {
+            return 0;
+        }
+
+        int method2()
+        {
+            return 0;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractSuperclass.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Extract/ExtractSuperclass.cs -->
+<a id='snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs'></a>
+```cs
+namespace RefactoringSamples.After.Extract
+{
+    public class ExtractSuperclassBase
+    {
+        private int method1()
+        {
+            return 0;
+        }
+
+        private int method2()
+        {
+            return 0;
+        }
+    }
+
+    public class ExtractSuperclass : ExtractSuperclassBase
+    {
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L1-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
 #### Extract Interface
 
 ![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
@@ -106,6 +259,58 @@ becomes
 becomes
 
 ![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
+
+<!-- snippet: RefactoringSamples/Before/Extract/ExtractInterface.cs -->
+<a id='snippet-RefactoringSamples/Before/Extract/ExtractInterface.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Extract
+{
+    public class ExtractInterface
+    {
+        int method1()
+        {
+            return 0;
+        }
+
+        int method2()
+        {
+            return 0;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractInterface.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Extract/ExtractInterface.cs -->
+<a id='snippet-RefactoringSamples/After/Extract/ExtractInterface.cs'></a>
+```cs
+namespace RefactoringSamples.After.Extract
+{
+    public interface IExtractInterface
+    {
+        int method1();
+        int method2();
+    }
+
+    public class ExtractInterface : IExtractInterface
+    {
+        public int method1()
+        {
+            return 0;
+        }
+
+        public int method2()
+        {
+            return 0;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 ### Encapsulate Refactorings
 
@@ -117,6 +322,45 @@ becomes
 
 ![EncapsulateField - After](uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
+
+<!-- snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs -->
+<a id='snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Encapsulate
+{
+    public class EncapsulateField
+    {
+        private int _thing1;
+        private int _thing2;
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Encapsulate/EncapsulateField.cs#L1-L8' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Encapsulate/EncapsulateField.cs -->
+<a id='snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs'></a>
+```cs
+namespace RefactoringSamples.After.Encapsulate
+{
+    public class EncapsulateField
+    {
+        public int Thing1AsAutoProperty { get; }
+
+        public int Thing2
+        {
+            get => _thing2;
+            set => _thing2 = value;
+        }
+
+        private int _thing2;
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 ## Creating a new pair of files
 
