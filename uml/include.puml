@@ -1,5 +1,7 @@
 @startuml
 !include .\\EncapsulateField.p.\
+!include .\\ExtractClass.p.\
+!include .\\ExtractClassAfter.p.\
 !include .\\ExtractField.p.\
 !include .\\ExtractFieldStatic.p.\
 !include .\\Key.p.\

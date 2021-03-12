@@ -1,0 +1,8 @@
+@startuml
+class ExtractClassBefore {
+    - _concept1 : int
+    - _concept2 : int
+    + Concept1Function() : int
+    + Concept2Function() : int
+}
+@enduml
