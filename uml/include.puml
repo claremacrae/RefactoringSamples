@@ -1,15 +1,15 @@
 @startuml
 !include .\\Encapsulate\EncapsulateField.p.\
-!include .\\Extract\ExtractFieldStaticAfter.p.\
 !include .\\Extract\ExtractFieldStaticBefore.p.\
-!include .\\Extract\ExtractInterfaceAfter.p.\
 !include .\\Extract\ExtractInterfaceBefore.p.\
-!include .\\Extract\ExtractSuperclassAfter.p.\
 !include .\\Extract\ExtractSuperclassBefore.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
 !include .\\Extract\After\ExtractClassAfter.p.\
 !include .\\Extract\After\ExtractFieldAfter.p.\
+!include .\\Extract\After\ExtractFieldStaticAfter.p.\
+!include .\\Extract\After\ExtractInterfaceAfter.p.\
+!include .\\Extract\After\ExtractSuperclassAfter.p.\
 !include .\\Extract\Before\ExtractClassBefore.p.\
 !include .\\Extract\Before\ExtractFieldBefore.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
