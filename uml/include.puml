@@ -4,8 +4,8 @@
 !include .\\ExtractClassAfter.p.\
 !include .\\ExtractField.p.\
 !include .\\ExtractFieldStatic.p.\
-!include .\\Key.p.\
-!include .\\Key2.p.\
+!include .\\Keys\Key.p.\
+!include .\\Keys\Key2.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
 !include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
 @enduml
