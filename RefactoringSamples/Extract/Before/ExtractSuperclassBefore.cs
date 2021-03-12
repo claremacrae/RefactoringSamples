@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.Extract
+﻿namespace RefactoringSamples.Extract.Before
 {
     public class ExtractSuperclassBefore
     {
