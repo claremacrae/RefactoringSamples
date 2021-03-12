@@ -1,0 +1,5 @@
+@startuml
+!include .\\Key.p.\
+!include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
+!include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
+@enduml
