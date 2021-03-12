@@ -2,11 +2,11 @@
 !include .\\Encapsulate\EncapsulateField.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
-!include .\\Extract\After\ExtractClassAfter.p.\
-!include .\\Extract\After\ExtractFieldAfter.p.\
-!include .\\Extract\After\ExtractFieldStaticAfter.p.\
-!include .\\Extract\After\ExtractInterfaceAfter.p.\
-!include .\\Extract\After\ExtractSuperclassAfter.p.\
+!include .\\Extract\After\ExtractClass.p.\
+!include .\\Extract\After\ExtractField.p.\
+!include .\\Extract\After\ExtractFieldStatic.p.\
+!include .\\Extract\After\ExtractInterface.p.\
+!include .\\Extract\After\ExtractSuperclass.p.\
 !include .\\Extract\Before\ExtractClassBefore.p.\
 !include .\\Extract\Before\ExtractFieldBefore.p.\
 !include .\\Extract\Before\ExtractFieldStaticBefore.p.\
