@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="110px" preserveAspectRatio="none" style="width:207px;height:110px;" version="1.1" viewBox="0 0 207 110" width="207px" zoomAndPan="magnify"><defs><filter height="300%" id="f12oxfc3zxp3mm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2e44aa2a9833f63ecd818225731097c6]
+class EncapsulateField--><rect codeLine="1" fill="#FEFECE" filter="url(#f12oxfc3zxp3mm)" height="89.5078" id="EncapsulateField" style="stroke:#A80036;stroke-width:1.5;" width="186" x="7" y="7"/><ellipse cx="48.1" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M50.8656,18.875 Q51.0219,18.6563 51.2094,18.5469 Q51.3969,18.4375 51.6156,18.4375 Q51.9906,18.4375 52.225,18.7031 Q52.4594,18.9531 52.4594,19.5625 L52.4594,21.0156 Q52.4594,21.625 52.225,21.8906 Q51.9906,22.1563 51.6156,22.1563 Q51.2719,22.1563 51.0688,21.9531 Q50.8656,21.7656 50.7563,21.25 Q50.7094,20.8906 50.5219,20.7031 Q50.1938,20.3281 49.5844,20.1094 Q48.975,19.8906 48.35,19.8906 Q47.5844,19.8906 46.9438,20.2188 Q46.3188,20.5469 45.8188,21.2969 Q45.3344,22.0469 45.3344,23.0781 L45.3344,24.1719 Q45.3344,25.4063 46.225,26.2344 Q47.1156,27.0469 48.7094,27.0469 Q49.6469,27.0469 50.3031,26.7969 Q50.6938,26.6406 51.1156,26.2031 Q51.3813,25.9375 51.5219,25.8594 Q51.6781,25.7813 51.8813,25.7813 Q52.2094,25.7813 52.4594,26.0469 Q52.725,26.2969 52.725,26.6406 Q52.725,26.9844 52.3813,27.3906 Q51.8813,27.9688 51.0844,28.2969 Q50.0063,28.75 48.7094,28.75 Q47.1938,28.75 45.9906,28.125 Q45.0063,27.625 44.3188,26.5625 Q43.6313,25.4844 43.6313,24.2031 L43.6313,23.0469 Q43.6313,21.7188 44.2406,20.5781 Q44.8656,19.4219 45.9594,18.8125 Q47.0531,18.1875 48.2875,18.1875 Q49.0219,18.1875 49.6625,18.3594 Q50.3188,18.5156 50.8656,18.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="96" x="67.9" y="27.9102">EncapsulateField</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="192" y1="39" y2="39"/><ellipse cx="18" cy="50" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="27" y="54.4189">Thing1AsAutoProperty : int «get»</text><ellipse cx="18" cy="63.8359" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="27" y="68.2549">Thing2 : int «get» «set»</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="74.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="82.0908">_thing2 : int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="192" y1="88.5078" y2="88.5078"/><!--MD5=[1c9983144a4de9ffff630f0bbce33ec8]
+@startuml
+class EncapsulateField {
+    + Thing1AsAutoProperty : int <<get>>
+    + Thing2 : int <<get>> <<set>>
+    - _thing2 : int
+}
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 11:10:27 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
