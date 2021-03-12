@@ -8,6 +8,7 @@
     * [Extract Refactorings](#extract-refactorings)
       * [Extract Field](#extract-field)
       * [Extract Field with Static members](#extract-field-with-static-members)
+      * [Extract Class](#extract-class)
       * [Extract Superclass](#extract-superclass)
       * [Extract Interface](#extract-interface)
     * [Encapsulate Refactorings](#encapsulate-refactorings)
@@ -80,6 +81,8 @@ namespace RefactoringSamples.After.Extract
 becomes
 
 ![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
+
+#### Extract Class
 
 ![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
 
