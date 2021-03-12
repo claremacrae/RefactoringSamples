@@ -3,12 +3,12 @@
 !include .\\Extract\ExtractClass.p.\
 !include .\\Extract\ExtractClassAfter.p.\
 !include .\\Extract\ExtractFieldAfter.p.\
-!include .\\Extract\ExtractFieldBefore.p.\
 !include .\\Extract\ExtractFieldStatic.p.\
 !include .\\Extract\ExtractInterface.p.\
 !include .\\Extract\ExtractSuperclass.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
+!include .\\Extract\Before\ExtractFieldBefore.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
 !include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
 @enduml
