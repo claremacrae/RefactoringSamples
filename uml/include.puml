@@ -1,8 +1,5 @@
 @startuml
 !include .\\Encapsulate\EncapsulateField.p.\
-!include .\\Extract\ExtractFieldStaticBefore.p.\
-!include .\\Extract\ExtractInterfaceBefore.p.\
-!include .\\Extract\ExtractSuperclassBefore.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
 !include .\\Extract\After\ExtractClassAfter.p.\
@@ -12,6 +9,9 @@
 !include .\\Extract\After\ExtractSuperclassAfter.p.\
 !include .\\Extract\Before\ExtractClassBefore.p.\
 !include .\\Extract\Before\ExtractFieldBefore.p.\
+!include .\\Extract\Before\ExtractFieldStaticBefore.p.\
+!include .\\Extract\Before\ExtractInterfaceBefore.p.\
+!include .\\Extract\Before\ExtractSuperclassBefore.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
 !include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
 !include .\\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
