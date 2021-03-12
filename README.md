@@ -32,6 +32,47 @@ becomes
 
 ![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
 
+<!-- snippet: RefactoringSamples/Before/Extract/ExtractField.cs -->
+<a id='snippet-RefactoringSamples/Before/Extract/ExtractField.cs'></a>
+```cs
+namespace RefactoringSamples.Before.Extract
+{
+    public class ExtractField
+    {
+        public void LongMethod()
+        {
+            int thing1;
+            int thing2;
+            int thing3;
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractField.cs#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/Extract/ExtractField.cs -->
+<a id='snippet-RefactoringSamples/After/Extract/ExtractField.cs'></a>
+```cs
+namespace RefactoringSamples.After.Extract
+{
+    public class ExtractField
+    {
+        private int _thing1;
+        private int _thing2;
+        private int _thing3;
+
+        public void LongMethod()
+        {
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
 #### Extract Field with Static members
 
 ![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
