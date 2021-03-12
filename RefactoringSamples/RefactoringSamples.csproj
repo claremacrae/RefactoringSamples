@@ -12,4 +12,11 @@
       <NoWarn>1701;1702;0168;0169;0649</NoWarn>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Encapsulate\After" />
+      <Folder Include="Encapsulate\Before" />
+      <Folder Include="Extract\After" />
+      <Folder Include="Extract\Before" />
+    </ItemGroup>
+
 </Project>
