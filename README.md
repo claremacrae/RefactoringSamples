@@ -378,6 +378,7 @@ namespace RefactoringSamples.After.Encapsulate
     * Change the namespace from Before to After
 1. In the new file, apply the refactoring
 1. Run `create-uml.bat`
+1. Add the new files to README.md
 1. Review and commit the files
 
 ## Reference
