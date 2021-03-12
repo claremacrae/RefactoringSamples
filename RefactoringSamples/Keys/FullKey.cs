@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RefactoringSamples
+﻿namespace RefactoringSamples.Keys
 {
     public class Key2
     {

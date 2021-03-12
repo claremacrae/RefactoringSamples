@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples
+﻿namespace RefactoringSamples.Extract.After
 {
     public class ExtractFieldAfter
     {

@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples
+﻿namespace RefactoringSamples.Encapsulate
 {
     public class EncapsulateFieldBefore
     {
