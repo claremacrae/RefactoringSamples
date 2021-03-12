@@ -1,0 +1,11 @@
+@startuml
+class EncapsulateFieldBefore {
+    - _thing1 : int
+    - _thing2 : int
+}
+class EncapsulateFieldAfter {
+    + Thing1AsAutoProperty : int <<get>>
+    + Thing2 : int <<get>> <<set>>
+    - _thing2 : int
+}
+@enduml
