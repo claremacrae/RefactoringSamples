@@ -22,7 +22,7 @@
 
 ## Purpose
 
-To provide visualisations of micro-refactorings in C# code
+To provide visualisations of micro-refactorings in C# code, using UML diagrams generated from pairs of tiny C# source files.
 
 ## Refactoring Samples
 
