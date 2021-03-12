@@ -2,7 +2,8 @@
 !include .\\Encapsulate\EncapsulateField.p.\
 !include .\\Extract\ExtractClass.p.\
 !include .\\Extract\ExtractClassAfter.p.\
-!include .\\Extract\ExtractField.p.\
+!include .\\Extract\ExtractFieldAfter.p.\
+!include .\\Extract\ExtractFieldBefore.p.\
 !include .\\Extract\ExtractFieldStatic.p.\
 !include .\\Extract\ExtractInterface.p.\
 !include .\\Extract\ExtractSuperclass.p.\

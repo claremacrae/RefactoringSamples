@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="124px" preserveAspectRatio="none" style="width:143px;height:124px;" version="1.1" viewBox="0 0 143 124" width="143px" zoomAndPan="magnify"><defs><filter height="300%" id="f1sycfipq5rtxv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ec1451e7ee6d30946c51b424ac4c5e64]
+class ExtractFieldAfter--><rect codeLine="1" fill="#FEFECE" filter="url(#f1sycfipq5rtxv)" height="103.3438" id="ExtractFieldAfter" style="stroke:#A80036;stroke-width:1.5;" width="122" x="7" y="7"/><ellipse cx="23.35" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M26.1156,18.875 Q26.2719,18.6563 26.4594,18.5469 Q26.6469,18.4375 26.8656,18.4375 Q27.2406,18.4375 27.475,18.7031 Q27.7094,18.9531 27.7094,19.5625 L27.7094,21.0156 Q27.7094,21.625 27.475,21.8906 Q27.2406,22.1563 26.8656,22.1563 Q26.5219,22.1563 26.3188,21.9531 Q26.1156,21.7656 26.0063,21.25 Q25.9594,20.8906 25.7719,20.7031 Q25.4438,20.3281 24.8344,20.1094 Q24.225,19.8906 23.6,19.8906 Q22.8344,19.8906 22.1938,20.2188 Q21.5688,20.5469 21.0688,21.2969 Q20.5844,22.0469 20.5844,23.0781 L20.5844,24.1719 Q20.5844,25.4063 21.475,26.2344 Q22.3656,27.0469 23.9594,27.0469 Q24.8969,27.0469 25.5531,26.7969 Q25.9438,26.6406 26.3656,26.2031 Q26.6313,25.9375 26.7719,25.8594 Q26.9281,25.7813 27.1313,25.7813 Q27.4594,25.7813 27.7094,26.0469 Q27.975,26.2969 27.975,26.6406 Q27.975,26.9844 27.6313,27.3906 Q27.1313,27.9688 26.3344,28.2969 Q25.2563,28.75 23.9594,28.75 Q22.4438,28.75 21.2406,28.125 Q20.2563,27.625 19.5688,26.5625 Q18.8813,25.4844 18.8813,24.2031 L18.8813,23.0469 Q18.8813,21.7188 19.4906,20.5781 Q20.1156,19.4219 21.2094,18.8125 Q22.3031,18.1875 23.5375,18.1875 Q24.2719,18.1875 24.9125,18.3594 Q25.5688,18.5156 26.1156,18.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="87" x="37.65" y="27.9102">ExtractFieldAfter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="128" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="54.4189">_thing1 : int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="60.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="68.2549">_thing2 : int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="74.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="82.0908">_thing3 : int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="128" y1="88.5078" y2="88.5078"/><ellipse cx="18" cy="99.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="27" y="103.9268">LongMethod() : void</text><!--MD5=[89b4b4022b76180828e7d68ba96cb327]
+@startuml
+class ExtractFieldAfter {
+    - _thing1 : int
+    - _thing2 : int
+    - _thing3 : int
+    + LongMethod() : void
+}
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 11:10:27 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

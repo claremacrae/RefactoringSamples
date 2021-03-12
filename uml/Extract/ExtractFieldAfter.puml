@@ -1,7 +1,4 @@
 @startuml
-class ExtractFieldBefore {
-    + LongMethod() : void
-}
 class ExtractFieldAfter {
     - _thing1 : int
     - _thing2 : int
