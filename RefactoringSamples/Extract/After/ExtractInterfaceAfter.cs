@@ -6,7 +6,7 @@
         int method2();
     }
 
-    public class ExtractInterfaceAfter : IExtractInterfaceAfter
+    public class ExtractInterface : IExtractInterfaceAfter
     {
         public int method1()
         {

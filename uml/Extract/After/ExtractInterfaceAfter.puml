@@ -3,9 +3,9 @@ interface IExtractInterfaceAfter {
     method1() : int
     method2() : int
 }
-class ExtractInterfaceAfter {
+class ExtractInterface {
     + method1() : int
     + method2() : int
 }
-IExtractInterfaceAfter <|-- ExtractInterfaceAfter
+IExtractInterfaceAfter <|-- ExtractInterface
 @enduml

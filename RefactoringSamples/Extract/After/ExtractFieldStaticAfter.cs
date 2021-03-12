@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Extract.After
 {
-    public class ExtractFieldStaticAfter
+    public class ExtractFieldStatic
     {
         private static int _thing1;
         private static int _thing2;

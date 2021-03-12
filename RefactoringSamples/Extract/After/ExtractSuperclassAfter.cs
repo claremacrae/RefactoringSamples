@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Extract.After
 {
-    public class ExtractSuperclassAfterBase
+    public class ExtractSuperclassBase
     {
         private int method1()
         {
@@ -13,7 +13,7 @@
         }
     }
 
-    public class ExtractSuperclassAfter : ExtractSuperclassAfterBase
+    public class ExtractSuperclass : ExtractSuperclassBase
     {
     }
 }

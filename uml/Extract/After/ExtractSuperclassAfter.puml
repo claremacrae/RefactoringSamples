@@ -1,9 +1,9 @@
 @startuml
-class ExtractSuperclassAfterBase {
+class ExtractSuperclassBase {
     - method1() : int
     - method2() : int
 }
-class ExtractSuperclassAfter {
+class ExtractSuperclass {
 }
-ExtractSuperclassAfterBase <|-- ExtractSuperclassAfter
+ExtractSuperclassBase <|-- ExtractSuperclass
 @enduml

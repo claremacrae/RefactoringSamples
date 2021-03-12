@@ -20,7 +20,7 @@
         }
     }
 
-    public class ExtractClassAfter
+    public class ExtractClass
     {
         private readonly Concept1 _concept1 = new Concept1();
         private readonly Concept2 _concept2 = new Concept2();

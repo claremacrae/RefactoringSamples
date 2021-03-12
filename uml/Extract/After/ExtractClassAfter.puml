@@ -7,7 +7,7 @@ class Concept2 {
     - _concept2 : int
     + Concept2Function() : int
 }
-class ExtractClassAfter {
+class ExtractClass {
     - <<readonly>> _concept1 : Concept1
     - <<readonly>> _concept2 : Concept2
 }
