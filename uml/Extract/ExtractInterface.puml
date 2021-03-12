@@ -1,0 +1,15 @@
+@startuml
+class ExtractInterfaceBefore {
+    method1() : int
+    method2() : int
+}
+interface IExtractInterfaceAfter {
+    method1() : int
+    method2() : int
+}
+class ExtractInterfaceAfter {
+    + method1() : int
+    + method2() : int
+}
+IExtractInterfaceAfter <|-- ExtractInterfaceAfter
+@enduml
