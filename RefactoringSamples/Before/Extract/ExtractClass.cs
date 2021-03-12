@@ -9,7 +9,7 @@
         {
             return _concept1;
         }
-        
+
         public int Concept2Function()
         {
             return _concept2;

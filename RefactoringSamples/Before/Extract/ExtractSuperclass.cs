@@ -6,7 +6,7 @@
         {
             return 0;
         }
-        
+
         int method2()
         {
             return 0;
