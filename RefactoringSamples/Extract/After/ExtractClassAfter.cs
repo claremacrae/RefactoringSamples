@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.Extract
+﻿namespace RefactoringSamples.Extract.After
 {
     public class Concept1
     {
