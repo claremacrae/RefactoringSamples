@@ -7,11 +7,11 @@
 !include .\\Extract\After\ExtractFieldStatic.p.\
 !include .\\Extract\After\ExtractInterface.p.\
 !include .\\Extract\After\ExtractSuperclass.p.\
-!include .\\Extract\Before\ExtractClassBefore.p.\
-!include .\\Extract\Before\ExtractFieldBefore.p.\
-!include .\\Extract\Before\ExtractFieldStaticBefore.p.\
-!include .\\Extract\Before\ExtractInterfaceBefore.p.\
-!include .\\Extract\Before\ExtractSuperclassBefore.p.\
+!include .\\Extract\Before\ExtractClass.p.\
+!include .\\Extract\Before\ExtractField.p.\
+!include .\\Extract\Before\ExtractFieldStatic.p.\
+!include .\\Extract\Before\ExtractInterface.p.\
+!include .\\Extract\Before\ExtractSuperclass.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
 !include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
 !include .\\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
