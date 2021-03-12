@@ -1,8 +1,8 @@
 @startuml
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
-!include .\\Encapsulate\After\EncapsulateFieldAfter.p.\
-!include .\\Encapsulate\Before\EncapsulateFieldBefore.p.\
+!include .\\Encapsulate\After\EncapsulateField.p.\
+!include .\\Encapsulate\Before\EncapsulateField.p.\
 !include .\\Extract\After\ExtractClass.p.\
 !include .\\Extract\After\ExtractField.p.\
 !include .\\Extract\After\ExtractFieldStatic.p.\
