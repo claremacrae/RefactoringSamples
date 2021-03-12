@@ -1,6 +1,7 @@
 @startuml
 !include .\\Encapsulate\EncapsulateField.p.\
-!include .\\Extract\ExtractFieldStatic.p.\
+!include .\\Extract\ExtractFieldStaticAfter.p.\
+!include .\\Extract\ExtractFieldStaticBefore.p.\
 !include .\\Extract\ExtractInterface.p.\
 !include .\\Extract\ExtractSuperclass.p.\
 !include .\\Keys\FullKey.p.\

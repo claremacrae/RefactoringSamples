@@ -1,15 +1,5 @@
 ﻿namespace RefactoringSamples.Extract
 {
-    public class ExtractFieldStaticBefore
-    {
-        public static void LongMethod()
-        {
-            int thing1;
-            int thing2;
-            int thing3;
-        }
-    }
-
     public class ExtractFieldStaticAfter
     {
         private static int _thing1;
