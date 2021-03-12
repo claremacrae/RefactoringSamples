@@ -4,7 +4,7 @@
 !include .\\Extract\ExtractFieldStaticBefore.p.\
 !include .\\Extract\ExtractInterfaceAfter.p.\
 !include .\\Extract\ExtractInterfaceBefore.p.\
-!include .\\Extract\ExtractSuperclass.p.\
+!include .\\Extract\ExtractSuperclassAfter.p.\
 !include .\\Extract\ExtractSuperclassBefore.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
