@@ -1,12 +1,12 @@
 ﻿namespace RefactoringSamples.After.Extract
 {
-    public interface IExtractInterfaceAfter
+    public interface IExtractInterface
     {
         int method1();
         int method2();
     }
 
-    public class ExtractInterface : IExtractInterfaceAfter
+    public class ExtractInterface : IExtractInterface
     {
         public int method1()
         {
