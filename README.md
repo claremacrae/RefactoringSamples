@@ -6,7 +6,8 @@
 ## Contents
 
   * [Purpose](#purpose)
-  * [Refactoring Demos](#refactoring-demos)
+  * [Refactoring Samples](#refactoring-samples)
+    * [Key](#key)
     * [Extract Refactorings](#extract-refactorings)
       * [Extract Field](#extract-field)
       * [Extract Field with Static members](#extract-field-with-static-members)
@@ -23,7 +24,11 @@
 
 To provide visualisations of micro-refactorings in C# code
 
-## Refactoring Demos
+## Refactoring Samples
+
+### Key
+
+![ExtractField - Before](uml/Keys/Key.svg?raw=true)
 
 ### Extract Refactorings
 
