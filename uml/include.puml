@@ -5,6 +5,7 @@
 !include .\\Extract\ExtractInterfaceAfter.p.\
 !include .\\Extract\ExtractInterfaceBefore.p.\
 !include .\\Extract\ExtractSuperclass.p.\
+!include .\\Extract\ExtractSuperclassBefore.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
 !include .\\Extract\After\ExtractClassAfter.p.\
