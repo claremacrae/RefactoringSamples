@@ -2,10 +2,13 @@
 
 namespace RefactoringSamples
 {
-    public class Key
+    public class Key2
     {
         public static int StaticPublicField = 0;
         public int PublicField = 0;
+
+        protected static int StaticProtectedField = 0;
+        protected int ProtectedField = 0;
 
         private static int _staticPrivateField = 0;
         private int _privateField = 0;
@@ -18,6 +21,16 @@ namespace RefactoringSamples
         public static int StaticPublicMethod()
         {
             return StaticPublicField;
+        }
+
+        protected static int StaticProtectedMethod()
+        {
+            return StaticProtectedField;
+        }
+
+        protected int ProtectedMethod()
+        {
+            return ProtectedField;
         }
 
         private int PrivateMethod()
