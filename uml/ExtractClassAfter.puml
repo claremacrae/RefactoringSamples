@@ -1,11 +1,11 @@
 @startuml
-class Concept2 {
-    - _concept2 : int
-    + Concept2Function() : int
-}
 class Concept1 {
     - _concept1 : int
     + Concept1Function() : int
+}
+class Concept2 {
+    - _concept2 : int
+    + Concept2Function() : int
 }
 class ExtractClassAfter {
     - <<readonly>> _concept1 : Concept1
