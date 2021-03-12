@@ -1,0 +1,13 @@
+@startuml
+class ExtractSuperclassBefore {
+    method1() : int
+    method2() : int
+}
+class ExtractSuperclassAfterBase {
+    - method1() : int
+    - method2() : int
+}
+class ExtractSuperclassAfter {
+}
+ExtractSuperclassAfterBase <|-- ExtractSuperclassAfter
+@enduml

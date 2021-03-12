@@ -4,6 +4,7 @@
 !include .\\Extract\ExtractClassAfter.p.\
 !include .\\Extract\ExtractField.p.\
 !include .\\Extract\ExtractFieldStatic.p.\
+!include .\\Extract\ExtractSuperclass.p.\
 !include .\\Keys\FullKey.p.\
 !include .\\Keys\Key.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
