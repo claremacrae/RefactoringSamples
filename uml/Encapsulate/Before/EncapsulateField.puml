@@ -1,5 +1,5 @@
 @startuml
-class EncapsulateFieldBefore {
+class EncapsulateField {
     - _thing1 : int
     - _thing2 : int
 }

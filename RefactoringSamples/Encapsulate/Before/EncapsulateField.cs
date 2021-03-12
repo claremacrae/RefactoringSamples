@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Encapsulate.Before
 {
-    public class EncapsulateFieldBefore
+    public class EncapsulateField
     {
         private int _thing1;
         private int _thing2;

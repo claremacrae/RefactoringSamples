@@ -1,6 +1,6 @@
 ﻿namespace RefactoringSamples.Encapsulate.After
 {
-    public class EncapsulateFieldAfter
+    public class EncapsulateField
     {
         public int Thing1AsAutoProperty { get; }
 
