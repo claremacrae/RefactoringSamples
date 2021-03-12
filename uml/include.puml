@@ -11,4 +11,6 @@
 !include .\\Extract\Before\ExtractFieldBefore.p.\
 !include .\\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
 !include .\\obj\Debug\net5.0\RefactoringSamples.AssemblyInfo.p.\
+!include .\\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.p.\
+!include .\\obj\Release\net5.0\RefactoringSamples.AssemblyInfo.p.\
 @enduml
