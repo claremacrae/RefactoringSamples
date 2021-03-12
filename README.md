@@ -1,12 +1,30 @@
-﻿# RefactoringSamples
+# RefactoringSamples
+
+<!-- toc -->
+## Contents
+
+  * [Purpose](#purpose)
+  * [Refactoring Demos](#refactoring-demos)
+    * [Extract Refactorings](#extract-refactorings)
+      * [Extract Field](#extract-field)
+      * [Extract Field with Static members](#extract-field-with-static-members)
+      * [Extract Superclass](#extract-superclass)
+      * [Extract Interface](#extract-interface)
+    * [Encapsulate Refactorings](#encapsulate-refactorings)
+      * [Encapsulate Field](#encapsulate-field)
+  * [Creating a new pair of files](#creating-a-new-pair-of-files)
+  * [Reference](#reference)
+  * [Ideas](#ideas)<!-- endToc -->
 
 ## Purpose
 
 To provide visualisations of micro-refactorings in C# code
 
-## Extract Refactorings
+## Refactoring Demos
 
-### Extract Field
+### Extract Refactorings
+
+#### Extract Field
 
 ![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
 
@@ -14,7 +32,7 @@ becomes
 
 ![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
 
-### Extract Field with Static members
+#### Extract Field with Static members
 
 ![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
 
@@ -28,7 +46,7 @@ becomes
 
 ![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
 
-### Extract Superclass
+#### Extract Superclass
 
 ![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
@@ -37,7 +55,7 @@ becomes
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
 
-### Extract Interface
+#### Extract Interface
 
 ![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
 
@@ -45,9 +63,9 @@ becomes
 
 ![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
 
-## Encapsulate Refactorings
+### Encapsulate Refactorings
 
-### Extract Interface
+#### Encapsulate Field
 
 ![EncapsulateField - Before](uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
