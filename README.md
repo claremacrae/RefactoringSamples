@@ -392,7 +392,23 @@ namespace RefactoringSamples.After.Encapsulate
 
 #### Remove Redundant Else
 
-![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true) <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
+ <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
+The IDE works out that the `else` statements are redundant,
+because of the return statements.
+
+Steps to improve the code:
+
+Either
+
+1. Click on first else, and select 'Remove redundant else'
+2. Click on second else, and select 'Remove redundant else'
+3. Click on third else, and select 'Remove redundant else'
+
+Or
+
+1. Click on first else, and select 'Remove redundant code in file'
+
+![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 becomes
 
@@ -409,22 +425,6 @@ namespace RefactoringSamples.Before.IfStatements
     {
         public string HeavilyNestedIf()
         {
-            /*
-             * The IDE works out that the else statements are redundant,
-             * because of the return statements.
-             *
-             * STEPS TO IMPROVE THE CODE:
-             * 
-             * OPTION 1
-             * 
-             * 1. Click on first else, and select 'Remove redundant else'
-             * 2. Click on second else, and select 'Remove redundant else'
-             * 3. Click on third else, and select 'Remove redundant else'
-             * 
-             * OPTION 2
-             * 
-             * 1. Click on first else, and select 'Remove redundant code in file'
-             */
             if ((new Random().Next() % 3) == 0)
             {
                 return "Multiple of 3";
@@ -449,7 +449,7 @@ namespace RefactoringSamples.Before.IfStatements
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L1-L47' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L1-L31' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
