@@ -25,6 +25,10 @@ To change this file edit the source file and then execute ./run_markdown_templat
       * [Encapsulate Field](#encapsulate-field)
     * [If Statements](#if-statements)
       * [Remove Redundant Else](#remove-redundant-else)
+        * [Context](#context)
+        * [Steps to improve the code](#steps-to-improve-the-code)
+        * [UML before and after](#uml-before-and-after)
+        * [Code before and after](#code-before-and-after)
   * [Creating a new pair of files](#creating-a-new-pair-of-files)
   * [Reference](#reference)
   * [Ideas](#ideas)<!-- endToc -->
@@ -393,10 +397,12 @@ namespace RefactoringSamples.After.Encapsulate
 #### Remove Redundant Else
 
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
+##### Context
+
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
 
-Steps to improve the code:
+##### Steps to improve the code
 
 Either
 
@@ -408,11 +414,15 @@ Or
 
 1. Click on first else, and select 'Remove redundant code in file'
 
+##### UML before and after
+
 ![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 becomes
 
 ![RemoveRedundantElse - After](uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs -->
 <a id='snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs'></a>

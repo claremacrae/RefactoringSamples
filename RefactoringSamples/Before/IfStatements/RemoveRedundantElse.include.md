@@ -1,8 +1,10 @@
 
+##### Context
+
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
 
-Steps to improve the code:
+##### Steps to improve the code
 
 Either
 
@@ -14,11 +16,15 @@ Or
 
 1. Click on first else, and select 'Remove redundant code in file'
 
+##### UML before and after
+
 ![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 becomes
 
 ![RemoveRedundantElse - After](uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
+
+##### Code before and after
 
 snippet: RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs
 
