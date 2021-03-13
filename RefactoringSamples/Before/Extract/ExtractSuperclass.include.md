@@ -5,7 +5,6 @@ becomes
 
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
-
 snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs
 
 becomes

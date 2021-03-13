@@ -222,7 +222,6 @@ becomes
 
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
-
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs'></a>
 ```cs
@@ -346,7 +345,6 @@ namespace RefactoringSamples.After.Extract
 becomes
 
 ![EncapsulateField - After](uml/After/Encapsulate/EncapsulateField.svg?raw=true)
-
 
 <!-- snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs -->
 <a id='snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs'></a>
