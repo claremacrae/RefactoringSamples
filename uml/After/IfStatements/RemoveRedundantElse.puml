@@ -1,0 +1,5 @@
+@startuml
+class RemoveRedundantElse {
+    + HeavilyNestedIf() : string
+}
+@enduml
