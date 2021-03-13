@@ -98,7 +98,9 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 #### Extract Field with Static members
 
@@ -157,7 +159,9 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 #### Extract Class
 
@@ -237,7 +241,9 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractClass.cs#L1-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 #### Extract Superclass
 
@@ -305,7 +311,9 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L1-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 #### Extract Interface
 
@@ -375,7 +383,9 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 ### Encapsulate Refactorings
 
@@ -434,7 +444,9 @@ namespace RefactoringSamples.After.Encapsulate
 ```
 <sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 ### If Statements
 
@@ -443,20 +455,7 @@ namespace RefactoringSamples.After.Encapsulate
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
 ##### Context
 
-The IDE works out that the `else` statements are redundant,
-because of the return statements.
-
 ##### Steps to improve the code
-
-Either
-
-1. Click on first else, and select 'Remove redundant else'
-2. Click on second else, and select 'Remove redundant else'
-3. Click on third else, and select 'Remove redundant else'
-
-Or
-
-1. Click on first else, and select 'Remove redundant code in file'
 
 ##### UML before and after
 
@@ -541,7 +540,9 @@ namespace RefactoringSamples.After.IfStatements
 ```
 <sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L1-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-<!-- endInclude -->
+
+-----
+ <!-- endInclude -->
 
 ## Creating a new pair of files
 

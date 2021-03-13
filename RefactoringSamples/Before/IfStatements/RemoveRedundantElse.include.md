@@ -31,3 +31,6 @@ snippet: RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs
 becomes
 
 snippet: RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs
+
+-----
+

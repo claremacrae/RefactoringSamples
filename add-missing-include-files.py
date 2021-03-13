@@ -28,6 +28,9 @@ snippet: RefactoringSamples/Before/{directory_name}/{base_name}.cs
 becomes
 
 snippet: RefactoringSamples/After/{directory_name}/{base_name}.cs
+
+-----
+
 """
         output.write(content)
 

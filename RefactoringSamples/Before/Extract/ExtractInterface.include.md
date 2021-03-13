@@ -18,3 +18,6 @@ snippet: RefactoringSamples/Before/Extract/ExtractInterface.cs
 becomes
 
 snippet: RefactoringSamples/After/Extract/ExtractInterface.cs
+
+-----
+

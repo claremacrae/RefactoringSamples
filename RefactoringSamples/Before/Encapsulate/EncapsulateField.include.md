@@ -18,3 +18,6 @@ snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs
 becomes
 
 snippet: RefactoringSamples/After/Encapsulate/EncapsulateField.cs
+
+-----
+
