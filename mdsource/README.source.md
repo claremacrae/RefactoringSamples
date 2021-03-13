@@ -62,3 +62,4 @@ include: EncapsulateField
 
 * Machine-generate markdown pages that show the Before and After of both the .cs source and the .svg files.
 * Try generating combined .svg files that show the Before and After UML, with an arrow between the two.
+* Add this to readthedocs
