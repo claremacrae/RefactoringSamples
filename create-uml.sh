@@ -4,7 +4,7 @@
 #set -e
 #set -o pipefail
 
-find . -name \*.puml -o -name \*.svg -exec rm {} \;
+find . \( -name \*.puml -o -name \*.svg \) -exec rm {} \;
 puml-gen RefactoringSamples uml -dir -excludePaths RefactoringSamples\out | grep -v "^Processing "
 
 # Delete a file which gives an error on Mac:
