@@ -18,74 +18,23 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 #### Extract Field
 
-![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
-
-becomes
-
-![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
-
-snippet: RefactoringSamples/Before/Extract/ExtractField.cs
-
-becomes
-
-snippet: RefactoringSamples/After/Extract/ExtractField.cs
+include: ExtractField
 
 #### Extract Field with Static members
 
-![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
-
-becomes
-
-![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
-
-snippet: RefactoringSamples/Before/Extract/ExtractFieldStatic.cs
-
-becomes
-
-snippet: RefactoringSamples/After/Extract/ExtractFieldStatic.cs
+include: ExtractFieldStatic
 
 #### Extract Class
 
-![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
-
-becomes
-
-![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
-
-snippet: RefactoringSamples/Before/Extract/ExtractClass.cs
-
-becomes
-
-snippet: RefactoringSamples/After/Extract/ExtractClass.cs
+include: ExtractClass
 
 #### Extract Superclass
 
-![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
-
-becomes
-
-![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
-
-
-snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs
-
-becomes
-
-snippet: RefactoringSamples/After/Extract/ExtractSuperclass.cs
+include: ExtractSuperclass
 
 #### Extract Interface
 
-![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
-
-becomes
-
-![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
-
-snippet: RefactoringSamples/Before/Extract/ExtractInterface.cs
-
-becomes
-
-snippet: RefactoringSamples/After/Extract/ExtractInterface.cs
+include: ExtractInterface
 
 ### Encapsulate Refactorings
 

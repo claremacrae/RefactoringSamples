@@ -41,6 +41,7 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 #### Extract Field
 
+ <!-- include: ExtractField. path: /RefactoringSamples/Before/Extract/ExtractField.include.md -->
 ![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
 
 becomes
@@ -87,9 +88,11 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+<!-- endInclude -->
 
 #### Extract Field with Static members
 
+ <!-- include: ExtractFieldStatic. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.include.md -->
 ![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
 
 becomes
@@ -136,9 +139,11 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+<!-- endInclude -->
 
 #### Extract Class
 
+ <!-- include: ExtractClass. path: /RefactoringSamples/Before/Extract/ExtractClass.include.md -->
 ![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
 
 becomes
@@ -206,9 +211,11 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractClass.cs#L1-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+<!-- endInclude -->
 
 #### Extract Superclass
 
+ <!-- include: ExtractSuperclass. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.include.md -->
 ![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
 becomes
@@ -265,9 +272,11 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L1-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+<!-- endInclude -->
 
 #### Extract Interface
 
+ <!-- include: ExtractInterface. path: /RefactoringSamples/Before/Extract/ExtractInterface.include.md -->
 ![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
 
 becomes
@@ -325,6 +334,7 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+ <!-- endInclude -->
 
 ### Encapsulate Refactorings
 
