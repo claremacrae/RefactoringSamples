@@ -12,7 +12,7 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 ### Key
 
-![ExtractField - Before](uml/Keys/Key.svg?raw=true)
+![Key](uml/Keys/Key.svg?raw=true)
 
 ### Extract Refactorings
 
