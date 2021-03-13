@@ -13,6 +13,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="After\RemoveRedundantElse" />
       <Folder Include="Encapsulate\After" />
       <Folder Include="Encapsulate\Before" />
       <Folder Include="Extract\After" />

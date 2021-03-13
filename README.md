@@ -23,6 +23,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
       * [Extract Interface](#extract-interface)
     * [Encapsulate Refactorings](#encapsulate-refactorings)
       * [Encapsulate Field](#encapsulate-field)
+    * [If Statements](#if-statements)
+      * [Remove Redundant Else](#remove-redundant-else)
   * [Creating a new pair of files](#creating-a-new-pair-of-files)
   * [Reference](#reference)
   * [Ideas](#ideas)<!-- endToc -->
@@ -383,6 +385,107 @@ namespace RefactoringSamples.After.Encapsulate
 }
 ```
 <sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+<!-- endInclude -->
+
+### If Statements
+
+#### Remove Redundant Else
+
+![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true) <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
+
+becomes
+
+![RemoveRedundantElse - After](uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
+
+<!-- snippet: RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs -->
+<a id='snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs'></a>
+```cs
+using System;
+
+namespace RefactoringSamples.Before.IfStatements
+{
+    public class RemoveRedundantElse
+    {
+        public string HeavilyNestedIf()
+        {
+            /*
+             * The IDE works out that the else statements are redundant,
+             * because of the return statements.
+             *
+             * STEPS TO IMPROVE THE CODE:
+             * 
+             * OPTION 1
+             * 
+             * 1. Click on first else, and select 'Remove redundant else'
+             * 2. Click on second else, and select 'Remove redundant else'
+             * 3. Click on third else, and select 'Remove redundant else'
+             * 
+             * OPTION 2
+             * 
+             * 1. Click on first else, and select 'Remove redundant code in file'
+             */
+            if ((new Random().Next() % 3) == 0)
+            {
+                return "Multiple of 3";
+            }
+            else
+            {
+                if ((new Random().Next() % 4) == 0)
+                {
+                    return "Multiple of 4";
+                }
+                else
+                {
+                    if ((new Random().Next() % 5) == 0)
+                    {
+                        return "Multiple of 5";
+                    }
+                }
+            }
+
+            return "Value not recognised";
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L1-L47' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs -->
+<a id='snippet-RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs'></a>
+```cs
+using System;
+
+namespace RefactoringSamples.After.IfStatements
+{
+    public class RemoveRedundantElse
+    {
+        public string HeavilyNestedIf()
+        {
+            if ((new Random().Next() % 3) == 0)
+            {
+                return "Multiple of 3";
+            }
+
+            if ((new Random().Next() % 4) == 0)
+            {
+                return "Multiple of 4";
+            }
+
+            if ((new Random().Next() % 5) == 0)
+            {
+                return "Multiple of 5";
+            }
+
+            return "Value not recognised";
+        }
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L1-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 <!-- endInclude -->
 

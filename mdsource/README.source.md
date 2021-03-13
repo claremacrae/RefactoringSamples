@@ -42,6 +42,12 @@ include: ExtractInterface
 
 include: EncapsulateField
 
+### If Statements
+
+#### Remove Redundant Else
+
+include: RemoveRedundantElse
+
 ## Creating a new pair of files
 
 1. Create a new .cs file in a sub-dir of `RefactoringSamples/Before`
