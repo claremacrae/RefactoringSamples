@@ -1,6 +1,6 @@
 {
   "ReadOnly": true,
-  "TocLevel": 5,
+  "TocLevel": 3,
   "ExcludeDirectories": [
     "cmake-build",
     "build",
