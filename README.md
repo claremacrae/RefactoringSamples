@@ -400,6 +400,10 @@ namespace RefactoringSamples.After.Encapsulate
 
 ## Reference
 
+* "Refactoring: Improving the Design of Existing Code", Second Edition by Martin Fowler
+  * [The Second Edition of "Refactoring"](https://martinfowler.com/articles/refactoring-2nd-ed.html)
+  * [Accessing the web edition of Refactoring](https://martinfowler.com/articles/access-refactoring-web-edition.html)
+  * [Online Catalog of Refactorings](https://refactoring.com/catalog/)
 * [JetBrains Rider Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Index.html)
 
 ## Ideas
