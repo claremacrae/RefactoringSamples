@@ -330,6 +330,7 @@ namespace RefactoringSamples.After.Extract
 
 #### Encapsulate Field
 
+ <!-- include: EncapsulateField. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.include.md -->
 ![EncapsulateField - Before](uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
 becomes
@@ -375,6 +376,7 @@ namespace RefactoringSamples.After.Encapsulate
 ```
 <sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+<!-- endInclude -->
 
 ## Creating a new pair of files
 
