@@ -55,9 +55,10 @@ include: RemoveRedundantElse
 1. Make sure its namespace matches its location
 1. Select the class name and Refactor This and Copy Type
     * Change the namespace from Before to After
+    * Move the new file to the correct location inside `RefactoringSamples/After`
 1. In the new file, apply the refactoring
-1. Run `create-uml.bat`
-1. Add the new files to README.md
+1. Add new heading and `include:` line to `mdsource/README.source.md`
+1. Run `update-docs.sh`
 1. Review and commit the files
 
 ## Reference
