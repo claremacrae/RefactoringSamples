@@ -1,4 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+# Force execution to halt if there are any errors in this script:
+#set -e
+#set -o pipefail
 
 find . -name \*.puml -o -name \*.svg -exec rm {} \;
 puml-gen RefactoringSamples uml -dir -excludePaths RefactoringSamples\out | grep -v "^Processing "
