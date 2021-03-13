@@ -31,14 +31,18 @@ snippet: RefactoringSamples/After/{directory_name}/{base_name}.cs
 """
         output.write(content)
 
+def generate_missing_include_md_files():
+    for root, dirs, files in os.walk("RefactoringSamples/Before"):
+        path = root.split(os.sep)
+        directory_name = os.path.basename(root)
+        print((len(path) - 1) * '---', directory_name)
+        for file in files:
+            base_name, extension = os.path.splitext(file)
+            if extension != '.cs':
+                continue
+            print(len(path) * '---', file, base_name, extension)
+            write_include_file(root, directory_name, base_name)
 
-for root, dirs, files in os.walk("RefactoringSamples/Before"):
-    path = root.split(os.sep)
-    directory_name = os.path.basename(root)
-    print((len(path) - 1) * '---', directory_name)
-    for file in files:
-        base_name, extension = os.path.splitext(file)
-        if extension != '.cs':
-            continue
-        print(len(path) * '---', file, base_name, extension)
-        write_include_file(root, directory_name, base_name)
+
+if __name__ == '__main__':
+    generate_missing_include_md_files()
