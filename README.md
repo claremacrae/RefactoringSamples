@@ -17,18 +17,42 @@ To change this file edit the source file and then execute ./run_markdown_templat
     * [Key](#key)
     * [Extract Refactorings](#extract-refactorings)
       * [Extract Field](#extract-field)
-      * [Extract Field with Static members](#extract-field-with-static-members)
-      * [Extract Class](#extract-class)
-      * [Extract Superclass](#extract-superclass)
-      * [Extract Interface](#extract-interface)
-    * [Encapsulate Refactorings](#encapsulate-refactorings)
-      * [Encapsulate Field](#encapsulate-field)
-    * [If Statements](#if-statements)
-      * [Remove Redundant Else](#remove-redundant-else)
         * [Context](#context)
         * [Steps to improve the code](#steps-to-improve-the-code)
         * [UML before and after](#uml-before-and-after)
         * [Code before and after](#code-before-and-after)
+      * [Extract Field with Static members](#extract-field-with-static-members)
+        * [Context](#context-1)
+        * [Steps to improve the code](#steps-to-improve-the-code-1)
+        * [UML before and after](#uml-before-and-after-1)
+        * [Code before and after](#code-before-and-after-1)
+      * [Extract Class](#extract-class)
+        * [Context](#context-2)
+        * [Steps to improve the code](#steps-to-improve-the-code-2)
+        * [UML before and after](#uml-before-and-after-2)
+        * [Code before and after](#code-before-and-after-2)
+      * [Extract Superclass](#extract-superclass)
+        * [Context](#context-3)
+        * [Steps to improve the code](#steps-to-improve-the-code-3)
+        * [UML before and after](#uml-before-and-after-3)
+        * [Code before and after](#code-before-and-after-3)
+      * [Extract Interface](#extract-interface)
+        * [Context](#context-4)
+        * [Steps to improve the code](#steps-to-improve-the-code-4)
+        * [UML before and after](#uml-before-and-after-4)
+        * [Code before and after](#code-before-and-after-4)
+    * [Encapsulate Refactorings](#encapsulate-refactorings)
+      * [Encapsulate Field](#encapsulate-field)
+        * [Context](#context-5)
+        * [Steps to improve the code](#steps-to-improve-the-code-5)
+        * [UML before and after](#uml-before-and-after-5)
+        * [Code before and after](#code-before-and-after-5)
+    * [If Statements](#if-statements)
+      * [Remove Redundant Else](#remove-redundant-else)
+        * [Context](#context-6)
+        * [Steps to improve the code](#steps-to-improve-the-code-6)
+        * [UML before and after](#uml-before-and-after-6)
+        * [Code before and after](#code-before-and-after-6)
   * [Creating a new pair of files](#creating-a-new-pair-of-files)
   * [Reference](#reference)
   * [Ideas](#ideas)<!-- endToc -->
@@ -48,11 +72,19 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 #### Extract Field
 
  <!-- include: ExtractField. path: /RefactoringSamples/Before/Extract/ExtractField.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
 
 becomes
 
 ![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractField.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractField.cs'></a>
@@ -99,11 +131,19 @@ namespace RefactoringSamples.After.Extract
 #### Extract Field with Static members
 
  <!-- include: ExtractFieldStatic. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
 
 becomes
 
 ![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractFieldStatic.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractFieldStatic.cs'></a>
@@ -150,11 +190,19 @@ namespace RefactoringSamples.After.Extract
 #### Extract Class
 
  <!-- include: ExtractClass. path: /RefactoringSamples/Before/Extract/ExtractClass.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
 
 becomes
 
 ![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractClass.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractClass.cs'></a>
@@ -222,11 +270,19 @@ namespace RefactoringSamples.After.Extract
 #### Extract Superclass
 
  <!-- include: ExtractSuperclass. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
 becomes
 
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs'></a>
@@ -282,11 +338,19 @@ namespace RefactoringSamples.After.Extract
 #### Extract Interface
 
  <!-- include: ExtractInterface. path: /RefactoringSamples/Before/Extract/ExtractInterface.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
 
 becomes
 
 ![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Extract/ExtractInterface.cs -->
 <a id='snippet-RefactoringSamples/Before/Extract/ExtractInterface.cs'></a>
@@ -339,18 +403,26 @@ namespace RefactoringSamples.After.Extract
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
- <!-- endInclude -->
+<!-- endInclude -->
 
 ### Encapsulate Refactorings
 
 #### Encapsulate Field
 
  <!-- include: EncapsulateField. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.include.md -->
+##### Context
+
+##### Steps to improve the code
+
+##### UML before and after
+
 ![EncapsulateField - Before](uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
 becomes
 
 ![EncapsulateField - After](uml/After/Encapsulate/EncapsulateField.svg?raw=true)
+
+##### Code before and after
 
 <!-- snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs -->
 <a id='snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs'></a>
