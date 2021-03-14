@@ -41,6 +41,10 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 ### Extract Refactorings
 
+<!-- #### Extract Method -->
+
+<!-- #### Extract Variable -->
+
 #### Extract Field
 
  <!-- include: ExtractField. path: /RefactoringSamples/Before/Extract/ExtractField.include.md -->
@@ -449,6 +453,10 @@ namespace RefactoringSamples.After.Encapsulate
  <!-- endInclude -->
 
 ### If Statements
+
+<!-- #### Invert If -->
+
+TODO Stuff
 
 #### Remove Redundant Else
 

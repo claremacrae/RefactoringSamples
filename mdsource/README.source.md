@@ -16,6 +16,10 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 ### Extract Refactorings
 
+<!-- #### Extract Method -->
+
+<!-- #### Extract Variable -->
+
 #### Extract Field
 
 include: ExtractField
@@ -43,6 +47,10 @@ include: ExtractInterface
 include: EncapsulateField
 
 ### If Statements
+
+<!-- #### Invert If -->
+
+TODO Stuff
 
 #### Remove Redundant Else
 
