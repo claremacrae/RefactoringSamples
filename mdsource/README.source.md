@@ -50,8 +50,6 @@ include: EncapsulateField
 
 <!-- #### Invert If -->
 
-TODO Stuff
-
 #### Remove Redundant Else
 
 include: RemoveRedundantElse

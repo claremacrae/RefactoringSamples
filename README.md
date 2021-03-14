@@ -456,8 +456,6 @@ namespace RefactoringSamples.After.Encapsulate
 
 <!-- #### Invert If -->
 
-TODO Stuff
-
 #### Remove Redundant Else
 
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
