@@ -2,8 +2,8 @@
 {
     public interface IExtractInterface
     {
-        int method1();
-        int method2();
+        public int method1();
+        public int method2();
     }
 
     public class ExtractInterface : IExtractInterface

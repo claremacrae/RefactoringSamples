@@ -2,12 +2,12 @@
 {
     public class ExtractInterface
     {
-        int method1()
+        public int method1()
         {
             return 0;
         }
 
-        int method2()
+        public int method2()
         {
             return 0;
         }
