@@ -2,13 +2,13 @@
 {
     public class Key2
     {
-        public static int StaticPublicField = 0;
+        public static int PublicFieldStatic = 0;
         public int PublicField = 0;
 
-        protected static int StaticProtectedField = 0;
+        protected static int ProtectedFieldStatic = 0;
         protected int ProtectedField = 0;
 
-        private static int _staticPrivateField = 0;
+        private static int _privateFieldStatic = 0;
         private int _privateField = 0;
 
         public int PublicMethod()
@@ -16,14 +16,14 @@
             return PublicField;
         }
 
-        public static int StaticPublicMethod()
+        public static int PublicMethodStatic()
         {
-            return StaticPublicField;
+            return PublicFieldStatic;
         }
 
-        protected static int StaticProtectedMethod()
+        protected static int ProtectedMethodStatic()
         {
-            return StaticProtectedField;
+            return ProtectedFieldStatic;
         }
 
         protected int ProtectedMethod()
@@ -36,9 +36,9 @@
             return _privateField;
         }
 
-        private static int StaticPrivateMethod()
+        private static int PrivateMethodStatic()
         {
-            return _staticPrivateField;
+            return _privateFieldStatic;
         }
     }
 }

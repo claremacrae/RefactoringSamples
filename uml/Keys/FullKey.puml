@@ -1,16 +1,16 @@
 @startuml
 class Key2 {
-    + {static} StaticPublicField : int = 0
+    + {static} PublicFieldStatic : int = 0
     + PublicField : int = 0
-    # {static} StaticProtectedField : int = 0
+    # {static} ProtectedFieldStatic : int = 0
     # ProtectedField : int = 0
-    - {static} _staticPrivateField : int = 0
+    - {static} _privateFieldStatic : int = 0
     - _privateField : int = 0
     + PublicMethod() : int
-    + {static} StaticPublicMethod() : int
-    # {static} StaticProtectedMethod() : int
+    + {static} PublicMethodStatic() : int
+    # {static} ProtectedMethodStatic() : int
     # ProtectedMethod() : int
     - PrivateMethod() : int
-    - {static} StaticPrivateMethod() : int
+    - {static} PrivateMethodStatic() : int
 }
 @enduml
