@@ -15,6 +15,10 @@ def create_files_impl(refactoring):
     template_name = 'refactoring-pattern.md'
     extension = 'include.md'
 
+    create_file_from_template(refactoring, env, template_name, extension)
+
+
+def create_file_from_template(refactoring, env, template_name, extension):
     template = env.get_template(template_name)
     #
     # RefactoringSamples/Before/Extract/ExtractClass.include.md
