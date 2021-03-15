@@ -13,11 +13,11 @@ becomes
 
 ##### Code before and after
 
-snippet: RefactoringSamples/Before/{{ data.category }}/{{ data.source_file }}.cs
+snippet: {{ data.source_file }}-Before
 
 becomes
 
-snippet: RefactoringSamples/After/{{ data.category }}/{{ data.source_file }}.cs
+snippet: {{ data.source_file }}-After
 
 -----
 
