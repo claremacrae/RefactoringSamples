@@ -18,8 +18,7 @@ def create_files_impl(refactoring):
 
 def create_file_from_template(refactoring, env, template_name, extension):
     template = env.get_template(template_name)
-    output_dir = F"../RefactoringSamples/Before/{refactoring['category']}/"
-    output_file_name = output_dir + F"{refactoring['source_file']}.{extension}"
+    output_file_name = F"../RefactoringSamples/Before/{refactoring['category']}/{refactoring['source_file']}.{extension}"
     with open(output_file_name, 'w') as f:
         output = template.render(data=refactoring)
         f.write(output)
