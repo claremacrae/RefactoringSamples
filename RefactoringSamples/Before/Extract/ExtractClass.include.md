@@ -1,7 +1,5 @@
 
-##### Context
-
-##### Steps to improve the code
+include: ExtractClass.description
 
 ##### UML before and after
 

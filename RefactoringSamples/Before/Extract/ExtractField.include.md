@@ -1,7 +1,5 @@
 
-##### Context
-
-##### Steps to improve the code
+include: ExtractField.description
 
 ##### UML before and after
 

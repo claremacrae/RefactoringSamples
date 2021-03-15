@@ -48,9 +48,12 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 #### Extract Field
 
  <!-- include: ExtractField. path: /RefactoringSamples/Before/Extract/ExtractField.include.md -->
+ <!-- include: ExtractField.description. path: /RefactoringSamples/Before/Extract/ExtractField.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -103,9 +106,12 @@ public class ExtractField
 #### Extract Field with Static members
 
  <!-- include: ExtractFieldStatic. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.include.md -->
+ <!-- include: ExtractFieldStatic.description. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -158,9 +164,12 @@ public class ExtractFieldStatic
 #### Extract Class
 
  <!-- include: ExtractClass. path: /RefactoringSamples/Before/Extract/ExtractClass.include.md -->
+ <!-- include: ExtractClass.description. path: /RefactoringSamples/Before/Extract/ExtractClass.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -234,9 +243,12 @@ public class ExtractClass
 #### Extract Superclass
 
  <!-- include: ExtractSuperclass. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.include.md -->
+ <!-- include: ExtractSuperclass.description. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -298,9 +310,12 @@ public class ExtractSuperclass : ExtractSuperclassBase
 #### Extract Interface
 
  <!-- include: ExtractInterface. path: /RefactoringSamples/Before/Extract/ExtractInterface.include.md -->
+ <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/Extract/ExtractInterface.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -366,9 +381,12 @@ public class ExtractInterface : IExtractInterface
 #### Encapsulate Field
 
  <!-- include: EncapsulateField. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.include.md -->
+ <!-- include: EncapsulateField.description. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.description.include.md -->
 ##### Context
 
-##### Steps to improve the code
+##### See Also
+
+##### Steps to improve the code <!-- endInclude -->
 
 ##### UML before and after
 
@@ -423,10 +441,13 @@ public class EncapsulateField
 #### Remove Redundant Else
 
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
+ <!-- include: RemoveRedundantElse.description. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.description.include.md -->
 ##### Context
 
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
+
+##### See Also
 
 ##### Steps to improve the code
 
@@ -438,7 +459,7 @@ Either
 
 Or
 
-1. Click on first else, and select 'Remove redundant code in file'
+1. Click on first else, and select 'Remove redundant code in file' <!-- endInclude -->
 
 ##### UML before and after
 
