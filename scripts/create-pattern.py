@@ -1,3 +1,5 @@
+import os
+
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -22,6 +24,9 @@ def create_files_impl(refactoring):
 def create_file_from_template(refactoring, stage, env, template_name, extension):
     template = env.get_template(template_name)
     output_file_name = F"../RefactoringSamples/{stage}/{refactoring['category']}/{refactoring['source_file']}.{extension}"
+    if os.path.exists(output_file_name):
+        print(f'File already exists: not overwriting: {output_file_name}')
+        return
     with open(output_file_name, 'w') as f:
         output = template.render(data=refactoring, stage=stage)
         f.write(output)
