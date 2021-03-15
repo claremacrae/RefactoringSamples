@@ -15,8 +15,9 @@ def create_files_impl(refactoring):
     template = env.get_template('refactoring-pattern.md')
     #
     # RefactoringSamples/Before/Extract/ExtractClass.include.md
+    extension = 'include.md'
     output_dir = F"../RefactoringSamples/Before/{refactoring['category']}/"
-    output_file_name = output_dir + F"{refactoring['source_file']}.include.md"
+    output_file_name = output_dir + F"{refactoring['source_file']}.{extension}"
     with open(output_file_name, 'w') as f:
         output = template.render(data=refactoring)
         f.write(output)
