@@ -13,6 +13,7 @@ def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
     create_file_from_template(refactoring, env, 'refactoring-pattern.md', 'include.md')
+    create_file_from_template(refactoring, env, 'refactoring-pattern.cs', 'cs')
 
 
 def create_file_from_template(refactoring, env, template_name, extension):
