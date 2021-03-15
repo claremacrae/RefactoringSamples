@@ -13,10 +13,11 @@ def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
     template_name = 'refactoring-pattern.md'
+    extension = 'include.md'
+
     template = env.get_template(template_name)
     #
     # RefactoringSamples/Before/Extract/ExtractClass.include.md
-    extension = 'include.md'
     output_dir = F"../RefactoringSamples/Before/{refactoring['category']}/"
     output_file_name = output_dir + F"{refactoring['source_file']}.{extension}"
     with open(output_file_name, 'w') as f:
