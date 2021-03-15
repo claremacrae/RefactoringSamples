@@ -440,34 +440,31 @@ becomes
 <!-- snippet: RemoveRedundantElse-Before -->
 <a id='snippet-removeredundantelse-before'></a>
 ```cs
-public class RemoveRedundantElse
+public string HeavilyNestedIf()
 {
-    public string HeavilyNestedIf()
+    if ((new Random().Next() % 3) == 0)
     {
-        if ((new Random().Next() % 3) == 0)
+        return "Multiple of 3";
+    }
+    else
+    {
+        if ((new Random().Next() % 4) == 0)
         {
-            return "Multiple of 3";
+            return "Multiple of 4";
         }
         else
         {
-            if ((new Random().Next() % 4) == 0)
+            if ((new Random().Next() % 5) == 0)
             {
-                return "Multiple of 4";
-            }
-            else
-            {
-                if ((new Random().Next() % 5) == 0)
-                {
-                    return "Multiple of 5";
-                }
+                return "Multiple of 5";
             }
         }
-
-        return "Value not recognised";
     }
+
+    return "Value not recognised";
 }
 ```
-<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L5-L32' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-before' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L7-L31' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
@@ -475,30 +472,27 @@ becomes
 <!-- snippet: RemoveRedundantElse-After -->
 <a id='snippet-removeredundantelse-after'></a>
 ```cs
-public class RemoveRedundantElse
+public string HeavilyNestedIf()
 {
-    public string HeavilyNestedIf()
+    if ((new Random().Next() % 3) == 0)
     {
-        if ((new Random().Next() % 3) == 0)
-        {
-            return "Multiple of 3";
-        }
-
-        if ((new Random().Next() % 4) == 0)
-        {
-            return "Multiple of 4";
-        }
-
-        if ((new Random().Next() % 5) == 0)
-        {
-            return "Multiple of 5";
-        }
-
-        return "Value not recognised";
+        return "Multiple of 3";
     }
+
+    if ((new Random().Next() % 4) == 0)
+    {
+        return "Multiple of 4";
+    }
+
+    if ((new Random().Next() % 5) == 0)
+    {
+        return "Multiple of 5";
+    }
+
+    return "Value not recognised";
 }
 ```
-<sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L5-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-after' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L7-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----

@@ -2,9 +2,9 @@
 
 namespace RefactoringSamples.Before.IfStatements
 {
-    // begin-snippet: RemoveRedundantElse-Before
     public class RemoveRedundantElse
     {
+        // begin-snippet: RemoveRedundantElse-Before
         public string HeavilyNestedIf()
         {
             if ((new Random().Next() % 3) == 0)
@@ -28,6 +28,6 @@ namespace RefactoringSamples.Before.IfStatements
 
             return "Value not recognised";
         }
+        // end-snippet
     }
-    // end-snippet
 }

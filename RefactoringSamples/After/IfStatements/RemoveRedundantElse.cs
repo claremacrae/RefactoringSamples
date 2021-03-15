@@ -2,9 +2,9 @@
 
 namespace RefactoringSamples.After.IfStatements
 {
-    // begin-snippet: RemoveRedundantElse-After
     public class RemoveRedundantElse
     {
+        // begin-snippet: RemoveRedundantElse-After
         public string HeavilyNestedIf()
         {
             if ((new Random().Next() % 3) == 0)
@@ -24,6 +24,6 @@ namespace RefactoringSamples.After.IfStatements
 
             return "Value not recognised";
         }
+        // end-snippet
     }
-    // end-snippet
 }
