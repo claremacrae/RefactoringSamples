@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.Before.{{ data.category }}
+﻿namespace RefactoringSamples.{{ stage }}.{{ data.category }}
 {
     public class {{ data.source_file }}
     {

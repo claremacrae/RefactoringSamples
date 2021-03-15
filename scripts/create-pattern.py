@@ -4,7 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 def create_files():
     refactoring = {}
     refactoring['category'] = 'Extract'
-    refactoring['source_file'] = 'ExtractClass'
+    refactoring['source_file'] = 'TestClass'
 
     create_files_impl(refactoring)
 
@@ -12,15 +12,16 @@ def create_files():
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
-    create_file_from_template(refactoring, env, 'refactoring-pattern.md', 'include.md')
-    create_file_from_template(refactoring, env, 'refactoring-pattern.cs', 'cs')
+    stage = 'Before'
+    create_file_from_template(refactoring, stage, env, 'refactoring-pattern.md', 'include.md')
+    create_file_from_template(refactoring, stage, env, 'refactoring-pattern.cs', 'cs')
 
 
-def create_file_from_template(refactoring, env, template_name, extension):
+def create_file_from_template(refactoring, stage, env, template_name, extension):
     template = env.get_template(template_name)
-    output_file_name = F"../RefactoringSamples/Before/{refactoring['category']}/{refactoring['source_file']}.{extension}"
+    output_file_name = F"../RefactoringSamples/{stage}/{refactoring['category']}/{refactoring['source_file']}.{extension}"
     with open(output_file_name, 'w') as f:
-        output = template.render(data=refactoring)
+        output = template.render(data=refactoring, stage=stage)
         f.write(output)
 
 
