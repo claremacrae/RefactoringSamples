@@ -62,45 +62,39 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Extract/ExtractField.cs -->
-<a id='snippet-RefactoringSamples/Before/Extract/ExtractField.cs'></a>
+<!-- snippet: ExtractField-Before -->
+<a id='snippet-extractfield-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Extract
+public class ExtractField
 {
-    public class ExtractField
+    public void LongMethod()
     {
-        public void LongMethod()
-        {
-            int thing1;
-            int thing2;
-            int thing3;
-        }
+        int thing1;
+        int thing2;
+        int thing3;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractField.cs#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractField.cs#L3-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfield-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Extract/ExtractField.cs -->
-<a id='snippet-RefactoringSamples/After/Extract/ExtractField.cs'></a>
+<!-- snippet: ExtractField-After -->
+<a id='snippet-extractfield-after'></a>
 ```cs
-namespace RefactoringSamples.After.Extract
+public class ExtractField
 {
-    public class ExtractField
-    {
-        private int _thing1;
-        private int _thing2;
-        private int _thing3;
+    private int _thing1;
+    private int _thing2;
+    private int _thing3;
 
-        public void LongMethod()
-        {
-        }
+    public void LongMethod()
+    {
     }
 }
 ```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractField.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfield-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -123,45 +117,39 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Extract/ExtractFieldStatic.cs -->
-<a id='snippet-RefactoringSamples/Before/Extract/ExtractFieldStatic.cs'></a>
+<!-- snippet: ExtractFieldStatic-Before -->
+<a id='snippet-extractfieldstatic-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Extract
+public class ExtractFieldStatic
 {
-    public class ExtractFieldStatic
+    public static void LongMethod()
     {
-        public static void LongMethod()
-        {
-            int thing1;
-            int thing2;
-            int thing3;
-        }
+        int thing1;
+        int thing2;
+        int thing3;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractFieldStatic.cs#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractFieldStatic.cs#L3-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfieldstatic-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Extract/ExtractFieldStatic.cs -->
-<a id='snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs'></a>
+<!-- snippet: ExtractFieldStatic-After -->
+<a id='snippet-extractfieldstatic-after'></a>
 ```cs
-namespace RefactoringSamples.After.Extract
+public class ExtractFieldStatic
 {
-    public class ExtractFieldStatic
-    {
-        private static int _thing1;
-        private static int _thing2;
-        private static int _thing3;
+    private static int _thing1;
+    private static int _thing2;
+    private static int _thing3;
 
-        public static void LongMethod()
-        {
-        }
+    public static void LongMethod()
+    {
     }
 }
 ```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractFieldStatic.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfieldstatic-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -184,66 +172,60 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Extract/ExtractClass.cs -->
-<a id='snippet-RefactoringSamples/Before/Extract/ExtractClass.cs'></a>
+<!-- snippet: ExtractClass-Before -->
+<a id='snippet-extractclass-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Extract
+public class ExtractClass
 {
-    public class ExtractClass
+    private int _concept1;
+    private int _concept2;
+
+    public int Concept1Function()
     {
-        private int _concept1;
-        private int _concept2;
+        return _concept1;
+    }
 
-        public int Concept1Function()
-        {
-            return _concept1;
-        }
-
-        public int Concept2Function()
-        {
-            return _concept2;
-        }
+    public int Concept2Function()
+    {
+        return _concept2;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractClass.cs#L1-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractClass.cs#L3-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractclass-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Extract/ExtractClass.cs -->
-<a id='snippet-RefactoringSamples/After/Extract/ExtractClass.cs'></a>
+<!-- snippet: ExtractClass-After -->
+<a id='snippet-extractclass-after'></a>
 ```cs
-namespace RefactoringSamples.After.Extract
+public class Concept1
 {
-    public class Concept1
+    private int _concept1;
+
+    public int Concept1Function()
     {
-        private int _concept1;
-
-        public int Concept1Function()
-        {
-            return _concept1;
-        }
-    }
-
-    public class Concept2
-    {
-        private int _concept2;
-
-        public int Concept2Function()
-        {
-            return _concept2;
-        }
-    }
-
-    public class ExtractClass
-    {
-        private readonly Concept1 _concept1 = new Concept1();
-        private readonly Concept2 _concept2 = new Concept2();
+        return _concept1;
     }
 }
+
+public class Concept2
+{
+    private int _concept2;
+
+    public int Concept2Function()
+    {
+        return _concept2;
+    }
+}
+
+public class ExtractClass
+{
+    private readonly Concept1 _concept1 = new Concept1();
+    private readonly Concept2 _concept2 = new Concept2();
+}
 ```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractClass.cs#L1-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractClass.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Extract/ExtractClass.cs#L3-L29' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractclass-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -266,54 +248,48 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs -->
-<a id='snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs'></a>
+<!-- snippet: ExtractSuperclass-Before -->
+<a id='snippet-extractsuperclass-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Extract
+public class ExtractSuperclass
 {
-    public class ExtractSuperclass
+    public int method1()
     {
-        public int method1()
-        {
-            return 0;
-        }
+        return 0;
+    }
 
-        public int method2()
-        {
-            return 0;
-        }
+    public int method2()
+    {
+        return 0;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractSuperclass.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractSuperclass.cs#L3-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractsuperclass-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Extract/ExtractSuperclass.cs -->
-<a id='snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs'></a>
+<!-- snippet: ExtractSuperclass-After -->
+<a id='snippet-extractsuperclass-after'></a>
 ```cs
-namespace RefactoringSamples.After.Extract
+public class ExtractSuperclassBase
 {
-    public class ExtractSuperclassBase
+    public int method1()
     {
-        public int method1()
-        {
-            return 0;
-        }
-
-        public int method2()
-        {
-            return 0;
-        }
+        return 0;
     }
 
-    public class ExtractSuperclass : ExtractSuperclassBase
+    public int method2()
     {
+        return 0;
     }
 }
+
+public class ExtractSuperclass : ExtractSuperclassBase
+{
+}
 ```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L1-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractSuperclass.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L3-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractsuperclass-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -336,56 +312,50 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Extract/ExtractInterface.cs -->
-<a id='snippet-RefactoringSamples/Before/Extract/ExtractInterface.cs'></a>
+<!-- snippet: ExtractInterface-Before -->
+<a id='snippet-extractinterface-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Extract
+public class ExtractInterface
 {
-    public class ExtractInterface
+    public int method1()
     {
-        public int method1()
-        {
-            return 0;
-        }
+        return 0;
+    }
 
-        public int method2()
-        {
-            return 0;
-        }
+    public int method2()
+    {
+        return 0;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractInterface.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Extract/ExtractInterface.cs#L3-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractinterface-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Extract/ExtractInterface.cs -->
-<a id='snippet-RefactoringSamples/After/Extract/ExtractInterface.cs'></a>
+<!-- snippet: ExtractInterface-After -->
+<a id='snippet-extractinterface-after'></a>
 ```cs
-namespace RefactoringSamples.After.Extract
+public interface IExtractInterface
 {
-    public interface IExtractInterface
+    public int method1();
+    public int method2();
+}
+
+public class ExtractInterface : IExtractInterface
+{
+    public int method1()
     {
-        public int method1();
-        public int method2();
+        return 0;
     }
 
-    public class ExtractInterface : IExtractInterface
+    public int method2()
     {
-        public int method1()
-        {
-            return 0;
-        }
-
-        public int method2()
-        {
-            return 0;
-        }
+        return 0;
     }
 }
 ```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L1-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Extract/ExtractInterface.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L3-L22' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractinterface-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -410,43 +380,37 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs -->
-<a id='snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs'></a>
+<!-- snippet: EncapsulateField-Before -->
+<a id='snippet-encapsulatefield-before'></a>
 ```cs
-namespace RefactoringSamples.Before.Encapsulate
+public class EncapsulateField
 {
-    public class EncapsulateField
-    {
-        private int _thing1;
-        private int _thing2;
-    }
+    private int _thing1;
+    private int _thing2;
 }
 ```
-<sup><a href='/RefactoringSamples/Before/Encapsulate/EncapsulateField.cs#L1-L8' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/Encapsulate/EncapsulateField.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-encapsulatefield-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 becomes
 
-<!-- snippet: RefactoringSamples/After/Encapsulate/EncapsulateField.cs -->
-<a id='snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs'></a>
+<!-- snippet: EncapsulateField-After -->
+<a id='snippet-encapsulatefield-after'></a>
 ```cs
-namespace RefactoringSamples.After.Encapsulate
+public class EncapsulateField
 {
-    public class EncapsulateField
+    public int Thing1AsAutoProperty { get; }
+
+    public int Thing2
     {
-        public int Thing1AsAutoProperty { get; }
-
-        public int Thing2
-        {
-            get => _thing2;
-            set => _thing2 = value;
-        }
-
-        private int _thing2;
+        get => _thing2;
+        set => _thing2 = value;
     }
+
+    private int _thing2;
 }
 ```
-<sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L1-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/Encapsulate/EncapsulateField.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L3-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-encapsulatefield-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
@@ -461,20 +425,7 @@ namespace RefactoringSamples.After.Encapsulate
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
 ##### Context
 
-The IDE works out that the `else` statements are redundant,
-because of the return statements.
-
 ##### Steps to improve the code
-
-Either
-
-1. Click on first else, and select 'Remove redundant else'
-2. Click on second else, and select 'Remove redundant else'
-3. Click on third else, and select 'Remove redundant else'
-
-Or
-
-1. Click on first else, and select 'Remove redundant code in file'
 
 ##### UML before and after
 
@@ -486,78 +437,68 @@ becomes
 
 ##### Code before and after
 
-<!-- snippet: RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs -->
-<a id='snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs'></a>
+<!-- snippet: RemoveRedundantElse-Before -->
+<a id='snippet-removeredundantelse-before'></a>
 ```cs
-using System;
-
-namespace RefactoringSamples.Before.IfStatements
+public class RemoveRedundantElse
 {
-    public class RemoveRedundantElse
+    public string HeavilyNestedIf()
     {
-        public string HeavilyNestedIf()
+        if ((new Random().Next() % 3) == 0)
         {
-            if ((new Random().Next() % 3) == 0)
-            {
-                return "Multiple of 3";
-            }
-            else
-            {
-                if ((new Random().Next() % 4) == 0)
-                {
-                    return "Multiple of 4";
-                }
-                else
-                {
-                    if ((new Random().Next() % 5) == 0)
-                    {
-                        return "Multiple of 5";
-                    }
-                }
-            }
-
-            return "Value not recognised";
+            return "Multiple of 3";
         }
-    }
-}
-```
-<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L1-L31' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
-<!-- endSnippet -->
-
-becomes
-
-<!-- snippet: RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs -->
-<a id='snippet-RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs'></a>
-```cs
-using System;
-
-namespace RefactoringSamples.After.IfStatements
-{
-    public class RemoveRedundantElse
-    {
-        public string HeavilyNestedIf()
+        else
         {
-            if ((new Random().Next() % 3) == 0)
-            {
-                return "Multiple of 3";
-            }
-
             if ((new Random().Next() % 4) == 0)
             {
                 return "Multiple of 4";
             }
-
-            if ((new Random().Next() % 5) == 0)
+            else
             {
-                return "Multiple of 5";
+                if ((new Random().Next() % 5) == 0)
+                {
+                    return "Multiple of 5";
+                }
             }
-
-            return "Value not recognised";
         }
+
+        return "Value not recognised";
     }
 }
 ```
-<sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L1-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L5-L32' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-before' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+becomes
+
+<!-- snippet: RemoveRedundantElse-After -->
+<a id='snippet-removeredundantelse-after'></a>
+```cs
+public class RemoveRedundantElse
+{
+    public string HeavilyNestedIf()
+    {
+        if ((new Random().Next() % 3) == 0)
+        {
+            return "Multiple of 3";
+        }
+
+        if ((new Random().Next() % 4) == 0)
+        {
+            return "Multiple of 4";
+        }
+
+        if ((new Random().Next() % 5) == 0)
+        {
+            return "Multiple of 5";
+        }
+
+        return "Value not recognised";
+    }
+}
+```
+<sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L5-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
