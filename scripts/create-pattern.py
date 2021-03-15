@@ -6,10 +6,13 @@ def create_files():
     refactoring['category'] = 'Extract'
     refactoring['source_file'] = 'ExtractClass'
 
+    create_files_impl(refactoring)
+
+
+def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
     template = env.get_template('refactoring-pattern.md')
-
     output = template.render(data=refactoring)
     print(output)
 
