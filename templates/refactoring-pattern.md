@@ -1,7 +1,5 @@
 
-##### Context
-
-##### Steps to improve the code
+include: {{ data.source_file }}.description
 
 ##### UML before and after
 

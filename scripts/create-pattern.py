@@ -19,6 +19,7 @@ def create_files_impl(refactoring):
     for stage in [before, after]:
         create_file_from_template(refactoring, stage, env, 'refactoring-pattern.cs', 'cs')
     create_file_from_template(refactoring, before, env, 'refactoring-pattern.md', 'include.md')
+    create_file_from_template(refactoring, before, env, 'refactoring-pattern.description.md', 'description.include.md')
 
 
 def create_file_from_template(refactoring, stage, env, template_name, extension):
