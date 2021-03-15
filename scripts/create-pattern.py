@@ -10,3 +10,19 @@ refactoring['source_file'] = 'ExtractClass'
 
 output = template.render(data=refactoring)
 print(output)
+
+"""
+{% if truth %}
+{% else %}
+{% endif %}
+
+colors = ['red', 'green', 'blue']
+{% for color in colors %}
+    {{ color }}
+{% endfor %}
+
+{% include 'header.html %}
+
+See also extending templates, and embedding blocks
+
+"""
