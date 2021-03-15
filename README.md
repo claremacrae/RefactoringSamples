@@ -13,49 +13,47 @@ To change this file edit the source file and then execute ./run_markdown_templat
 ## Contents
 
   * [Purpose](#purpose)
-  * [Refactoring Samples](#refactoring-samples)
-    * [Key](#key)
-    * [Extract Refactorings](#extract-refactorings)
-      * [Extract Field](#extract-field)
-      * [Extract Field with Static members](#extract-field-with-static-members)
-      * [Extract Class](#extract-class)
-      * [Extract Superclass](#extract-superclass)
-      * [Extract Interface](#extract-interface)
-    * [Encapsulate Refactorings](#encapsulate-refactorings)
-      * [Encapsulate Field](#encapsulate-field)
-    * [If Statements](#if-statements)
-      * [Remove Redundant Else](#remove-redundant-else)
-  * [Creating a new pair of files](#creating-a-new-pair-of-files)
-  * [Reference](#reference)
-  * [Ideas](#ideas)<!-- endToc -->
+  * [Key](#key)
+  * [Extract Refactorings](#extract-refactorings)
+    * [Extract Field](#extract-field)
+    * [Extract Field with Static members](#extract-field-with-static-members)
+    * [Extract Class](#extract-class)
+    * [Extract Superclass](#extract-superclass)
+    * [Extract Interface](#extract-interface)
+  * [Encapsulate Refactorings](#encapsulate-refactorings)
+    * [Encapsulate Field](#encapsulate-field)
+  * [If Statements](#if-statements)
+    * [Remove Redundant Else](#remove-redundant-else)
+  * [Appendix](#appendix)
+    * [Creating a new pair of files](#creating-a-new-pair-of-files)
+    * [Reference](#reference)
+    * [Ideas](#ideas)<!-- endToc -->
 
 ## Purpose
 
 To provide visualisations of micro-refactorings in C# code, using UML diagrams generated from pairs of tiny C# source files.
 
-## Refactoring Samples
-
-### Key
+## Key
 
 ![Key](uml/Keys/Key.svg?raw=true)
 
-### Extract Refactorings
+## Extract Refactorings
 
-<!-- #### Extract Method -->
+<!-- ### Extract Method -->
 
-<!-- #### Extract Variable -->
+<!-- ### Extract Variable -->
 
-#### Extract Field
+### Extract Field
 
  <!-- include: ExtractField. path: /RefactoringSamples/Before/Extract/ExtractField.include.md -->
  <!-- include: ExtractField.description. path: /RefactoringSamples/Before/Extract/ExtractField.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
 
@@ -63,7 +61,7 @@ becomes
 
 ![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: ExtractField-Before -->
 <a id='snippet-extractfield-before'></a>
@@ -103,17 +101,17 @@ public class ExtractField
 -----
  <!-- endInclude -->
 
-#### Extract Field with Static members
+### Extract Field with Static members
 
  <!-- include: ExtractFieldStatic. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.include.md -->
  <!-- include: ExtractFieldStatic.description. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
 
@@ -121,7 +119,7 @@ becomes
 
 ![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: ExtractFieldStatic-Before -->
 <a id='snippet-extractfieldstatic-before'></a>
@@ -161,17 +159,17 @@ public class ExtractFieldStatic
 -----
  <!-- endInclude -->
 
-#### Extract Class
+### Extract Class
 
  <!-- include: ExtractClass. path: /RefactoringSamples/Before/Extract/ExtractClass.include.md -->
  <!-- include: ExtractClass.description. path: /RefactoringSamples/Before/Extract/ExtractClass.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
 
@@ -179,7 +177,7 @@ becomes
 
 ![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: ExtractClass-Before -->
 <a id='snippet-extractclass-before'></a>
@@ -240,17 +238,17 @@ public class ExtractClass
 -----
  <!-- endInclude -->
 
-#### Extract Superclass
+### Extract Superclass
 
  <!-- include: ExtractSuperclass. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.include.md -->
  <!-- include: ExtractSuperclass.description. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
@@ -258,7 +256,7 @@ becomes
 
 ![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: ExtractSuperclass-Before -->
 <a id='snippet-extractsuperclass-before'></a>
@@ -307,17 +305,17 @@ public class ExtractSuperclass : ExtractSuperclassBase
 -----
  <!-- endInclude -->
 
-#### Extract Interface
+### Extract Interface
 
  <!-- include: ExtractInterface. path: /RefactoringSamples/Before/Extract/ExtractInterface.include.md -->
  <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/Extract/ExtractInterface.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
 
@@ -325,7 +323,7 @@ becomes
 
 ![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: ExtractInterface-Before -->
 <a id='snippet-extractinterface-before'></a>
@@ -376,19 +374,19 @@ public class ExtractInterface : IExtractInterface
 -----
  <!-- endInclude -->
 
-### Encapsulate Refactorings
+## Encapsulate Refactorings
 
-#### Encapsulate Field
+### Encapsulate Field
 
  <!-- include: EncapsulateField. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.include.md -->
  <!-- include: EncapsulateField.description. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.description.include.md -->
-##### Context
+#### Context
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code <!-- endInclude -->
+#### Steps to improve the code <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![EncapsulateField - Before](uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
@@ -396,7 +394,7 @@ becomes
 
 ![EncapsulateField - After](uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: EncapsulateField-Before -->
 <a id='snippet-encapsulatefield-before'></a>
@@ -434,22 +432,22 @@ public class EncapsulateField
 -----
  <!-- endInclude -->
 
-### If Statements
+## If Statements
 
-<!-- #### Invert If -->
+<!-- ### Invert If -->
 
-#### Remove Redundant Else
+### Remove Redundant Else
 
  <!-- include: RemoveRedundantElse. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.include.md -->
  <!-- include: RemoveRedundantElse.description. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.description.include.md -->
-##### Context
+#### Context
 
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
 
-##### See Also
+#### See Also
 
-##### Steps to improve the code
+#### Steps to improve the code
 
 Either
 
@@ -461,7 +459,7 @@ Or
 
 1. Click on first else, and select 'Remove redundant code in file' <!-- endInclude -->
 
-##### UML before and after
+#### UML before and after
 
 ![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
@@ -469,7 +467,7 @@ becomes
 
 ![RemoveRedundantElse - After](uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
-##### Code before and after
+#### Code before and after
 
 <!-- snippet: RemoveRedundantElse-Before -->
 <a id='snippet-removeredundantelse-before'></a>
@@ -532,7 +530,9 @@ public string HeavilyNestedIf()
 -----
  <!-- endInclude -->
 
-## Creating a new pair of files
+## Appendix
+
+### Creating a new pair of files
 
 1. Create a new .cs file in a sub-dir of `RefactoringSamples/Before`
 1. Set it up with the methods and fields that you want to demo
@@ -545,7 +545,7 @@ public string HeavilyNestedIf()
 1. Run `update-docs.sh`
 1. Review and commit the files
 
-## Reference
+### Reference
 
 * "Refactoring: Improving the Design of Existing Code", Second Edition by Martin Fowler
   * [The Second Edition of "Refactoring"](https://martinfowler.com/articles/refactoring-2nd-ed.html)
@@ -553,7 +553,7 @@ public string HeavilyNestedIf()
   * [Online Catalog of Refactorings](https://refactoring.com/catalog/)
 * [JetBrains Rider Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Index.html)
 
-## Ideas
+### Ideas
 
 * Machine-generate markdown pages that show the Before and After of both the .cs source and the .svg files.
 * Try generating combined .svg files that show the Before and After UML, with an arrow between the two.

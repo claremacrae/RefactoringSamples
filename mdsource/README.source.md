@@ -8,53 +8,53 @@ toc
 
 To provide visualisations of micro-refactorings in C# code, using UML diagrams generated from pairs of tiny C# source files.
 
-## Refactoring Samples
-
-### Key
+## Key
 
 ![Key](uml/Keys/Key.svg?raw=true)
 
-### Extract Refactorings
+## Extract Refactorings
 
-<!-- #### Extract Method -->
+<!-- ### Extract Method -->
 
-<!-- #### Extract Variable -->
+<!-- ### Extract Variable -->
 
-#### Extract Field
+### Extract Field
 
 include: ExtractField
 
-#### Extract Field with Static members
+### Extract Field with Static members
 
 include: ExtractFieldStatic
 
-#### Extract Class
+### Extract Class
 
 include: ExtractClass
 
-#### Extract Superclass
+### Extract Superclass
 
 include: ExtractSuperclass
 
-#### Extract Interface
+### Extract Interface
 
 include: ExtractInterface
 
-### Encapsulate Refactorings
+## Encapsulate Refactorings
 
-#### Encapsulate Field
+### Encapsulate Field
 
 include: EncapsulateField
 
-### If Statements
+## If Statements
 
-<!-- #### Invert If -->
+<!-- ### Invert If -->
 
-#### Remove Redundant Else
+### Remove Redundant Else
 
 include: RemoveRedundantElse
 
-## Creating a new pair of files
+## Appendix
+
+### Creating a new pair of files
 
 1. Create a new .cs file in a sub-dir of `RefactoringSamples/Before`
 1. Set it up with the methods and fields that you want to demo
@@ -67,7 +67,7 @@ include: RemoveRedundantElse
 1. Run `update-docs.sh`
 1. Review and commit the files
 
-## Reference
+### Reference
 
 * "Refactoring: Improving the Design of Existing Code", Second Edition by Martin Fowler
   * [The Second Edition of "Refactoring"](https://martinfowler.com/articles/refactoring-2nd-ed.html)
@@ -75,7 +75,7 @@ include: RemoveRedundantElse
   * [Online Catalog of Refactorings](https://refactoring.com/catalog/)
 * [JetBrains Rider Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Index.html)
 
-## Ideas
+### Ideas
 
 * Machine-generate markdown pages that show the Before and After of both the .cs source and the .svg files.
 * Try generating combined .svg files that show the Before and After UML, with an arrow between the two.
