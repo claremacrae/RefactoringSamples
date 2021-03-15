@@ -1,5 +1,6 @@
 ﻿namespace RefactoringSamples.After.Extract
 {
+    // begin-snippet: ExtractInterface-After
     public interface IExtractInterface
     {
         public int method1();
@@ -18,4 +19,5 @@
             return 0;
         }
     }
+    // end-snippet
 }

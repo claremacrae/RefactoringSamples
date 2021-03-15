@@ -1,5 +1,6 @@
 ﻿namespace RefactoringSamples.After.Extract
 {
+    // begin-snippet: ExtractFieldStatic-After
     public class ExtractFieldStatic
     {
         private static int _thing1;
@@ -10,4 +11,5 @@
         {
         }
     }
+    // end-snippet
 }

@@ -1,7 +1,6 @@
-using System;
-
-namespace RefactoringSamples.After.IfStatements
+﻿namespace RefactoringSamples.After.IfStatements
 {
+    // begin-snippet: RemoveRedundantElse-After
     public class RemoveRedundantElse
     {
         public string HeavilyNestedIf()
@@ -24,4 +23,5 @@ namespace RefactoringSamples.After.IfStatements
             return "Value not recognised";
         }
     }
+    // end-snippet
 }

@@ -1,5 +1,6 @@
 ﻿namespace RefactoringSamples.Before.Extract
 {
+    // begin-snippet: ExtractClass-Before
     public class ExtractClass
     {
         private int _concept1;
@@ -15,4 +16,5 @@
             return _concept2;
         }
     }
+    // end-snippet
 }
