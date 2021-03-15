@@ -10,7 +10,7 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 ## Key
 
-![Key](uml/Keys/Key.svg?raw=true)
+![Key](uml/Keys/FullKey.svg?raw=true)
 
 ## Extract Refactorings
 
