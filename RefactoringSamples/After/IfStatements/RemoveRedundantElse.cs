@@ -1,4 +1,6 @@
-﻿namespace RefactoringSamples.After.IfStatements
+﻿using System;
+
+namespace RefactoringSamples.After.IfStatements
 {
     // begin-snippet: RemoveRedundantElse-After
     public class RemoveRedundantElse
