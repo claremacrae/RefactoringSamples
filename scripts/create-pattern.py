@@ -1,10 +1,10 @@
 from jinja2 import Environment, FileSystemLoader
 
 
-def create_files():
+def create_files(category, source_file):
     refactoring = {}
-    refactoring['category'] = 'Extract'
-    refactoring['source_file'] = 'TestClass'
+    refactoring['category'] = category
+    refactoring['source_file'] = source_file
 
     create_files_impl(refactoring)
 
@@ -28,7 +28,7 @@ def create_file_from_template(refactoring, stage, env, template_name, extension)
 
 
 if __name__ == '__main__':
-    create_files()
+    create_files('Extract', 'TestClass')
 
 """
 {% if truth %}
