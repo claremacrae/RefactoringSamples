@@ -21,3 +21,4 @@ snippet: RefactoringSamples/After/{{ data.category }}/{{ data.source_file }}.cs
 
 -----
 
+
