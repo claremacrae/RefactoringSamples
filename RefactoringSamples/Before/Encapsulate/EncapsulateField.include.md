@@ -13,11 +13,11 @@ becomes
 
 ##### Code before and after
 
-snippet: RefactoringSamples/Before/Encapsulate/EncapsulateField.cs
+snippet: EncapsulateField-Before
 
 becomes
 
-snippet: RefactoringSamples/After/Encapsulate/EncapsulateField.cs
+snippet: EncapsulateField-After
 
 -----
 

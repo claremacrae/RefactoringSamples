@@ -13,11 +13,11 @@ becomes
 
 ##### Code before and after
 
-snippet: RefactoringSamples/Before/Extract/ExtractSuperclass.cs
+snippet: ExtractSuperclass-Before
 
 becomes
 
-snippet: RefactoringSamples/After/Extract/ExtractSuperclass.cs
+snippet: ExtractSuperclass-After
 
 -----
 

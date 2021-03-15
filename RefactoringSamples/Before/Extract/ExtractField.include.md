@@ -13,11 +13,11 @@ becomes
 
 ##### Code before and after
 
-snippet: RefactoringSamples/Before/Extract/ExtractField.cs
+snippet: ExtractField-Before
 
 becomes
 
-snippet: RefactoringSamples/After/Extract/ExtractField.cs
+snippet: ExtractField-After
 
 -----
 
