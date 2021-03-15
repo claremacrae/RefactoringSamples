@@ -3,12 +3,12 @@ import os
 from jinja2 import Environment, FileSystemLoader
 
 
-def create_files(category, source_file):
+def create_files(category, source_files):
     refactoring = {}
     refactoring['category'] = category
-    refactoring['source_file'] = source_file
-
-    create_files_impl(refactoring)
+    for source_file in source_files:
+        refactoring['source_file'] = source_file
+        create_files_impl(refactoring)
 
 
 def create_files_impl(refactoring):
@@ -33,7 +33,16 @@ def create_file_from_template(refactoring, stage, env, template_name, extension)
 
 
 if __name__ == '__main__':
-    create_files('Extract', 'TestClass')
+    create_files('Encapsulate', [
+        'EncapsulateField', ])
+    create_files('Extract', [
+        'ExtractClass',
+        'ExtractField',
+        'ExtractFieldStatic',
+        'ExtractInterface',
+        'ExtractSuperclass', ])
+    create_files('IfStatements', [
+        'RemoveRedundantElse', ])
 
 """
 {% if truth %}
