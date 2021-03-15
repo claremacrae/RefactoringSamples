@@ -5,19 +5,19 @@
 
 ##### UML before and after
 
-![{{ SourceNameBase }} - Before](uml/Before/{{ Category }}/{{ SourceNameBase }}.svg?raw=true)
+![{{ data.source_file }} - Before](uml/Before/{{ data.category }}/{{ data.source_file }}.svg?raw=true)
 
 becomes
 
-![{{ SourceNameBase }} - After](uml/After/{{ Category }}/{{ SourceNameBase }}.svg?raw=true)
+![{{ data.source_file }} - After](uml/After/{{ data.category }}/{{ data.source_file }}.svg?raw=true)
 
 ##### Code before and after
 
-snippet: RefactoringSamples/Before/{{ Category }}/{{ SourceNameBase }}.cs
+snippet: RefactoringSamples/Before/{{ data.category }}/{{ data.source_file }}.cs
 
 becomes
 
-snippet: RefactoringSamples/After/{{ Category }}/{{ SourceNameBase }}.cs
+snippet: RefactoringSamples/After/{{ data.category }}/{{ data.source_file }}.cs
 
 -----
 
