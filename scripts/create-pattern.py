@@ -19,7 +19,7 @@ def create_files(category, source_files):
     for source_file in source_files:
         refactoring['source_file'] = source_file
         for f in files.files:
-            f.create_file(refactoring, env)
+            f.create_file(refactoring)
 
 
 def get_templates_environment():
@@ -81,7 +81,7 @@ class AllRefactorings:
         env = get_templates_environment()
         refactoring = dict()
         refactoring['source_file'] = 'README'
-        template.create_file(refactoring, env)
+        template.create_file(refactoring)
         pass
 
 
