@@ -5,9 +5,9 @@ Source File: /docs/IfStatements/mdsource/README.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
-# IfStatements Refactorings
+# If Statements Refactorings
 
-[Top](../) / **IfStatements**
+[Top](../) / **If Statements**
 
 Refactorings:
 

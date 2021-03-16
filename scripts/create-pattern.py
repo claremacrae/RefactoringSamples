@@ -42,8 +42,9 @@ def get_per_refactoring_templates():
 
 
 class RefactoringCategory:
-    def __init__(self, category, refactorings):
-        self.category = category
+    def __init__(self, category_with_spaces, refactorings):
+        self.category = category_with_spaces.replace(' ', '')
+        self.category_with_spaces = category_with_spaces
         self.refactorings = refactorings
 
     def create_files(self):
@@ -59,6 +60,7 @@ class RefactoringCategory:
         refactoring = dict()
         refactoring['source_file'] = 'README'
         refactoring['category'] = self.category
+        refactoring['category_with_spaces'] = self.category_with_spaces
         refactoring['refactorings'] = [x for x in self.refactorings]
         template.create_file(refactoring)
 
@@ -99,7 +101,7 @@ if __name__ == '__main__':
         'ExtractField',
         'ExtractInterface',
         'ExtractSuperclass', ]))
-    all.add_category(RefactoringCategory('IfStatements', [
+    all.add_category(RefactoringCategory('If Statements', [
         'RemoveRedundantElse', ]))
 
     all.create_files()

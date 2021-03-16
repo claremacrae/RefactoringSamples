@@ -1,6 +1,6 @@
-# IfStatements Refactorings
+# If Statements Refactorings
 
-[Top](../) / **IfStatements**
+[Top](../) / **If Statements**
 
 Refactorings:
 
