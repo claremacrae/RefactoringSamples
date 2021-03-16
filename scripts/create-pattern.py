@@ -4,6 +4,7 @@ from typing import List
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.constants import do_not_overwrite, overwrite_if_exists
+from scripts.file_from_template import FileFromTemplate
 from scripts.inputs import Inputs
 from scripts.output_files import OutputFiles
 from scripts.outputs import Outputs
@@ -74,6 +75,13 @@ class AllRefactorings:
             category.create_files()
 
     def create_doc_readme(self):
+        inputs = Inputs('doc-readme.md', 'source.md', '', overwrite_if_exists)
+        outputs = Outputs('../docs/mdsource')
+        template = FileFromTemplate(inputs, outputs)
+        env = get_templates_environment()
+        refactoring = dict()
+        refactoring['source_file'] = 'README'
+        template.create_file(refactoring, env)
         pass
 
 

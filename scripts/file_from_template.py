@@ -3,10 +3,12 @@ import os
 from jinja2 import Template
 
 from scripts.constants import do_not_overwrite
+from scripts.inputs import Inputs
+from scripts.outputs import Outputs
 
 
 class FileFromTemplate(object):
-    def __init__(self, inputs, outputs):
+    def __init__(self, inputs: Inputs, outputs: Outputs):
         self.inputs = inputs
         self.outputs = outputs
 
