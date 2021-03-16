@@ -27,8 +27,6 @@ If you select a variable, at the point it is declared, then it gets moved to be 
 
 If you select an expression, then no existing variables are removed. If the expression occurs more than once, you will have the option to replace all of the occurrences.
 
-Also known as "Introduce Field".
-
 Applications:
 
 * There is a repeated expression in the code, such as repeated magic numbers, and you want to replace all repeated magic numbers and expressions with single value, such as a constant.
