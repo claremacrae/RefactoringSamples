@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from typing import List
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -48,17 +49,20 @@ class RefactoringCategory:
         self.category = category
         self.refactorings = refactorings
 
+    def create_files(self):
+        create_files(self.category, self.refactorings)
+
 
 class AllRefactorings:
     def __init__(self):
-        self.categories = []
+        self.categories: List[RefactoringCategory] = []
 
     def add_category(self, category: RefactoringCategory):
         self.categories.append(category)
 
     def create_files(self):
         for category in self.categories:
-            create_files(category.category, category.refactorings)
+            category.create_files()
 
 
 if __name__ == '__main__':
