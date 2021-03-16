@@ -18,6 +18,7 @@ overwrite_if_exists = True
 
 class FileFromTemplate(object):
     def __init__(self, template_name, extension, stage, overwrite_if_existing):
+        self.file_template = 'source-file.txt'
         self.directory_template = 'source-directory.txt'
         self.template_name = template_name
         self.extension = extension
@@ -32,8 +33,7 @@ class FileFromTemplate(object):
     def create_file(self, refactoring, env):
         output_directory = self.render_template(env, refactoring, self.directory_template)
         os.makedirs(output_directory, exist_ok=True)
-        file_template = 'source-file.txt'
-        output_file = self.render_template(env, refactoring, file_template)
+        output_file = self.render_template(env, refactoring, self.file_template)
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
