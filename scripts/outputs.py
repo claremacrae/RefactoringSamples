@@ -5,8 +5,8 @@ class Outputs:
 
     @staticmethod
     def source_file():
-        return Outputs(directory_template='../RefactoringSamples/{{ stage }}/{{ data.category }}')
+        return Outputs('../RefactoringSamples/{{ stage }}/{{ data.category }}')
 
     @staticmethod
     def doc_file():
-        return Outputs(directory_template='../docs/{{ data.category }}/mdsource')
+        return Outputs('../docs/{{ data.category }}/mdsource')
