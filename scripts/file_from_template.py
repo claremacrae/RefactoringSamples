@@ -1,5 +1,7 @@
 import os
 
+from jinja2 import Template
+
 from scripts.constants import do_not_overwrite
 
 
@@ -12,6 +14,11 @@ class FileFromTemplate(object):
         output_directory = self.render_file_template(env, refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
         output_file = self.render_file_template(env, refactoring, self.outputs.file_template)
+        output_file2 = self.render_string_template(refactoring, self.outputs.file_name_template)
+        if output_file2 != output_file:
+            print(output_file)
+            print(output_file2)
+            print("Error")
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
@@ -29,6 +36,10 @@ class FileFromTemplate(object):
 
     def render_file_template(self, env, refactoring, template_name):
         template = env.get_template(template_name)
+        return self.render_template(refactoring, template)
+
+    def render_string_template(self, refactoring, template_text):
+        template = Template(template_text)
         return self.render_template(refactoring, template)
 
     def render_template(self, refactoring, template):
