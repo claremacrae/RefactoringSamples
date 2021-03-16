@@ -37,15 +37,21 @@ class FileFromTemplate(object):
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
+    files = get_file_templates()
+    for f in files:
+        f.create_file(refactoring, env)
+
+
+def get_file_templates():
     before = 'Before'
     after = 'After'
     files = []
     for stage in [before, after]:
         files.append(FileFromTemplate('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
     files.append(FileFromTemplate('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
-    files.append(FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
-    for f in files:
-        f.create_file(refactoring, env)
+    files.append(
+        FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
+    return files
 
 
 if __name__ == '__main__':
