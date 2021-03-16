@@ -85,9 +85,7 @@ class AllRefactorings:
         outputs = Outputs('../docs/mdsource')
         template = FileFromTemplate(inputs, outputs)
 
-        # TODO split multi-word categories at capitals
-        refactoring = self.data()
-        template.create_file(refactoring)
+        template.create_file(self.data())
 
     def data(self):
         refactoring = dict()
