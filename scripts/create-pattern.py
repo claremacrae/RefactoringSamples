@@ -25,8 +25,8 @@ class Inputs:
 
 class Outputs:
     def __init__(self):
-        self.file_template = 'source-file.txt'
         self.directory_template = 'source-directory.txt'
+        self.file_template = 'source-file.txt'
 
 
 class FileFromTemplate(object):
