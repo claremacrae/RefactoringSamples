@@ -24,7 +24,14 @@ class FileFromTemplate(object):
         self.overwrite_if_existing = overwrite_if_existing
 
     def create_file(self, refactoring, env):
-        create_file_from_template(refactoring, env, self.template_name, self.extension, self.stage, self.overwrite_if_existing)
+        template = env.get_template(self.template_name)
+        output_file_name = F"../RefactoringSamples/{self.stage}/{refactoring['category']}/{refactoring['source_file']}.{self.extension}"
+        if os.path.exists(output_file_name) and self.overwrite_if_existing == do_not_overwrite:
+            print(f'File already exists: not overwriting: {output_file_name}')
+            return
+        with open(output_file_name, 'w') as f:
+            output = template.render(data=refactoring, stage=self.stage)
+            f.write(output)
 
 
 def create_files_impl(refactoring):
@@ -39,16 +46,6 @@ def create_files_impl(refactoring):
     files.append(FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
     for f in files:
         f.create_file(refactoring, env)
-
-def create_file_from_template(refactoring, env, template_name, extension, stage, overwrite_if_existing):
-    template = env.get_template(template_name)
-    output_file_name = F"../RefactoringSamples/{stage}/{refactoring['category']}/{refactoring['source_file']}.{extension}"
-    if os.path.exists(output_file_name) and overwrite_if_existing == do_not_overwrite:
-        print(f'File already exists: not overwriting: {output_file_name}')
-        return
-    with open(output_file_name, 'w') as f:
-        output = template.render(data=refactoring, stage=stage)
-        f.write(output)
 
 
 if __name__ == '__main__':
