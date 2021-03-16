@@ -38,11 +38,6 @@ class FileFromTemplate(object):
         self.inputs = inputs
         self.outputs = outputs
 
-    @staticmethod
-    def create_in_source_dir(inputs):
-        template = FileFromTemplate(inputs, Outputs.source_file())
-        return template
-
     def create_file(self, refactoring, env):
         output_directory = self.render_template(env, refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
@@ -72,7 +67,8 @@ class OutputFiles:
         self.files = []
 
     def add_source_file(self, inputs):
-        self.files.append(FileFromTemplate.create_in_source_dir(inputs))
+        template = FileFromTemplate(inputs, Outputs.source_file())
+        self.files.append(template)
 
 
 def create_files_impl(refactoring):
