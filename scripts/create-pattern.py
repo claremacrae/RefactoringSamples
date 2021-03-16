@@ -44,8 +44,7 @@ class FileFromTemplate(object):
 
     def render_template(self, env, refactoring):
         template = env.get_template(self.template_name)
-        output = template.render(data=refactoring, stage=self.stage)
-        return output
+        return template.render(data=refactoring, stage=self.stage)
 
 
 def create_files_impl(refactoring):
