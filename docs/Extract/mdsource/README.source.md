@@ -2,7 +2,7 @@
 
 Refactorings:
 
-* [ExtractClass](ExtractClass/)
-* [ExtractField](ExtractField/)
-* [ExtractInterface](ExtractInterface/)
-* [ExtractSuperclass](ExtractSuperclass/)
+* [ExtractClass](ExtractClass.md)
+* [ExtractField](ExtractField.md)
+* [ExtractInterface](ExtractInterface.md)
+* [ExtractSuperclass](ExtractSuperclass.md)

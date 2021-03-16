@@ -2,4 +2,4 @@
 
 Refactorings:
 
-* [RemoveRedundantElse](RemoveRedundantElse/)
+* [RemoveRedundantElse](RemoveRedundantElse.md)

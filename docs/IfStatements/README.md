@@ -9,4 +9,4 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 Refactorings:
 
-* [RemoveRedundantElse](RemoveRedundantElse/)
+* [RemoveRedundantElse](RemoveRedundantElse.md)

@@ -2,4 +2,4 @@
 
 Refactorings:
 {% for refactoring in data.refactorings %}
-* [{{ refactoring }}]({{ refactoring }}/){% endfor %}
+* [{{ refactoring }}]({{ refactoring }}.md){% endfor %}

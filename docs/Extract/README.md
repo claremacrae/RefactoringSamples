@@ -9,7 +9,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 Refactorings:
 
-* [ExtractClass](ExtractClass/)
-* [ExtractField](ExtractField/)
-* [ExtractInterface](ExtractInterface/)
-* [ExtractSuperclass](ExtractSuperclass/)
+* [ExtractClass](ExtractClass.md)
+* [ExtractField](ExtractField.md)
+* [ExtractInterface](ExtractInterface.md)
+* [ExtractSuperclass](ExtractSuperclass.md)
