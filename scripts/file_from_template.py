@@ -29,4 +29,7 @@ class FileFromTemplate(object):
 
     def render_file_template(self, env, refactoring, template_name):
         template = env.get_template(template_name)
-        return template.render(data=refactoring, extension = self.inputs.extension, stage=self.inputs.stage)
+        return self.render_template(refactoring, template)
+
+    def render_template(self, refactoring, template):
+        return template.render(data=refactoring, extension=self.inputs.extension, stage=self.inputs.stage)
