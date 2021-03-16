@@ -1,6 +1,6 @@
-# {{ data.source_file }}
+# {{ data.title }}
 
-[Top](../) / [{{ data.category_title }}](.) / **{{ data.source_file }}**
+[Top](../) / [{{ data.category_title }}](.) / **{{ data.title }}**
 
 toc
 

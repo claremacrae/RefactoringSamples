@@ -5,9 +5,9 @@ Source File: /docs/Extract/mdsource/ExtractClass.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
-# ExtractClass
+# Extract Class
 
-[Top](../) / [Extract](.) / **ExtractClass**
+[Top](../) / [Extract](.) / **Extract Class**
 
 <!-- toc -->
 ## Contents

@@ -8,14 +8,15 @@ from scripts.output_files import OutputFiles
 from scripts.outputs import Outputs
 
 
-def create_files(category, category_title, source_files):
+def create_files(category, category_title, source_files, titles):
     files = get_per_refactoring_templates()
 
-    for source_file in source_files:
+    for source_file, title in zip(source_files, titles):
         refactoring = {}
         refactoring['category'] = category
         refactoring['category_title'] = category_title
         refactoring['source_file'] = source_file
+        refactoring['title'] = title
         for f in files.files:
             f.create_file(refactoring)
 
@@ -61,7 +62,7 @@ class RefactoringCategory:
 
     def create_files(self):
         self.create_category_readme()
-        create_files(self.category, self.title, self.refactorings)
+        create_files(self.category, self.title, self.refactorings, self.titles)
 
     def create_category_readme(self):
         inputs = Inputs('doc-category.md', 'source.md', '', overwrite_if_exists)

@@ -1,6 +1,6 @@
-# EncapsulateField
+# Encapsulate Field
 
-[Top](../) / [Encapsulate](.) / **EncapsulateField**
+[Top](../) / [Encapsulate](.) / **Encapsulate Field**
 
 toc
 

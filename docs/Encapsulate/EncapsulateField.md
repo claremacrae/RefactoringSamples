@@ -5,9 +5,9 @@ Source File: /docs/Encapsulate/mdsource/EncapsulateField.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
-# EncapsulateField
+# Encapsulate Field
 
-[Top](../) / [Encapsulate](.) / **EncapsulateField**
+[Top](../) / [Encapsulate](.) / **Encapsulate Field**
 
 <!-- toc -->
 ## Contents

@@ -5,9 +5,9 @@ Source File: /docs/Extract/mdsource/ExtractInterface.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
-# ExtractInterface
+# Extract Interface
 
-[Top](../) / [Extract](.) / **ExtractInterface**
+[Top](../) / [Extract](.) / **Extract Interface**
 
 <!-- toc -->
 ## Contents

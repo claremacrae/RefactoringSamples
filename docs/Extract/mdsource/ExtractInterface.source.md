@@ -1,6 +1,6 @@
-# ExtractInterface
+# Extract Interface
 
-[Top](../) / [Extract](.) / **ExtractInterface**
+[Top](../) / [Extract](.) / **Extract Interface**
 
 toc
 
