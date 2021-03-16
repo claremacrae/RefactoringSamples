@@ -19,12 +19,12 @@ def create_files(category, source_files):
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
-    files = get_file_templates()
+    files = get_per_refactoring_templates()
     for f in files.files:
         f.create_file(refactoring, env)
 
 
-def get_file_templates():
+def get_per_refactoring_templates():
     before = 'Before'
     after = 'After'
     files = OutputFiles()
