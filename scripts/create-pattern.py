@@ -25,14 +25,14 @@ class Inputs:
 
 
 class FileFromTemplate(object):
-    def __init__(self, template_name, extension, stage, overwrite_if_existing):
+    def __init__(self, inputs):
         self.file_template = 'source-file.txt'
         self.directory_template = 'source-directory.txt'
-        self.inputs = Inputs(template_name, extension, stage, overwrite_if_existing)
+        self.inputs = inputs
 
     @staticmethod
-    def create_in_source_dir(template_name, extension, stage, overwrite_if_existing):
-        template = FileFromTemplate(template_name, extension, stage, overwrite_if_existing)
+    def create_in_source_dir(inputs):
+        template = FileFromTemplate(inputs)
         return template
 
     def create_file(self, refactoring, env):
@@ -64,7 +64,7 @@ class OutputFiles:
         self.files = []
 
     def add_source_file(self, template_name, extension, stage, overwrite_if_existing):
-        self.files.append(FileFromTemplate.create_in_source_dir(template_name, extension, stage, overwrite_if_existing))
+        self.files.append(FileFromTemplate.create_in_source_dir(Inputs(template_name, extension, stage, overwrite_if_existing)))
 
 
 def create_files_impl(refactoring):
