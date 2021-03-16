@@ -29,10 +29,6 @@ class FileFromTemplate(object):
         self.file_template = 'source-file.txt'
         self.directory_template = 'source-directory.txt'
         self.inputs = Inputs(template_name, extension, stage, overwrite_if_existing)
-        self.template_name = template_name
-        self.extension = extension
-        self.stage = stage
-        self.overwrite_if_existing = overwrite_if_existing
 
     @staticmethod
     def create_in_source_dir(template_name, extension, stage, overwrite_if_existing):
@@ -48,11 +44,11 @@ class FileFromTemplate(object):
         self.expand_template(env, output_file_name, refactoring)
 
     def expand_template(self, env, output_file_name, refactoring):
-        output = self.render_template(env, refactoring, self.template_name)
+        output = self.render_template(env, refactoring, self.inputs.template_name)
         self.write_file(output, output_file_name)
 
     def write_file(self, output, output_file_name):
-        if os.path.exists(output_file_name) and self.overwrite_if_existing == do_not_overwrite:
+        if os.path.exists(output_file_name) and self.inputs.overwrite_if_existing == do_not_overwrite:
             print(f'File already exists: not overwriting: {output_file_name}')
             return
         with open(output_file_name, 'w') as f:
@@ -60,7 +56,7 @@ class FileFromTemplate(object):
 
     def render_template(self, env, refactoring, template_name):
         template = env.get_template(template_name)
-        return template.render(data=refactoring, extension = self.extension, stage=self.stage)
+        return template.render(data=refactoring, extension = self.inputs.extension, stage=self.inputs.stage)
 
 
 class OutputFiles:
