@@ -16,10 +16,19 @@ do_not_overwrite = False
 overwrite_if_exists = True
 
 
+class Inputs:
+    def __init__(self, template_name, extension, stage, overwrite_if_existing):
+        self.template_name = template_name
+        self.extension = extension
+        self.stage = stage
+        self.overwrite_if_existing = overwrite_if_existing
+
+
 class FileFromTemplate(object):
     def __init__(self, template_name, extension, stage, overwrite_if_existing):
         self.file_template = 'source-file.txt'
         self.directory_template = 'source-directory.txt'
+        self.inputs = Inputs(template_name, extension, stage, overwrite_if_existing)
         self.template_name = template_name
         self.extension = extension
         self.stage = stage
