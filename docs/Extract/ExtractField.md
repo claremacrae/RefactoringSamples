@@ -5,7 +5,13 @@ Source File: /docs/Extract/mdsource/ExtractField.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# ExtractField
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: ExtractField.description. path: /RefactoringSamples/Before/Extract/ExtractField.description.include.md -->
 #### Context
@@ -40,15 +46,15 @@ Notes:
 * if the field was extracted from a non-static method, the new field will be non-static.
 * if the field was extracted from a static method, the new field will be static. <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![ExtractField - Before](uml/Before/Extract/ExtractField.svg?raw=true)
+![ExtractField - Before](../../uml/Before/Extract/ExtractField.svg?raw=true)
 
 becomes
 
-![ExtractField - After](uml/After/Extract/ExtractField.svg?raw=true)
+![ExtractField - After](../../uml/After/Extract/ExtractField.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: ExtractField-Before -->
 <a id='snippet-extractfield-before'></a>

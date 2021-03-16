@@ -5,7 +5,13 @@ Source File: /docs/Extract/mdsource/ExtractInterface.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# ExtractInterface
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/Extract/ExtractInterface.description.include.md -->
 #### Context
@@ -14,15 +20,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 #### Steps to improve the code <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![ExtractInterface - Before](uml/Before/Extract/ExtractInterface.svg?raw=true)
+![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
 
 becomes
 
-![ExtractInterface - After](uml/After/Extract/ExtractInterface.svg?raw=true)
+![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: ExtractInterface-Before -->
 <a id='snippet-extractinterface-before'></a>

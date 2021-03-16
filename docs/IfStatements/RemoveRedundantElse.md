@@ -5,7 +5,13 @@ Source File: /docs/IfStatements/mdsource/RemoveRedundantElse.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# RemoveRedundantElse
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: RemoveRedundantElse.description. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.description.include.md -->
 #### Context
@@ -27,15 +33,15 @@ Or
 
 1. Click on first else, and select 'Remove redundant code in file' <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![RemoveRedundantElse - Before](uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
+![RemoveRedundantElse - Before](../../uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 becomes
 
-![RemoveRedundantElse - After](uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
+![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: RemoveRedundantElse-Before -->
 <a id='snippet-removeredundantelse-before'></a>

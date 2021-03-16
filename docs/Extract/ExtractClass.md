@@ -5,7 +5,13 @@ Source File: /docs/Extract/mdsource/ExtractClass.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# ExtractClass
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: ExtractClass.description. path: /RefactoringSamples/Before/Extract/ExtractClass.description.include.md -->
 #### Context
@@ -14,15 +20,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 #### Steps to improve the code <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - Before](../../uml/Before/Extract/ExtractClass.svg?raw=true)
 
 becomes
 
-![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: ExtractClass-Before -->
 <a id='snippet-extractclass-before'></a>

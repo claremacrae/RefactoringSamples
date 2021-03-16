@@ -1,16 +1,18 @@
+# ExtractClass
 
+toc
 
 include: ExtractClass.description
 
-#### UML before and after
+## UML before and after
 
-![ExtractClass - Before](uml/Before/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - Before](../../uml/Before/Extract/ExtractClass.svg?raw=true)
 
 becomes
 
-![ExtractClass - After](uml/After/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 snippet: ExtractClass-Before
 

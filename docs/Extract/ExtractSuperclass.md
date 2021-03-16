@@ -5,7 +5,13 @@ Source File: /docs/Extract/mdsource/ExtractSuperclass.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# ExtractSuperclass
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: ExtractSuperclass.description. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.description.include.md -->
 #### Context
@@ -14,15 +20,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 #### Steps to improve the code <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
 becomes
 
-![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: ExtractSuperclass-Before -->
 <a id='snippet-extractsuperclass-before'></a>

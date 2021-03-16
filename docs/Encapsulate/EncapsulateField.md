@@ -5,7 +5,13 @@ Source File: /docs/Encapsulate/mdsource/EncapsulateField.source.md
 To change this file edit the source file and then execute ./run_markdown_templates.sh.
 -->
 
+# EncapsulateField
 
+<!-- toc -->
+## Contents
+
+  * [UML before and after](#uml-before-and-after)
+  * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: EncapsulateField.description. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.description.include.md -->
 #### Context
@@ -14,15 +20,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 #### Steps to improve the code <!-- endInclude -->
 
-#### UML before and after
+## UML before and after
 
-![EncapsulateField - Before](uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
+![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
 becomes
 
-![EncapsulateField - After](uml/After/Encapsulate/EncapsulateField.svg?raw=true)
+![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 <!-- snippet: EncapsulateField-Before -->
 <a id='snippet-encapsulatefield-before'></a>

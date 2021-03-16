@@ -1,16 +1,18 @@
+# ExtractSuperclass
 
+toc
 
 include: ExtractSuperclass.description
 
-#### UML before and after
+## UML before and after
 
-![ExtractSuperclass - Before](uml/Before/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
 becomes
 
-![ExtractSuperclass - After](uml/After/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
-#### Code before and after
+## Code before and after
 
 snippet: ExtractSuperclass-Before
 
