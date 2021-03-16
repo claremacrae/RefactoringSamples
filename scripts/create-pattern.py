@@ -54,23 +54,30 @@ class FileFromTemplate(object):
         return template.render(data=refactoring, extension = self.extension, stage=self.stage)
 
 
+class OutputFiles:
+    def __init__(self):
+        self.files = []
+
+    def add_source_file(self, template_name, extension, stage, overwrite_if_existing):
+        self.files.append(FileFromTemplate.create_in_source_dir(template_name, extension, stage, overwrite_if_existing))
+
+
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
     files = get_file_templates()
-    for f in files:
+    for f in files.files:
         f.create_file(refactoring, env)
 
 
 def get_file_templates():
     before = 'Before'
     after = 'After'
-    files = []
+    files = OutputFiles()
     for stage in [before, after]:
-        files.append(FileFromTemplate.create_in_source_dir('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
-    files.append(FileFromTemplate.create_in_source_dir('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
-    files.append(
-        FileFromTemplate.create_in_source_dir('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
+        files.add_source_file('refactoring-pattern.cs', 'cs', stage, do_not_overwrite)
+    files.add_source_file('refactoring-pattern.md', 'include.md', before, overwrite_if_exists)
+    files.add_source_file('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite)
     return files
 
 
