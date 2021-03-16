@@ -29,9 +29,11 @@ class FileFromTemplate(object):
         return template
 
     def create_file(self, refactoring, env):
-        output_directory = self.render_template(env, refactoring, 'source-directory.txt')
+        directory_template = 'source-directory.txt'
+        output_directory = self.render_template(env, refactoring, directory_template)
         os.makedirs(output_directory, exist_ok=True)
-        output_file = self.render_template(env, refactoring, 'source-file.txt')
+        file_template = 'source-file.txt'
+        output_file = self.render_template(env, refactoring, file_template)
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
