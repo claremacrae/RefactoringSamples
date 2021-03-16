@@ -4,6 +4,7 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
+from scripts.constants import do_not_overwrite, overwrite_if_exists
 from scripts.inputs import Inputs
 from scripts.outputs import Outputs
 
@@ -14,9 +15,6 @@ def create_files(category, source_files):
     for source_file in source_files:
         refactoring['source_file'] = source_file
         create_files_impl(refactoring)
-
-do_not_overwrite = False
-overwrite_if_exists = True
 
 
 class FileFromTemplate(object):
