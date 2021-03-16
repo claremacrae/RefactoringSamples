@@ -123,6 +123,8 @@ if __name__ == '__main__':
         'Extract Superclass', ]))
     all.add_category(RefactoringCategory('If Statements', [
         'Remove Redundant Else', ]))
+    all.add_category(RefactoringCategory('Introduce', [
+        'Introduce Field', ]))
 
     all.create_files()
 
