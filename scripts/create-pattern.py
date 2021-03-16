@@ -15,6 +15,15 @@ def create_files(category, source_files):
 do_not_overwrite = False
 overwrite_if_exists = True
 
+
+class FileFromTemplate(object):
+    def __init__(self, template_name, extension, stage, overwrite_if_existing):
+        self.template_name = template_name
+        self.extension = extension
+        self.stage = stage
+        self.overwrite_if_existing = overwrite_if_existing
+
+
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
