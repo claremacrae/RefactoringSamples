@@ -7,7 +7,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # EncapsulateField
 
-[Top](../../) / [Encapsulate](../) / **EncapsulateField**
+[Top](../) / [Encapsulate](.) / **EncapsulateField**
 
 <!-- toc -->
 ## Contents

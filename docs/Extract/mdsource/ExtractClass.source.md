@@ -1,6 +1,6 @@
 # ExtractClass
 
-[Top](../../) / [Extract](../) / **ExtractClass**
+[Top](../) / [Extract](.) / **ExtractClass**
 
 toc
 
