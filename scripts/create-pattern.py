@@ -13,15 +13,11 @@ def create_files(category, source_files):
     refactoring['category'] = category
     for source_file in source_files:
         refactoring['source_file'] = source_file
-        create_files_impl(refactoring)
-
-
-def create_files_impl(refactoring):
-    file_loader = FileSystemLoader('../templates')
-    env = Environment(loader=file_loader)
-    files = get_per_refactoring_templates()
-    for f in files.files:
-        f.create_file(refactoring, env)
+        file_loader = FileSystemLoader('../templates')
+        env = Environment(loader=file_loader)
+        files = get_per_refactoring_templates()
+        for f in files.files:
+            f.create_file(refactoring, env)
 
 
 def get_per_refactoring_templates():
