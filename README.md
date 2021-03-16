@@ -72,7 +72,12 @@ Having introduced one or more fields, you can then "Extract Class" to group them
 
 * Select the expression, and say "Refactor This" -> "Introduce Field"
 * If there are multiple occurrences of the expression, say if you want to replace one or all.
-* Give the new field a name. <!-- endInclude -->
+* Give the new field a name.
+
+Notes:
+
+* if the field was extracted from a non-static method, the new field will be non-static.
+* if the field was extracted from a static method, the new field will be static. <!-- endInclude -->
 
 #### UML before and after
 
