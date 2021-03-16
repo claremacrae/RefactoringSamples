@@ -11,7 +11,7 @@ class FileFromTemplate(object):
         self.outputs = outputs
 
     def create_file(self, refactoring, env):
-        output_directory = self.render_file_template(env, refactoring, self.outputs.directory_template)
+        output_directory = self.render_string_template(refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
         output_file = self.render_string_template(refactoring, self.outputs.file_name_template)
         output_file_name = os.path.join(output_directory, output_file)
