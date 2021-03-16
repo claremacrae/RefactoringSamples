@@ -6,6 +6,8 @@ because of the return statements.
 
 ## See Also
 
+* [Remove Redundant Else refactoring](https://www.jetbrains.com/help/rider/RedundantIfElseBlock.html) (JetBrains Rider)
+
 ## Steps to improve the code
 
 Either

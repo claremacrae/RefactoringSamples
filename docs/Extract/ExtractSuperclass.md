@@ -23,6 +23,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## See Also
 
+* [Extract Superclass refactoring](https://www.jetbrains.com/help/rider/Refactorings__Extract_Superclass.html) (JetBrains Rider)
+
 ## Steps to improve the code <!-- endInclude -->
 
 ## UML before and after
