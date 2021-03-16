@@ -66,9 +66,9 @@ def get_file_templates():
     files = []
     for stage in [before, after]:
         files.append(FileFromTemplate.create_in_source_dir('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
-    files.append(FileFromTemplate('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
+    files.append(FileFromTemplate.create_in_source_dir('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
     files.append(
-        FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
+        FileFromTemplate.create_in_source_dir('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
     return files
 
 
