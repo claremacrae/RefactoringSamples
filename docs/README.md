@@ -7,12 +7,6 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Refactoring Samples
 
-<!-- toc -->
-## Contents
-
-  * [Categories](#categories)
-  * [Reference](#reference)<!-- endToc -->
-
 ## Categories
 
 

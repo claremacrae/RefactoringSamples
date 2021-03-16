@@ -1,7 +1,5 @@
 # Refactoring Samples
 
-toc
-
 ## Categories
 
 

@@ -1,7 +1,5 @@
 # Refactoring Samples
 
-toc
-
 ## Categories
 
 {% for category,title in data.categories_and_titles %}
