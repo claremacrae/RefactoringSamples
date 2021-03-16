@@ -43,6 +43,7 @@ def get_per_refactoring_templates():
     return files
 
 
+# TODO Move code above in to this class, and start using it
 class Refactoring:
     templates = get_per_refactoring_templates()
 
