@@ -30,7 +30,7 @@ def get_file_templates():
     files = OutputFiles()
 
     # Files in source tree
-    outputs = Outputs.source_file()
+    outputs = Outputs('../RefactoringSamples/{{ stage }}/{{ data.category }}')
     for stage in [before, after]:
         files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), outputs)
 
