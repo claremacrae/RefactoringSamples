@@ -68,7 +68,8 @@ class OutputFiles:
         self.files = []
 
     def add_source_file(self, template_name, extension, stage, overwrite_if_existing):
-        self.files.append(FileFromTemplate.create_in_source_dir(Inputs(template_name, extension, stage, overwrite_if_existing)))
+        inputs = Inputs(template_name, extension, stage, overwrite_if_existing)
+        self.files.append(FileFromTemplate.create_in_source_dir(inputs))
 
 
 def create_files_impl(refactoring):
