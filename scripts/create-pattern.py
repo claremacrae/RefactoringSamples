@@ -85,9 +85,9 @@ class AllRefactorings:
         outputs = Outputs('../docs/mdsource')
         template = FileFromTemplate(inputs, outputs)
 
-        template.create_file(self.data())
+        template.create_file(self.as_dictionary())
 
-    def data(self):
+    def as_dictionary(self):
         refactoring = dict()
         refactoring['source_file'] = 'README'
         refactoring['categories_and_titles'] = zip([x.category for x in self.categories],
