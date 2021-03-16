@@ -39,7 +39,6 @@ if __name__ == '__main__':
     create_files('Extract', [
         'ExtractClass',
         'ExtractField',
-        'ExtractFieldStatic',
         'ExtractInterface',
         'ExtractSuperclass', ])
     create_files('IfStatements', [

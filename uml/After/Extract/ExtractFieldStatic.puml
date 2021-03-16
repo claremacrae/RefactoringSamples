@@ -1,8 +1,0 @@
-@startuml
-class ExtractFieldStatic {
-    - {static} _thing1 : int
-    - {static} _thing2 : int
-    - {static} _thing3 : int
-    + {static} LongMethod() : void
-}
-@enduml

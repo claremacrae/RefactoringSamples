@@ -22,10 +22,6 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 include: ExtractField
 
-### Extract Field with Static members
-
-include: ExtractFieldStatic
-
 ### Extract Class
 
 include: ExtractClass

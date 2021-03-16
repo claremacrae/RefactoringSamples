@@ -16,7 +16,6 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Key](#key)
   * [Extract Refactorings](#extract-refactorings)
     * [Extract Field](#extract-field)
-    * [Extract Field with Static members](#extract-field-with-static-members)
     * [Extract Class](#extract-class)
     * [Extract Superclass](#extract-superclass)
     * [Extract Interface](#extract-interface)
@@ -122,64 +121,6 @@ public class ExtractField
 }
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractField.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfield-after' title='Start of snippet'>anchor</a></sup>
-<!-- endSnippet -->
-
------
- <!-- endInclude -->
-
-### Extract Field with Static members
-
- <!-- include: ExtractFieldStatic. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.include.md -->
- <!-- include: ExtractFieldStatic.description. path: /RefactoringSamples/Before/Extract/ExtractFieldStatic.description.include.md -->
-#### Context
-
-#### See Also
-
-#### Steps to improve the code <!-- endInclude -->
-
-#### UML before and after
-
-![ExtractFieldStatic - Before](uml/Before/Extract/ExtractFieldStatic.svg?raw=true)
-
-becomes
-
-![ExtractFieldStatic - After](uml/After/Extract/ExtractFieldStatic.svg?raw=true)
-
-#### Code before and after
-
-<!-- snippet: ExtractFieldStatic-Before -->
-<a id='snippet-extractfieldstatic-before'></a>
-```cs
-public class ExtractFieldStatic
-{
-    public static void LongMethod()
-    {
-        int thing1;
-        int thing2;
-        int thing3;
-    }
-}
-```
-<sup><a href='/RefactoringSamples/Before/Extract/ExtractFieldStatic.cs#L3-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfieldstatic-before' title='Start of snippet'>anchor</a></sup>
-<!-- endSnippet -->
-
-becomes
-
-<!-- snippet: ExtractFieldStatic-After -->
-<a id='snippet-extractfieldstatic-after'></a>
-```cs
-public class ExtractFieldStatic
-{
-    private static int _thing1;
-    private static int _thing2;
-    private static int _thing3;
-
-    public static void LongMethod()
-    {
-    }
-}
-```
-<sup><a href='/RefactoringSamples/After/Extract/ExtractFieldStatic.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractfieldstatic-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 -----
