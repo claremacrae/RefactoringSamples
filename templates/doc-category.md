@@ -1,6 +1,6 @@
-# {{ data.category_with_spaces }} Refactorings
+# {{ data.title }} Refactorings
 
-[Top](../) / **{{ data.category_with_spaces }}**
+[Top](../) / **{{ data.title }}**
 
 Refactorings:
 {% for refactoring in data.refactorings %}

@@ -42,9 +42,9 @@ def get_per_refactoring_templates():
 
 
 class RefactoringCategory:
-    def __init__(self, category_with_spaces, refactorings):
-        self.category = category_with_spaces.replace(' ', '')
-        self.category_with_spaces = category_with_spaces
+    def __init__(self, title, refactorings):
+        self.category = title.replace(' ', '')
+        self.title = title
         self.refactorings = refactorings
 
     def create_files(self):
@@ -63,7 +63,7 @@ class RefactoringCategory:
         refactoring = dict()
         refactoring['source_file'] = 'README'
         refactoring['category'] = self.category
-        refactoring['category_with_spaces'] = self.category_with_spaces
+        refactoring['title'] = self.title
         refactoring['refactorings'] = [x for x in self.refactorings]
         return refactoring
 
@@ -94,7 +94,7 @@ class AllRefactorings:
         refactoring = dict()
         refactoring['source_file'] = 'README'
         refactoring['categories_and_titles'] = zip([x.category for x in self.categories],
-                                                   [x.category_with_spaces for x in self.categories])
+                                                   [x.title for x in self.categories])
         return refactoring
 
 
