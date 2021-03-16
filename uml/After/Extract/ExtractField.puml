@@ -1,8 +1,0 @@
-@startuml
-class ExtractField {
-    - _thing1 : int
-    - _thing2 : int
-    - _thing3 : int
-    + LongMethod() : void
-}
-@enduml

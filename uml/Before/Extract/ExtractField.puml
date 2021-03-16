@@ -1,5 +1,0 @@
-@startuml
-class ExtractField {
-    + LongMethod() : void
-}
-@enduml

@@ -118,7 +118,6 @@ if __name__ == '__main__':
         'Encapsulate Field', ]))
     all.add_category(RefactoringCategory('Extract', [
         'Extract Class',
-        'Extract Field',
         'Extract Interface',
         'Extract Superclass', ]))
     all.add_category(RefactoringCategory('If Statements', [

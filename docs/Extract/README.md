@@ -12,6 +12,5 @@ To change this file edit the source file and then execute ./run_markdown_templat
 Refactorings:
 
 * [Extract Class](ExtractClass.md)
-* [Extract Field](ExtractField.md)
 * [Extract Interface](ExtractInterface.md)
 * [Extract Superclass](ExtractSuperclass.md)
