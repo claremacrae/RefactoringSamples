@@ -5,6 +5,7 @@ import os
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.inputs import Inputs
+from scripts.outputs import Outputs
 
 
 def create_files(category, source_files):
@@ -16,20 +17,6 @@ def create_files(category, source_files):
 
 do_not_overwrite = False
 overwrite_if_exists = True
-
-
-class Outputs:
-    def __init__(self, directory_template, file_template):
-        self.directory_template = directory_template
-        self.file_template = file_template
-
-    @staticmethod
-    def source_file():
-        return Outputs(directory_template='source-directory.txt', file_template='source-file.txt')
-
-    @staticmethod
-    def doc_file():
-        return Outputs(directory_template='doc-directory.txt', file_template='doc-file.txt')
 
 
 class FileFromTemplate(object):
