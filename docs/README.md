@@ -7,6 +7,6 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Refactoring Samples
 
-* Encapsulate
-* Extract
-* If Statements
+* [Encapsulate](Encapsulate/)
+* [Extract](Extract/)
+* [IfStatements](IfStatements/)
