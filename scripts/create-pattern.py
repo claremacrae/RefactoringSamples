@@ -24,19 +24,23 @@ class Inputs:
         self.overwrite_if_existing = overwrite_if_existing
 
 class Outputs:
-    def __init__(self, directory_template='source-directory.txt', file_template='source-file.txt'):
+    def __init__(self, directory_template, file_template):
         self.directory_template = directory_template
         self.file_template = file_template
 
+    @staticmethod
+    def source_file():
+        return Outputs(directory_template='source-directory.txt', file_template='source-file.txt')
+
 
 class FileFromTemplate(object):
-    def __init__(self, inputs):
+    def __init__(self, inputs, outputs):
         self.inputs = inputs
-        self.outputs = Outputs()
+        self.outputs = outputs
 
     @staticmethod
     def create_in_source_dir(inputs):
-        template = FileFromTemplate(inputs)
+        template = FileFromTemplate(inputs, Outputs.source_file())
         return template
 
     def create_file(self, refactoring, env):
