@@ -30,16 +30,18 @@ def get_file_templates():
     files = OutputFiles()
 
     # Files in source tree
+    outputs = Outputs.source_file()
     for stage in [before, after]:
-        files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), Outputs.source_file())
+        files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), outputs)
 
-    files.add_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists), Outputs.source_file())
+    files.add_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists), outputs)
 
     files.add_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
-                                 do_not_overwrite), Outputs.source_file())
+                                 do_not_overwrite), outputs)
 
     # Files in documentation tree
-    files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), Outputs.doc_file())
+    outputs = Outputs.doc_file()
+    files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), outputs)
 
     return files
 
