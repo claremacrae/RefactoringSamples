@@ -21,13 +21,13 @@ def create_files_impl(refactoring):
     before = 'Before'
     after = 'After'
     for stage in [before, after]:
-        create_file_from_template(refactoring, stage, env, 'refactoring-pattern.cs', 'cs', do_not_overwrite)
-    create_file_from_template(refactoring, before, env, 'refactoring-pattern.md', 'include.md', overwrite_if_exists)
-    create_file_from_template(refactoring, before, env, 'refactoring-pattern.description.md', 'description.include.md',
+        create_file_from_template(refactoring, env, 'refactoring-pattern.cs', 'cs', stage, do_not_overwrite)
+    create_file_from_template(refactoring, env, 'refactoring-pattern.md', 'include.md', before, overwrite_if_exists)
+    create_file_from_template(refactoring, env, 'refactoring-pattern.description.md', 'description.include.md', before,
                               do_not_overwrite)
 
 
-def create_file_from_template(refactoring, stage, env, template_name, extension, overwrite_if_existing):
+def create_file_from_template(refactoring, env, template_name, extension, stage, overwrite_if_existing):
     template = env.get_template(template_name)
     output_file_name = F"../RefactoringSamples/{stage}/{refactoring['category']}/{refactoring['source_file']}.{extension}"
     if os.path.exists(output_file_name) and overwrite_if_existing == do_not_overwrite:
