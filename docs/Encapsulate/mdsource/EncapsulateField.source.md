@@ -1,5 +1,7 @@
 # EncapsulateField
 
+[Top](../../) / [Encapsulate](../) / **EncapsulateField**
+
 toc
 
 include: EncapsulateField.description

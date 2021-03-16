@@ -7,6 +7,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Encapsulate Refactorings
 
+[Top](../) / **Encapsulate**
+
 Refactorings:
 
 * [EncapsulateField](EncapsulateField.md)

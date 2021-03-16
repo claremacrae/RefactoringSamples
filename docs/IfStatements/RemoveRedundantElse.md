@@ -7,6 +7,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # RemoveRedundantElse
 
+[Top](../../) / [IfStatements](../) / **RemoveRedundantElse**
+
 <!-- toc -->
 ## Contents
 

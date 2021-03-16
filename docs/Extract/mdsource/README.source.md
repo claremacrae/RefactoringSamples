@@ -1,5 +1,7 @@
 # Extract Refactorings
 
+[Top](../) / **Extract**
+
 Refactorings:
 
 * [ExtractClass](ExtractClass.md)
