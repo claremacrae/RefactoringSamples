@@ -1,6 +1,6 @@
 # RemoveRedundantElse
 
-[Top](../) / [IfStatements](.) / **RemoveRedundantElse**
+[Top](../) / [If Statements](.) / **RemoveRedundantElse**
 
 toc
 
