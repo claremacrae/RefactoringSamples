@@ -126,19 +126,3 @@ if __name__ == '__main__':
         'Introduce Field', ]))
 
     all.create_files()
-
-"""
-{% if truth %}
-{% else %}
-{% endif %}
-
-colors = ['red', 'green', 'blue']
-{% for color in colors %}
-    {{ color }}
-{% endfor %}
-
-{% include 'header.html %}
-
-See also extending templates, and embedding blocks
-
-"""
