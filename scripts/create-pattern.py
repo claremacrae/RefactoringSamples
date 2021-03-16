@@ -9,13 +9,14 @@ from scripts.outputs import Outputs
 
 
 def create_files(category, source_files):
+    file_loader = FileSystemLoader('../templates')
+    env = Environment(loader=file_loader)
+    files = get_per_refactoring_templates()
+
     refactoring = {}
     refactoring['category'] = category
     for source_file in source_files:
         refactoring['source_file'] = source_file
-        file_loader = FileSystemLoader('../templates')
-        env = Environment(loader=file_loader)
-        files = get_per_refactoring_templates()
         for f in files.files:
             f.create_file(refactoring, env)
 
