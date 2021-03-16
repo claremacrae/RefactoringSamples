@@ -56,13 +56,16 @@ class RefactoringCategory:
         outputs = Outputs('../docs/{{ data.category }}/mdsource')
         template = FileFromTemplate(inputs, outputs)
 
-        # TODO split multi-word categories at capitals
+        refactoring = self.as_dictionary()
+        template.create_file(refactoring)
+
+    def as_dictionary(self):
         refactoring = dict()
         refactoring['source_file'] = 'README'
         refactoring['category'] = self.category
         refactoring['category_with_spaces'] = self.category_with_spaces
         refactoring['refactorings'] = [x for x in self.refactorings]
-        template.create_file(refactoring)
+        return refactoring
 
 
 class AllRefactorings:
