@@ -10,8 +10,7 @@ from scripts.outputs import Outputs
 
 
 def create_files(category, source_files):
-    file_loader = FileSystemLoader('../templates')
-    env = Environment(loader=file_loader)
+    env = get_templates_environment()
     files = get_per_refactoring_templates()
 
     refactoring = {}
@@ -20,6 +19,12 @@ def create_files(category, source_files):
         refactoring['source_file'] = source_file
         for f in files.files:
             f.create_file(refactoring, env)
+
+
+def get_templates_environment():
+    file_loader = FileSystemLoader('../templates')
+    env = Environment(loader=file_loader)
+    return env
 
 
 def get_per_refactoring_templates():
