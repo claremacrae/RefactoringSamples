@@ -1,5 +1,5 @@
 
-#### Context
+## Context
 
 You have a variable or expression in a method, and you want to make it a field.
 
@@ -16,11 +16,11 @@ Applications:
 
 Having introduced one or more fields, you can then "Extract Class" to group them together, in a separate class.
 
-#### See Also
+## See Also
 
 * [Introduce Field refactoring](https://www.jetbrains.com/help/rider/Refactorings__Introduce_Field.html) (JetBrains Rider)
 
-#### Steps to improve the code
+## Steps to improve the code
 
 * Select the expression, and say "Refactor This" -> "Introduce Field"
 * If there are multiple occurrences of the expression, say if you want to replace one or all.

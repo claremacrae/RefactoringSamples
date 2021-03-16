@@ -1,12 +1,12 @@
 
-#### Context
+## Context
 
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
 
-#### See Also
+## See Also
 
-#### Steps to improve the code
+## Steps to improve the code
 
 Either
 

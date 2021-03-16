@@ -10,15 +10,18 @@ To change this file edit the source file and then execute ./run_markdown_templat
 <!-- toc -->
 ## Contents
 
+  * [Context](#context)
+  * [See Also](#see-also)
+  * [Steps to improve the code <!-- endInclude -->](#steps-to-improve-the-code----endinclude---)
   * [UML before and after](#uml-before-and-after)
   * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/Extract/ExtractInterface.description.include.md -->
-#### Context
+## Context
 
-#### See Also
+## See Also
 
-#### Steps to improve the code <!-- endInclude -->
+## Steps to improve the code <!-- endInclude -->
 
 ## UML before and after
 

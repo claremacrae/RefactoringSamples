@@ -10,18 +10,21 @@ To change this file edit the source file and then execute ./run_markdown_templat
 <!-- toc -->
 ## Contents
 
+  * [Context](#context)
+  * [See Also](#see-also)
+  * [Steps to improve the code](#steps-to-improve-the-code)
   * [UML before and after](#uml-before-and-after)
   * [Code before and after](#code-before-and-after)<!-- endToc -->
 
  <!-- include: RemoveRedundantElse.description. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.description.include.md -->
-#### Context
+## Context
 
 The IDE works out that the `else` statements are redundant,
 because of the return statements.
 
-#### See Also
+## See Also
 
-#### Steps to improve the code
+## Steps to improve the code
 
 Either
 
