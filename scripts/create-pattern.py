@@ -23,18 +23,22 @@ class FileFromTemplate(object):
         self.stage = stage
         self.overwrite_if_existing = overwrite_if_existing
 
+    def create_file(self, refactoring, env):
+        create_file_from_template(refactoring, env, self.template_name, self.extension, self.stage, self.overwrite_if_existing)
+
 
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
     env = Environment(loader=file_loader)
     before = 'Before'
     after = 'After'
+    files = []
     for stage in [before, after]:
-        create_file_from_template(refactoring, env, 'refactoring-pattern.cs', 'cs', stage, do_not_overwrite)
-    create_file_from_template(refactoring, env, 'refactoring-pattern.md', 'include.md', before, overwrite_if_exists)
-    create_file_from_template(refactoring, env, 'refactoring-pattern.description.md', 'description.include.md', before,
-                              do_not_overwrite)
-
+        files.append(FileFromTemplate('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
+    files.append(FileFromTemplate('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
+    files.append(FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
+    for f in files:
+        f.create_file(refactoring, env)
 
 def create_file_from_template(refactoring, env, template_name, extension, stage, overwrite_if_existing):
     template = env.get_template(template_name)
