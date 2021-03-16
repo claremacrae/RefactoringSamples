@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 from typing import List
 
-from jinja2 import Environment, FileSystemLoader
-
 from scripts.constants import do_not_overwrite, overwrite_if_exists
 from scripts.file_from_template import FileFromTemplate
 from scripts.inputs import Inputs
@@ -11,7 +9,6 @@ from scripts.outputs import Outputs
 
 
 def create_files(category, source_files):
-    env = get_templates_environment()
     files = get_per_refactoring_templates()
 
     refactoring = {}
@@ -20,12 +17,6 @@ def create_files(category, source_files):
         refactoring['source_file'] = source_file
         for f in files.files:
             f.create_file(refactoring)
-
-
-def get_templates_environment():
-    file_loader = FileSystemLoader('../templates')
-    env = Environment(loader=file_loader)
-    return env
 
 
 def get_per_refactoring_templates():
@@ -78,7 +69,6 @@ class AllRefactorings:
         inputs = Inputs('doc-readme.md', 'source.md', '', overwrite_if_exists)
         outputs = Outputs('../docs/mdsource')
         template = FileFromTemplate(inputs, outputs)
-        env = get_templates_environment()
         refactoring = dict()
         refactoring['source_file'] = 'README'
         template.create_file(refactoring)
