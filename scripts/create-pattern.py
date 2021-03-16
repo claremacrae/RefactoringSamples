@@ -86,10 +86,15 @@ class AllRefactorings:
         template = FileFromTemplate(inputs, outputs)
 
         # TODO split multi-word categories at capitals
+        refactoring = self.data()
+        template.create_file(refactoring)
+
+    def data(self):
         refactoring = dict()
         refactoring['source_file'] = 'README'
-        refactoring['categories_and_titles'] = zip([x.category for x in self.categories], [x.category_with_spaces for x in self.categories])
-        template.create_file(refactoring)
+        refactoring['categories_and_titles'] = zip([x.category for x in self.categories],
+                                                   [x.category_with_spaces for x in self.categories])
+        return refactoring
 
 
 if __name__ == '__main__':
