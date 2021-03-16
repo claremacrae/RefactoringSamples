@@ -47,7 +47,21 @@ class RefactoringCategory:
         self.refactorings = refactorings
 
     def create_files(self):
+        self.create_category_readme()
         create_files(self.category, self.refactorings)
+
+    def create_category_readme(self):
+        inputs = Inputs('doc-category.md', 'source.md', '', overwrite_if_exists)
+        outputs = Outputs('../docs/{{ data.category }}/mdsource')
+        template = FileFromTemplate(inputs, outputs)
+
+        # TODO Add hyperlinks
+        # TODO split multi-word categories at capitals
+        refactoring = dict()
+        refactoring['source_file'] = 'README'
+        refactoring['category'] = self.category
+        refactoring['refactorings'] = [x for x in self.refactorings]
+        template.create_file(refactoring)
 
 
 class AllRefactorings:
