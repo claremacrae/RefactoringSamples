@@ -7,9 +7,11 @@ class OutputFiles:
         self.files = []
 
     def add_source_file(self, inputs):
-        template = FileFromTemplate(inputs, Outputs.source_file())
-        self.files.append(template)
+        self.add_file(inputs, Outputs.source_file())
 
     def add_docs_file(self, inputs):
-        template = FileFromTemplate(inputs, Outputs.doc_file())
+        self.add_file(inputs, Outputs.doc_file())
+
+    def add_file(self, inputs, outputs):
+        template = FileFromTemplate(inputs, outputs)
         self.files.append(template)
