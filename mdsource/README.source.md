@@ -12,41 +12,9 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 ![Key](uml/Keys/FullKey.svg?raw=true)
 
-## Extract Refactorings
+## The Refactorings
 
-<!-- ### Extract Method -->
-
-<!-- ### Extract Variable -->
-
-### Extract Field
-
-include: ExtractField
-
-### Extract Class
-
-include: ExtractClass
-
-### Extract Superclass
-
-include: ExtractSuperclass
-
-### Extract Interface
-
-include: ExtractInterface
-
-## Encapsulate Refactorings
-
-### Encapsulate Field
-
-include: EncapsulateField
-
-## If Statements
-
-<!-- ### Invert If -->
-
-### Remove Redundant Else
-
-include: RemoveRedundantElse
+See the [List of Refactorings](docs/README.md#top).
 
 ## Appendix
 
