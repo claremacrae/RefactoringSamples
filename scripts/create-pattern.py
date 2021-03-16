@@ -5,6 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 from scripts.constants import do_not_overwrite, overwrite_if_exists
 from scripts.inputs import Inputs
 from scripts.output_files import OutputFiles
+from scripts.outputs import Outputs
 
 
 def create_files(category, source_files):
@@ -30,10 +31,12 @@ def get_file_templates():
 
     # Files in source tree
     for stage in [before, after]:
-        files.add_source_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
-    files.add_source_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
-    files.add_source_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
-                                 do_not_overwrite))
+        files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), Outputs.source_file())
+
+    files.add_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists), Outputs.source_file())
+
+    files.add_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
+                                 do_not_overwrite), Outputs.source_file())
 
     # Files in documentation tree
     files.add_docs_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists))

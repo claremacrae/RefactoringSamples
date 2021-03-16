@@ -6,9 +6,6 @@ class OutputFiles:
     def __init__(self):
         self.files = []
 
-    def add_source_file(self, inputs):
-        self.add_file(inputs, Outputs.source_file())
-
     def add_docs_file(self, inputs):
         self.add_file(inputs, Outputs.doc_file())
 
