@@ -1,0 +1,2 @@
+
+{% include 'refactoring-pattern.md' %}

@@ -32,6 +32,10 @@ class Outputs:
     def source_file():
         return Outputs(directory_template='source-directory.txt', file_template='source-file.txt')
 
+    @staticmethod
+    def doc_file():
+        return Outputs(directory_template='doc-directory.txt', file_template='doc-file.txt')
+
 
 class FileFromTemplate(object):
     def __init__(self, inputs, outputs):
@@ -70,6 +74,10 @@ class OutputFiles:
         template = FileFromTemplate(inputs, Outputs.source_file())
         self.files.append(template)
 
+    def add_docs_file(self, inputs):
+        template = FileFromTemplate(inputs, Outputs.doc_file())
+        self.files.append(template)
+
 
 def create_files_impl(refactoring):
     file_loader = FileSystemLoader('../templates')
@@ -83,11 +91,17 @@ def get_file_templates():
     before = 'Before'
     after = 'After'
     files = OutputFiles()
+
+    # Files in source tree
     for stage in [before, after]:
         files.add_source_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
     files.add_source_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
     files.add_source_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
                                  do_not_overwrite))
+
+    # Files in documentation tree
+    files.add_docs_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists))
+
     return files
 
 
