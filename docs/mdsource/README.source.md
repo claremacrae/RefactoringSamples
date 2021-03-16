@@ -5,4 +5,4 @@ Categories:
 
 * [Encapsulate](Encapsulate/)
 * [Extract](Extract/)
-* [IfStatements](IfStatements/)
+* [If Statements](IfStatements/)

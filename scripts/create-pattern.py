@@ -88,7 +88,7 @@ class AllRefactorings:
         # TODO split multi-word categories at capitals
         refactoring = dict()
         refactoring['source_file'] = 'README'
-        refactoring['categories'] = [x.category for x in self.categories]
+        refactoring['categories_and_titles'] = zip([x.category for x in self.categories], [x.category_with_spaces for x in self.categories])
         template.create_file(refactoring)
 
 
