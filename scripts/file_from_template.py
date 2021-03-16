@@ -13,12 +13,7 @@ class FileFromTemplate(object):
     def create_file(self, refactoring, env):
         output_directory = self.render_file_template(env, refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
-        output_file = self.render_file_template(env, refactoring, self.outputs.file_template)
-        output_file2 = self.render_string_template(refactoring, self.outputs.file_name_template)
-        if output_file2 != output_file:
-            print(output_file)
-            print(output_file2)
-            print("Error")
+        output_file = self.render_string_template(refactoring, self.outputs.file_name_template)
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
