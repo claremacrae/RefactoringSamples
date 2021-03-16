@@ -17,7 +17,6 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [The Refactorings](#the-refactorings)
   * [Appendix](#appendix)
     * [Creating a new pair of files](#creating-a-new-pair-of-files)
-    * [Reference](#reference)
     * [Ideas](#ideas)<!-- endToc -->
 
 ## Purpose
@@ -46,14 +45,6 @@ See the [List of Refactorings](docs/README.md#top).
 1. Add new heading and `include:` line to `mdsource/README.source.md`
 1. Run `update-docs.sh`
 1. Review and commit the files
-
-### Reference
-
-* "Refactoring: Improving the Design of Existing Code", Second Edition by Martin Fowler
-  * [The Second Edition of "Refactoring"](https://martinfowler.com/articles/refactoring-2nd-ed.html)
-  * [Accessing the web edition of Refactoring](https://martinfowler.com/articles/access-refactoring-web-edition.html)
-  * [Online Catalog of Refactorings](https://refactoring.com/catalog/)
-* [JetBrains Rider Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Index.html)
 
 ### Ideas
 
