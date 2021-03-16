@@ -66,11 +66,15 @@ class AllRefactorings:
         self.categories.append(category)
 
     def create_files(self):
+        self.create_doc_readme()
         self.create_per_category_files()
 
     def create_per_category_files(self):
         for category in self.categories:
             category.create_files()
+
+    def create_doc_readme(self):
+        pass
 
 
 if __name__ == '__main__':
