@@ -3,9 +3,8 @@
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.constants import do_not_overwrite, overwrite_if_exists
-from scripts.file_from_template import FileFromTemplate
 from scripts.inputs import Inputs
-from scripts.outputs import Outputs
+from scripts.output_files import OutputFiles
 
 
 def create_files(category, source_files):
@@ -14,19 +13,6 @@ def create_files(category, source_files):
     for source_file in source_files:
         refactoring['source_file'] = source_file
         create_files_impl(refactoring)
-
-
-class OutputFiles:
-    def __init__(self):
-        self.files = []
-
-    def add_source_file(self, inputs):
-        template = FileFromTemplate(inputs, Outputs.source_file())
-        self.files.append(template)
-
-    def add_docs_file(self, inputs):
-        template = FileFromTemplate(inputs, Outputs.doc_file())
-        self.files.append(template)
 
 
 def create_files_impl(refactoring):
