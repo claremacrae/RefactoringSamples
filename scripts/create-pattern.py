@@ -23,12 +23,16 @@ class Inputs:
         self.stage = stage
         self.overwrite_if_existing = overwrite_if_existing
 
+class Outputs:
+    def __init__(self):
+        self.file_template = 'source-file.txt'
+        self.directory_template = 'source-directory.txt'
+
 
 class FileFromTemplate(object):
     def __init__(self, inputs):
-        self.file_template = 'source-file.txt'
-        self.directory_template = 'source-directory.txt'
         self.inputs = inputs
+        self.outputs = Outputs()
 
     @staticmethod
     def create_in_source_dir(inputs):
@@ -36,9 +40,9 @@ class FileFromTemplate(object):
         return template
 
     def create_file(self, refactoring, env):
-        output_directory = self.render_template(env, refactoring, self.directory_template)
+        output_directory = self.render_template(env, refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
-        output_file = self.render_template(env, refactoring, self.file_template)
+        output_file = self.render_template(env, refactoring, self.outputs.file_template)
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
