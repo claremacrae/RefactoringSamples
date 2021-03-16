@@ -1,5 +1,5 @@
 # Refactoring Samples
 
-* Encapsulate
-* Extract
-* IfStatements
+* [Encapsulate](Encapsulate/)
+* [Extract](Extract/)
+* [IfStatements](IfStatements/)
