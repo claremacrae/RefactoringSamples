@@ -4,6 +4,9 @@
 set -e
 set -o pipefail
 
-./add-missing-include-files.py 
+cd  scripts
+./create-pattern.py
+cd ..
+
 ./create-uml.sh
 ./run_markdown_templates.sh
