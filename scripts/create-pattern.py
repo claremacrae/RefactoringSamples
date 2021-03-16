@@ -26,7 +26,7 @@ class FileFromTemplate(object):
     def create_file(self, refactoring, env):
         output_directory = self.render_template(env, refactoring, 'source-directory.txt')
         os.makedirs(output_directory, exist_ok=True)
-        output_file = F"{refactoring['source_file']}.{self.extension}"
+        output_file = self.render_template(env, refactoring, 'source-file.txt')
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
@@ -44,7 +44,7 @@ class FileFromTemplate(object):
 
     def render_template(self, env, refactoring, template_name):
         template = env.get_template(template_name)
-        return template.render(data=refactoring, stage=self.stage)
+        return template.render(data=refactoring, extension = self.extension, stage=self.stage)
 
 
 def create_files_impl(refactoring):
