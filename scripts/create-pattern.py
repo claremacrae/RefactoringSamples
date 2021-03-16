@@ -24,9 +24,9 @@ class Inputs:
         self.overwrite_if_existing = overwrite_if_existing
 
 class Outputs:
-    def __init__(self):
-        self.directory_template = 'source-directory.txt'
-        self.file_template = 'source-file.txt'
+    def __init__(self, directory_template='source-directory.txt', file_template='source-file.txt'):
+        self.directory_template = directory_template
+        self.file_template = file_template
 
 
 class FileFromTemplate(object):
