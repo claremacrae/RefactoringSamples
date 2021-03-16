@@ -11,9 +11,9 @@ from scripts.outputs import Outputs
 def create_files(category, source_files):
     files = get_per_refactoring_templates()
 
-    refactoring = {}
-    refactoring['category'] = category
     for source_file in source_files:
+        refactoring = {}
+        refactoring['category'] = category
         refactoring['source_file'] = source_file
         for f in files.files:
             f.create_file(refactoring)
