@@ -24,7 +24,7 @@ class FileFromTemplate(object):
         self.overwrite_if_existing = overwrite_if_existing
 
     def create_file(self, refactoring, env):
-        output_directory = F"../RefactoringSamples/{self.stage}/{refactoring['category']}"
+        output_directory = self.render_template(env, refactoring, 'source-directory.txt')
         os.makedirs(output_directory, exist_ok=True)
         output_file = F"{refactoring['source_file']}.{self.extension}"
         output_file_name = os.path.join(output_directory, output_file)
