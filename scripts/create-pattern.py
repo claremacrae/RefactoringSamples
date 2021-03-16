@@ -18,9 +18,9 @@ overwrite_if_exists = True
 
 class FileFromTemplate(object):
     def __init__(self, template_name, extension, stage, overwrite_if_existing):
-        self.create_file_in_source_dir(extension, overwrite_if_existing, stage, template_name)
+        self.in_source_dir(extension, overwrite_if_existing, stage, template_name)
 
-    def create_file_in_source_dir(self, extension, overwrite_if_existing, stage, template_name):
+    def in_source_dir(self, extension, overwrite_if_existing, stage, template_name):
         self.template_name = template_name
         self.extension = extension
         self.stage = stage
