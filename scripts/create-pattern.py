@@ -67,8 +67,7 @@ class OutputFiles:
     def __init__(self):
         self.files = []
 
-    def add_source_file(self, template_name, extension, stage, overwrite_if_existing):
-        inputs = Inputs(template_name, extension, stage, overwrite_if_existing)
+    def add_source_file(self, inputs):
         self.files.append(FileFromTemplate.create_in_source_dir(inputs))
 
 
@@ -85,9 +84,10 @@ def get_file_templates():
     after = 'After'
     files = OutputFiles()
     for stage in [before, after]:
-        files.add_source_file('refactoring-pattern.cs', 'cs', stage, do_not_overwrite)
-    files.add_source_file('refactoring-pattern.md', 'include.md', before, overwrite_if_exists)
-    files.add_source_file('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite)
+        files.add_source_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
+    files.add_source_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
+    files.add_source_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
+                                 do_not_overwrite))
     return files
 
 
