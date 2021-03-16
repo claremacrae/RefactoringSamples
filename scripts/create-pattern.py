@@ -33,6 +33,9 @@ class FileFromTemplate(object):
 
     def expand_template(self, env, output_file_name, refactoring):
         output = self.render_template(env, refactoring)
+        self.write_file(output, output_file_name)
+
+    def write_file(self, output, output_file_name):
         if os.path.exists(output_file_name) and self.overwrite_if_existing == do_not_overwrite:
             print(f'File already exists: not overwriting: {output_file_name}')
             return
