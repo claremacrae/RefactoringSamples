@@ -39,7 +39,7 @@ def get_file_templates():
                                  do_not_overwrite), Outputs.source_file())
 
     # Files in documentation tree
-    files.add_docs_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists))
+    files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), Outputs.doc_file())
 
     return files
 
