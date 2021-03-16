@@ -41,6 +41,16 @@ def get_per_refactoring_templates():
     return files
 
 
+class Refactoring:
+    templates = get_per_refactoring_templates()
+
+    def __init__(self, title):
+        self.title = title
+
+    def create_files(self, category_title):
+        pass
+
+
 class RefactoringCategory:
     def __init__(self, title, refactorings):
         self.category = title.replace(' ', '')
