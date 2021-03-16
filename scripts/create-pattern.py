@@ -4,6 +4,8 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
+from scripts.inputs import Inputs
+
 
 def create_files(category, source_files):
     refactoring = {}
@@ -15,13 +17,6 @@ def create_files(category, source_files):
 do_not_overwrite = False
 overwrite_if_exists = True
 
-
-class Inputs:
-    def __init__(self, template_name, extension, stage, overwrite_if_existing):
-        self.template_name = template_name
-        self.extension = extension
-        self.stage = stage
-        self.overwrite_if_existing = overwrite_if_existing
 
 class Outputs:
     def __init__(self, directory_template, file_template):
