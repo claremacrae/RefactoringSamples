@@ -55,7 +55,6 @@ class RefactoringCategory:
         outputs = Outputs('../docs/{{ data.category }}/mdsource')
         template = FileFromTemplate(inputs, outputs)
 
-        # TODO Add hyperlinks
         # TODO split multi-word categories at capitals
         refactoring = dict()
         refactoring['source_file'] = 'README'
@@ -84,7 +83,6 @@ class AllRefactorings:
         outputs = Outputs('../docs/mdsource')
         template = FileFromTemplate(inputs, outputs)
 
-        # TODO Add hyperlinks
         # TODO split multi-word categories at capitals
         refactoring = dict()
         refactoring['source_file'] = 'README'
