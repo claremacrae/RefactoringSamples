@@ -24,12 +24,12 @@ class FileFromTemplate(object):
         self.overwrite_if_existing = overwrite_if_existing
 
     def create_file(self, refactoring, env):
-        template = env.get_template(self.template_name)
         output_directory = F"../RefactoringSamples/{self.stage}/{refactoring['category']}"
         os.makedirs(output_directory, exist_ok=True)
         output_file = F"{refactoring['source_file']}.{self.extension}"
         output_file_name = os.path.join(output_directory, output_file)
 
+        template = env.get_template(self.template_name)
         if os.path.exists(output_file_name) and self.overwrite_if_existing == do_not_overwrite:
             print(f'File already exists: not overwriting: {output_file_name}')
             return
