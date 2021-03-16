@@ -69,10 +69,13 @@ class AllRefactorings:
         inputs = Inputs('doc-readme.md', 'source.md', '', overwrite_if_exists)
         outputs = Outputs('../docs/mdsource')
         template = FileFromTemplate(inputs, outputs)
+
+        # TODO Add hyperlinks
+        # TODO split multi-word categories at capitals
         refactoring = dict()
         refactoring['source_file'] = 'README'
+        refactoring['categories'] = [x.category for x in self.categories]
         template.create_file(refactoring)
-        pass
 
 
 if __name__ == '__main__':

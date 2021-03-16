@@ -2,4 +2,4 @@
 
 * Encapsulate
 * Extract
-* If Statements
+* IfStatements

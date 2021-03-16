@@ -1,5 +1,3 @@
 # Refactoring Samples
-
-* Encapsulate
-* Extract
-* If Statements
+{% for category in data.categories %}
+* {{ category }}{% endfor %}
