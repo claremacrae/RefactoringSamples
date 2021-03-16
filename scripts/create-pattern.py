@@ -45,7 +45,8 @@ class RefactoringCategory:
     def __init__(self, title, refactorings):
         self.category = title.replace(' ', '')
         self.title = title
-        self.refactorings = refactorings
+        self.titles = refactorings
+        self.refactorings = [x.replace(' ', '') for x in refactorings]
 
     def create_files(self):
         self.create_category_readme()
@@ -65,6 +66,7 @@ class RefactoringCategory:
         refactoring['category'] = self.category
         refactoring['title'] = self.title
         refactoring['refactorings'] = [x for x in self.refactorings]
+        refactoring['refactorings_and_titles'] = zip(self.refactorings, self.titles)
         return refactoring
 
 
@@ -101,14 +103,14 @@ class AllRefactorings:
 if __name__ == '__main__':
     all = AllRefactorings()
     all.add_category(RefactoringCategory('Encapsulate', [
-        'EncapsulateField', ]))
+        'Encapsulate Field', ]))
     all.add_category(RefactoringCategory('Extract', [
-        'ExtractClass',
-        'ExtractField',
-        'ExtractInterface',
-        'ExtractSuperclass', ]))
+        'Extract Class',
+        'Extract Field',
+        'Extract Interface',
+        'Extract Superclass', ]))
     all.add_category(RefactoringCategory('If Statements', [
-        'RemoveRedundantElse', ]))
+        'Remove Redundant Else', ]))
 
     all.create_files()
 

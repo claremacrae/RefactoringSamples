@@ -4,4 +4,4 @@
 
 Refactorings:
 
-* [EncapsulateField](EncapsulateField.md)
+* [Encapsulate Field](EncapsulateField.md)

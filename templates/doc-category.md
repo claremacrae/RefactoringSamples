@@ -3,5 +3,5 @@
 [Top](../) / **{{ data.title }}**
 
 Refactorings:
-{% for refactoring in data.refactorings %}
-* [{{ refactoring }}]({{ refactoring }}.md){% endfor %}
+{% for refactoring,title in data.refactorings_and_titles %}
+* [{{ title }}]({{ refactoring }}.md){% endfor %}

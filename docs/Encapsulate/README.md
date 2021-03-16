@@ -11,4 +11,4 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 Refactorings:
 
-* [EncapsulateField](EncapsulateField.md)
+* [Encapsulate Field](EncapsulateField.md)
