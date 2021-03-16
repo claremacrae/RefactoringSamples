@@ -43,16 +43,37 @@ def get_per_refactoring_templates():
     return files
 
 
+class RefactoringCategory:
+    def __init__(self, category, refactorings):
+        self.category = category
+        self.refactorings = refactorings
+
+
+class AllRefactorings:
+    def __init__(self):
+        self.categories = []
+
+    def add_category(self, category: RefactoringCategory):
+        self.categories.append(category)
+
+    def create_files(self):
+        for category in self.categories:
+            create_files(category.category, category.refactorings)
+
+
 if __name__ == '__main__':
-    create_files('Encapsulate', [
-        'EncapsulateField', ])
-    create_files('Extract', [
+    all = AllRefactorings()
+    all.add_category(RefactoringCategory('Encapsulate', [
+        'EncapsulateField', ]))
+    all.add_category(RefactoringCategory('Extract', [
         'ExtractClass',
         'ExtractField',
         'ExtractInterface',
-        'ExtractSuperclass', ])
-    create_files('IfStatements', [
-        'RemoveRedundantElse', ])
+        'ExtractSuperclass', ]))
+    all.add_category(RefactoringCategory('IfStatements', [
+        'RemoveRedundantElse', ]))
+
+    all.create_files()
 
 """
 {% if truth %}
