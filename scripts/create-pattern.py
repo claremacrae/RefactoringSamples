@@ -23,13 +23,19 @@ class FileFromTemplate(object):
         self.stage = None
         self.overwrite_if_existing = None
 
-        self.in_source_dir(extension, overwrite_if_existing, stage, template_name)
+        self.in_source_dir(template_name, extension, stage, overwrite_if_existing)
 
-    def in_source_dir(self, extension, overwrite_if_existing, stage, template_name):
+    def in_source_dir(self, template_name, extension, stage, overwrite_if_existing):
         self.template_name = template_name
         self.extension = extension
         self.stage = stage
         self.overwrite_if_existing = overwrite_if_existing
+
+    @staticmethod
+    def create_in_source_dir(template_name, extension, stage, overwrite_if_existing):
+        template = FileFromTemplate(None, None, None, None)
+        template.in_source_dir(template_name, extension, stage, overwrite_if_existing)
+        return template
 
     def create_file(self, refactoring, env):
         output_directory = self.render_template(env, refactoring, 'source-directory.txt')
@@ -68,7 +74,7 @@ def get_file_templates():
     after = 'After'
     files = []
     for stage in [before, after]:
-        files.append(FileFromTemplate('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
+        files.append(FileFromTemplate.create_in_source_dir('refactoring-pattern.cs', 'cs', stage, do_not_overwrite))
     files.append(FileFromTemplate('refactoring-pattern.md', 'include.md', before, overwrite_if_exists))
     files.append(
         FileFromTemplate('refactoring-pattern.description.md', 'description.include.md', before, do_not_overwrite))
