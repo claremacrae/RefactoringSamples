@@ -9,15 +9,15 @@ class FileFromTemplate(object):
         self.outputs = outputs
 
     def create_file(self, refactoring, env):
-        output_directory = self.render_template(env, refactoring, self.outputs.directory_template)
+        output_directory = self.render_file_template(env, refactoring, self.outputs.directory_template)
         os.makedirs(output_directory, exist_ok=True)
-        output_file = self.render_template(env, refactoring, self.outputs.file_template)
+        output_file = self.render_file_template(env, refactoring, self.outputs.file_template)
         output_file_name = os.path.join(output_directory, output_file)
 
         self.expand_template(env, output_file_name, refactoring)
 
     def expand_template(self, env, output_file_name, refactoring):
-        output = self.render_template(env, refactoring, self.inputs.template_name)
+        output = self.render_file_template(env, refactoring, self.inputs.template_name)
         self.write_file(output, output_file_name)
 
     def write_file(self, output, output_file_name):
@@ -27,6 +27,6 @@ class FileFromTemplate(object):
         with open(output_file_name, 'w') as f:
             f.write(output)
 
-    def render_template(self, env, refactoring, template_name):
+    def render_file_template(self, env, refactoring, template_name):
         template = env.get_template(template_name)
         return template.render(data=refactoring, extension = self.inputs.extension, stage=self.inputs.stage)
