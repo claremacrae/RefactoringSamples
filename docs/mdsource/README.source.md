@@ -4,15 +4,15 @@
 
 
 * [Encapsulate](Encapsulate/)
-  * [Encapsulate Field](EncapsulateField.md)
+  * [Encapsulate Field](Encapsulate/EncapsulateField.md)
 * [Extract](Extract/)
-  * [Extract Class](ExtractClass.md)
-  * [Extract Interface](ExtractInterface.md)
-  * [Extract Superclass](ExtractSuperclass.md)
+  * [Extract Class](Extract/ExtractClass.md)
+  * [Extract Interface](Extract/ExtractInterface.md)
+  * [Extract Superclass](Extract/ExtractSuperclass.md)
 * [If Statements](IfStatements/)
-  * [Remove Redundant Else](RemoveRedundantElse.md)
+  * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
 * [Introduce](Introduce/)
-  * [Introduce Field](IntroduceField.md)
+  * [Introduce Field](Introduce/IntroduceField.md)
 
 ## Reference
 

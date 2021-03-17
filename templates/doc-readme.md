@@ -4,7 +4,7 @@
 
 {% for category in data.categories %}
 * [{{ category.title }}]({{ category.category }}/){% for refactoring,title in category.refactorings_and_titles %}
-  * [{{ title }}]({{ refactoring }}.md){% endfor %}{% endfor %}
+  * [{{ title }}]({{ category.category }}/{{ refactoring }}.md){% endfor %}{% endfor %}
 
 ## Reference
 
