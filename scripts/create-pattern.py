@@ -20,26 +20,6 @@ def create_files(category_title, titles):
         r.create_files(category_title)
 
 
-def get_per_refactoring_templates():
-    before = 'Before'
-    after = 'After'
-    files = OutputFiles()
-
-    # Files in source tree
-    outputs = Outputs('../RefactoringSamples/{{ stage }}/{{ data.category }}')
-    for stage in [before, after]:
-        files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), outputs)
-
-    files.add_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
-                                 do_not_overwrite), outputs)
-
-    # Files in documentation tree
-    outputs = Outputs('../docs/{{ data.category }}/mdsource')
-    files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), outputs)
-
-    return files
-
-
 # TODO Move code above in to this class, and start using it
 class Refactoring:
     templates = None
@@ -62,7 +42,23 @@ class Refactoring:
 
     @staticmethod
     def create_templates():
-        return get_per_refactoring_templates()
+        before = 'Before'
+        after = 'After'
+        files = OutputFiles()
+
+        # Files in source tree
+        outputs = Outputs('../RefactoringSamples/{{ stage }}/{{ data.category }}')
+        for stage in [before, after]:
+            files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), outputs)
+
+        files.add_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
+                              do_not_overwrite), outputs)
+
+        # Files in documentation tree
+        outputs = Outputs('../docs/{{ data.category }}/mdsource')
+        files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), outputs)
+
+        return files
 
 
 Refactoring.templates = Refactoring.create_templates()
