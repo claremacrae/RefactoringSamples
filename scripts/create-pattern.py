@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 from scripts.all_refactorings import AllRefactorings
-from scripts.refactoring import Refactoring
 from scripts.refactoring_category import RefactoringCategory
-
-Refactoring.templates = Refactoring.create_templates()
 
 if __name__ == '__main__':
     all = AllRefactorings()

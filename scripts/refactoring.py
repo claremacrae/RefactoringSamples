@@ -43,3 +43,6 @@ class Refactoring:
         files.add_file(Inputs('doc-pattern-description.md', 'source.md', '', overwrite_if_exists), outputs)
 
         return files
+
+
+Refactoring.templates = Refactoring.create_templates()
