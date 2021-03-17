@@ -30,7 +30,8 @@ class AllRefactorings:
         template.create_file(self.as_dictionary())
 
     def as_dictionary(self):
-        refactoring = dict()
-        refactoring['source_file'] = 'README'
-        refactoring['categories'] = [category.as_dictionary() for category in self.categories]
+        refactoring = {
+            'source_file': 'README',
+            'categories': [category.as_dictionary() for category in self.categories]
+        }
         return refactoring
