@@ -28,6 +28,8 @@ snippet: {{ data.source_file }}-After
 
 ![{{ data.source_file }} - After](../../uml/After/{{ data.category }}/{{ data.source_file }}.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 
 

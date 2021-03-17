@@ -28,5 +28,7 @@ snippet: EncapsulateField-After
 
 ![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

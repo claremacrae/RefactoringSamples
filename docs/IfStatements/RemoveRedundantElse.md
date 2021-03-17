@@ -115,5 +115,7 @@ public string HeavilyNestedIf()
 
 ![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

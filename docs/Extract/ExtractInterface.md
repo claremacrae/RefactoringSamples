@@ -90,5 +90,7 @@ public class ExtractInterface : IExtractInterface
 
 ![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

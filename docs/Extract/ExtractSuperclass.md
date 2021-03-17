@@ -88,5 +88,7 @@ public class ExtractSuperclass : ExtractSuperclassBase
 
 ![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

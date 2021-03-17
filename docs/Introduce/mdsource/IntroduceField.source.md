@@ -28,5 +28,7 @@ snippet: IntroduceField-After
 
 ![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

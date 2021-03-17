@@ -28,5 +28,7 @@ snippet: ExtractClass-After
 
 ![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 

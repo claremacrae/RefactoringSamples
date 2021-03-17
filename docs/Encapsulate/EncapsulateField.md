@@ -77,5 +77,7 @@ public class EncapsulateField
 
 ![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
+*[Key](../../uml/Keys/FullKey.svg)*
+
 -----
 
