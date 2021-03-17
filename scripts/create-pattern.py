@@ -20,12 +20,6 @@ def create_files(category_title, titles):
         r.create_files(category_title)
 
 
-def create_files_for_refactoring(category_title, files, r):
-    refactoring = r.as_dictionary(category_title)
-    for f in files.files:
-        f.create_file(refactoring)
-
-
 def get_per_refactoring_templates():
     before = 'Before'
     after = 'After'
@@ -54,7 +48,9 @@ class Refactoring:
         self.title = title
 
     def create_files(self, category_title):
-        create_files_for_refactoring(category_title, Refactoring.templates, self)
+        refactoring = self.as_dictionary(category_title)
+        for f in Refactoring.templates.files:
+            f.create_file(refactoring)
 
     def as_dictionary(self, category_title):
         refactoring = {}
