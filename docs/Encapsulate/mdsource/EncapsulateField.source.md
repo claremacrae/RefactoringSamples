@@ -8,17 +8,21 @@ include: EncapsulateField.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: EncapsulateField-Before
 
-becomes
+**After refactoring**
 
 snippet: EncapsulateField-After
 

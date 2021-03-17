@@ -8,17 +8,21 @@ include: IntroduceField.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![IntroduceField - Before](../../uml/Before/Introduce/IntroduceField.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: IntroduceField-Before
 
-becomes
+**After refactoring**
 
 snippet: IntroduceField-After
 

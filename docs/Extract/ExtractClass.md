@@ -30,13 +30,17 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## UML before and after
 
+**Before refactoring**
+
 ![ExtractClass - Before](../../uml/Before/Extract/ExtractClass.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
 
 ## Code before and after
+
+**Before refactoring**
 
 <!-- snippet: ExtractClass-Before -->
 <a id='snippet-extractclass-before'></a>
@@ -60,7 +64,7 @@ public class ExtractClass
 <sup><a href='/RefactoringSamples/Before/Extract/ExtractClass.cs#L3-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractclass-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-becomes
+**After refactoring**
 
 <!-- snippet: ExtractClass-After -->
 <a id='snippet-extractclass-after'></a>

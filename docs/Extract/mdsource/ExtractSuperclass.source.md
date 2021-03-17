@@ -8,17 +8,21 @@ include: ExtractSuperclass.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: ExtractSuperclass-Before
 
-becomes
+**After refactoring**
 
 snippet: ExtractSuperclass-After
 

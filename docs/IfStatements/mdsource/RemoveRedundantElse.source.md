@@ -8,17 +8,21 @@ include: RemoveRedundantElse.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![RemoveRedundantElse - Before](../../uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: RemoveRedundantElse-Before
 
-becomes
+**After refactoring**
 
 snippet: RemoveRedundantElse-After
 

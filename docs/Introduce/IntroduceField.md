@@ -51,13 +51,17 @@ Notes:
 
 ## UML before and after
 
+**Before refactoring**
+
 ![IntroduceField - Before](../../uml/Before/Introduce/IntroduceField.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
 
 ## Code before and after
+
+**Before refactoring**
 
 <!-- snippet: IntroduceField-Before -->
 <a id='snippet-introducefield-before'></a>
@@ -75,7 +79,7 @@ public class IntroduceField
 <sup><a href='/RefactoringSamples/Before/Introduce/IntroduceField.cs#L3-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-introducefield-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-becomes
+**After refactoring**
 
 <!-- snippet: IntroduceField-After -->
 <a id='snippet-introducefield-after'></a>

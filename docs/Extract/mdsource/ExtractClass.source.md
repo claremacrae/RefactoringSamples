@@ -8,17 +8,21 @@ include: ExtractClass.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![ExtractClass - Before](../../uml/Before/Extract/ExtractClass.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: ExtractClass-Before
 
-becomes
+**After refactoring**
 
 snippet: ExtractClass-After
 

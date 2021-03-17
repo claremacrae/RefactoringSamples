@@ -29,13 +29,17 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## UML before and after
 
+**Before refactoring**
+
 ![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
 ## Code before and after
+
+**Before refactoring**
 
 <!-- snippet: EncapsulateField-Before -->
 <a id='snippet-encapsulatefield-before'></a>
@@ -49,7 +53,7 @@ public class EncapsulateField
 <sup><a href='/RefactoringSamples/Before/Encapsulate/EncapsulateField.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-encapsulatefield-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-becomes
+**After refactoring**
 
 <!-- snippet: EncapsulateField-After -->
 <a id='snippet-encapsulatefield-after'></a>

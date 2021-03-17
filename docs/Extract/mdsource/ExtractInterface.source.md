@@ -8,17 +8,21 @@ include: ExtractInterface.description
 
 ## UML before and after
 
+**Before refactoring**
+
 ![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
 
 ## Code before and after
 
+**Before refactoring**
+
 snippet: ExtractInterface-Before
 
-becomes
+**After refactoring**
 
 snippet: ExtractInterface-After
 

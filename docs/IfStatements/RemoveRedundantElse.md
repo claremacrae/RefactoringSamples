@@ -42,13 +42,17 @@ Or
 
 ## UML before and after
 
+**Before refactoring**
+
 ![RemoveRedundantElse - Before](../../uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 ## Code before and after
+
+**Before refactoring**
 
 <!-- snippet: RemoveRedundantElse-Before -->
 <a id='snippet-removeredundantelse-before'></a>
@@ -80,7 +84,7 @@ public string HeavilyNestedIf()
 <sup><a href='/RefactoringSamples/Before/IfStatements/RemoveRedundantElse.cs#L7-L31' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-becomes
+**After refactoring**
 
 <!-- snippet: RemoveRedundantElse-After -->
 <a id='snippet-removeredundantelse-after'></a>

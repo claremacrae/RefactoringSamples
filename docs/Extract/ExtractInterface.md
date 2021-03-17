@@ -29,13 +29,17 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## UML before and after
 
+**Before refactoring**
+
 ![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
 
-becomes
+**After refactoring**
 
 ![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
 
 ## Code before and after
+
+**Before refactoring**
 
 <!-- snippet: ExtractInterface-Before -->
 <a id='snippet-extractinterface-before'></a>
@@ -56,7 +60,7 @@ public class ExtractInterface
 <sup><a href='/RefactoringSamples/Before/Extract/ExtractInterface.cs#L3-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractinterface-before' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-becomes
+**After refactoring**
 
 <!-- snippet: ExtractInterface-After -->
 <a id='snippet-extractinterface-after'></a>
