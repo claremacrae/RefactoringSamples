@@ -17,12 +17,12 @@ class Refactoring:
             f.create_file(refactoring)
 
     def as_dictionary(self, category_title):
-        refactoring = {}
-        refactoring['category'] = remove_spaces(category_title)
-        refactoring['category_title'] = category_title
-        refactoring['source_file'] = remove_spaces(self.title)
-        refactoring['title'] = self.title
-        return refactoring
+        return {
+            'category': remove_spaces(category_title),
+            'category_title': category_title,
+            'source_file': remove_spaces(self.title),
+            'title': self.title
+        }
 
     @staticmethod
     def create_templates():
