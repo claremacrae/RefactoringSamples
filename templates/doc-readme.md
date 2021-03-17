@@ -3,7 +3,7 @@
 ## Categories
 
 {% for category in data.categories %}
-* [{{ category.title }}]({{ category.category }}/){% for refactoring,title in category.refactorings_and_titles %}
+* [{{ category.title }}]({{ category.category }}//README.md){% for refactoring,title in category.refactorings_and_titles %}
   * [{{ title }}]({{ category.category }}/{{ refactoring }}.md){% endfor %}{% endfor %}
 
 ## Reference

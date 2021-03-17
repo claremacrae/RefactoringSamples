@@ -10,15 +10,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 ## Categories
 
 
-* [Encapsulate](Encapsulate/)
+* [Encapsulate](Encapsulate//README.md)
   * [Encapsulate Field](Encapsulate/EncapsulateField.md)
-* [Extract](Extract/)
+* [Extract](Extract//README.md)
   * [Extract Class](Extract/ExtractClass.md)
   * [Extract Interface](Extract/ExtractInterface.md)
   * [Extract Superclass](Extract/ExtractSuperclass.md)
-* [If Statements](IfStatements/)
+* [If Statements](IfStatements//README.md)
   * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
-* [Introduce](Introduce/)
+* [Introduce](Introduce//README.md)
   * [Introduce Field](Introduce/IntroduceField.md)
 
 ## Reference

@@ -1,6 +1,6 @@
 # Extract Refactorings
 
-[Top](../) / **Extract**
+[Top](../README.md) / **Extract**
 
 Refactorings:
 

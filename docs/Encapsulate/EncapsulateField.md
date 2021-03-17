@@ -7,7 +7,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Encapsulate Field
 
-[Top](../) / [Encapsulate](.) / **Encapsulate Field**
+[Top](../README.md) / [Encapsulate](./README.md) / **Encapsulate Field**
 
 <!-- toc -->
 ## Contents

@@ -7,7 +7,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Extract Class
 
-[Top](../) / [Extract](.) / **Extract Class**
+[Top](../README.md) / [Extract](./README.md) / **Extract Class**
 
 <!-- toc -->
 ## Contents

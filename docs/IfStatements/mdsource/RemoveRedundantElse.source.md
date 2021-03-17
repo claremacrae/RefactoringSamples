@@ -1,6 +1,6 @@
 # Remove Redundant Else
 
-[Top](../) / [If Statements](.) / **Remove Redundant Else**
+[Top](../README.md) / [If Statements](./README.md) / **Remove Redundant Else**
 
 toc
 

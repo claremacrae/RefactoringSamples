@@ -1,6 +1,6 @@
 # Encapsulate Field
 
-[Top](../) / [Encapsulate](.) / **Encapsulate Field**
+[Top](../README.md) / [Encapsulate](./README.md) / **Encapsulate Field**
 
 toc
 

@@ -7,7 +7,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 # Extract Superclass
 
-[Top](../) / [Extract](.) / **Extract Superclass**
+[Top](../README.md) / [Extract](./README.md) / **Extract Superclass**
 
 <!-- toc -->
 ## Contents

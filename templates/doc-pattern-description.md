@@ -1,6 +1,6 @@
 # {{ data.title }}
 
-[Top](../) / [{{ data.category_title }}](.) / **{{ data.title }}**
+[Top](../README.md) / [{{ data.category_title }}](./README.md) / **{{ data.title }}**
 
 toc
 

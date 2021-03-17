@@ -1,6 +1,6 @@
 # Encapsulate Refactorings
 
-[Top](../) / **Encapsulate**
+[Top](../README.md) / **Encapsulate**
 
 Refactorings:
 
