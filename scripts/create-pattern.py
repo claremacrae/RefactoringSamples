@@ -3,13 +3,10 @@ from typing import List
 
 from scripts.constants import do_not_overwrite, overwrite_if_exists
 from scripts.file_from_template import FileFromTemplate
+from scripts.helpers import remove_spaces
 from scripts.inputs import Inputs
 from scripts.output_files import OutputFiles
 from scripts.outputs import Outputs
-
-
-def remove_spaces(text):
-    return text.replace(' ', '')
 
 
 class Refactoring:
