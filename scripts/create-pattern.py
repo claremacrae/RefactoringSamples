@@ -12,11 +12,12 @@ def create_files(category, category_title, source_files, titles):
     files = get_per_refactoring_templates()
 
     for source_file, title in zip(source_files, titles):
+        r = Refactoring(title)
         refactoring = {}
         refactoring['category'] = category
         refactoring['category_title'] = category_title
-        refactoring['source_file'] = source_file
-        refactoring['title'] = title
+        refactoring['source_file'] = r.title.replace(' ', '')
+        refactoring['title'] = r.title
         for f in files.files:
             f.create_file(refactoring)
 
