@@ -17,9 +17,13 @@ def create_files(category_title, titles):
 
     for title in titles:
         r = Refactoring(title)
-        refactoring = refactoring_as_dictionary(r, category_title)
-        for f in files.files:
-            f.create_file(refactoring)
+        create_files_for_refactoring(category_title, files, r)
+
+
+def create_files_for_refactoring(category_title, files, r):
+    refactoring = refactoring_as_dictionary(r, category_title)
+    for f in files.files:
+        f.create_file(refactoring)
 
 
 def refactoring_as_dictionary(r, category_title):
