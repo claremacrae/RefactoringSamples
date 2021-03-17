@@ -26,15 +26,6 @@ def create_files_for_refactoring(category_title, files, r):
         f.create_file(refactoring)
 
 
-def refactoring_as_dictionary(r, category_title):
-    refactoring = {}
-    refactoring['category'] = remove_spaces(category_title)
-    refactoring['category_title'] = category_title
-    refactoring['source_file'] = remove_spaces(r.title)
-    refactoring['title'] = r.title
-    return refactoring
-
-
 def get_per_refactoring_templates():
     before = 'Before'
     after = 'After'
@@ -66,7 +57,12 @@ class Refactoring:
         pass
 
     def as_dictionary(self, category_title):
-        return refactoring_as_dictionary(self, category_title)
+        refactoring = {}
+        refactoring['category'] = remove_spaces(category_title)
+        refactoring['category_title'] = category_title
+        refactoring['source_file'] = remove_spaces(self.title)
+        refactoring['title'] = self.title
+        return refactoring
 
 class RefactoringCategory:
     def __init__(self, title, refactorings):
