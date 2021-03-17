@@ -12,7 +12,6 @@ def remove_spaces(text):
     return text.replace(' ', '')
 
 
-# TODO Move code above in to this class, and start using it
 class Refactoring:
     templates = None
 
