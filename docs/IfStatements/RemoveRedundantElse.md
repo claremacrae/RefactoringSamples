@@ -15,8 +15,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code](#steps-to-improve-the-code)
-  * [UML before and after](#uml-before-and-after)
-  * [Code before and after](#code-before-and-after)<!-- endToc -->
+  * [Example](#example)
+    * [Code](#code)
+    * [UML](#uml)<!-- endToc -->
 
  <!-- include: RemoveRedundantElse.description. path: /RefactoringSamples/Before/IfStatements/RemoveRedundantElse.description.include.md -->
 ## Context
@@ -40,17 +41,9 @@ Or
 
 1. Click on first else, and select 'Remove redundant code in file' <!-- endInclude -->
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![RemoveRedundantElse - Before](../../uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
-
-**After refactoring**
-
-![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -111,6 +104,16 @@ public string HeavilyNestedIf()
 ```
 <sup><a href='/RefactoringSamples/After/IfStatements/RemoveRedundantElse.cs#L7-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-removeredundantelse-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+### UML
+
+**Before refactoring**
+
+![RemoveRedundantElse - Before](../../uml/Before/IfStatements/RemoveRedundantElse.svg?raw=true)
+
+**After refactoring**
+
+![RemoveRedundantElse - After](../../uml/After/IfStatements/RemoveRedundantElse.svg?raw=true)
 
 -----
 

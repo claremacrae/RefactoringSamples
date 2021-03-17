@@ -6,17 +6,9 @@ toc
 
 include: EncapsulateField.description
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
-
-**After refactoring**
-
-![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -25,6 +17,16 @@ snippet: EncapsulateField-Before
 **After refactoring**
 
 snippet: EncapsulateField-After
+
+### UML
+
+**Before refactoring**
+
+![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
+
+**After refactoring**
+
+![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
 -----
 

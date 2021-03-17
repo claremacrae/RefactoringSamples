@@ -15,8 +15,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code <!-- endInclude -->](#steps-to-improve-the-code----endinclude---)
-  * [UML before and after](#uml-before-and-after)
-  * [Code before and after](#code-before-and-after)<!-- endToc -->
+  * [Example](#example)
+    * [Code](#code)
+    * [UML](#uml)<!-- endToc -->
 
  <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/Extract/ExtractInterface.description.include.md -->
 ## Context
@@ -27,17 +28,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## Steps to improve the code <!-- endInclude -->
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
-
-**After refactoring**
-
-![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -86,6 +79,16 @@ public class ExtractInterface : IExtractInterface
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractInterface.cs#L3-L22' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractinterface-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+### UML
+
+**Before refactoring**
+
+![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
+
+**After refactoring**
+
+![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
 
 -----
 

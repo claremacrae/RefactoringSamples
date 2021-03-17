@@ -15,8 +15,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code](#steps-to-improve-the-code)
-  * [UML before and after](#uml-before-and-after)
-  * [Code before and after](#code-before-and-after)<!-- endToc -->
+  * [Example](#example)
+    * [Code](#code)
+    * [UML](#uml)<!-- endToc -->
 
  <!-- include: IntroduceField.description. path: /RefactoringSamples/Before/Introduce/IntroduceField.description.include.md -->
 ## Context
@@ -49,17 +50,9 @@ Notes:
 * if the field was extracted from a non-static method, the new field will be non-static.
 * if the field was extracted from a static method, the new field will be static. <!-- endInclude -->
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![IntroduceField - Before](../../uml/Before/Introduce/IntroduceField.svg?raw=true)
-
-**After refactoring**
-
-![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -97,6 +90,16 @@ public class IntroduceField
 ```
 <sup><a href='/RefactoringSamples/After/Introduce/IntroduceField.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-introducefield-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+### UML
+
+**Before refactoring**
+
+![IntroduceField - Before](../../uml/Before/Introduce/IntroduceField.svg?raw=true)
+
+**After refactoring**
+
+![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
 
 -----
 

@@ -6,17 +6,9 @@ toc
 
 include: ExtractSuperclass.description
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
-
-**After refactoring**
-
-![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -25,6 +17,16 @@ snippet: ExtractSuperclass-Before
 **After refactoring**
 
 snippet: ExtractSuperclass-After
+
+### UML
+
+**Before refactoring**
+
+![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
+
+**After refactoring**
+
+![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
 -----
 

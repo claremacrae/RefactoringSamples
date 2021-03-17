@@ -15,8 +15,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code <!-- endInclude -->](#steps-to-improve-the-code----endinclude---)
-  * [UML before and after](#uml-before-and-after)
-  * [Code before and after](#code-before-and-after)<!-- endToc -->
+  * [Example](#example)
+    * [Code](#code)
+    * [UML](#uml)<!-- endToc -->
 
  <!-- include: ExtractSuperclass.description. path: /RefactoringSamples/Before/Extract/ExtractSuperclass.description.include.md -->
 ## Context
@@ -27,17 +28,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## Steps to improve the code <!-- endInclude -->
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
-
-**After refactoring**
-
-![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -84,6 +77,16 @@ public class ExtractSuperclass : ExtractSuperclassBase
 ```
 <sup><a href='/RefactoringSamples/After/Extract/ExtractSuperclass.cs#L3-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-extractsuperclass-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+### UML
+
+**Before refactoring**
+
+![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
+
+**After refactoring**
+
+![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
 
 -----
 

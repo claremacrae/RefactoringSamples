@@ -15,8 +15,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code <!-- endInclude -->](#steps-to-improve-the-code----endinclude---)
-  * [UML before and after](#uml-before-and-after)
-  * [Code before and after](#code-before-and-after)<!-- endToc -->
+  * [Example](#example)
+    * [Code](#code)
+    * [UML](#uml)<!-- endToc -->
 
  <!-- include: EncapsulateField.description. path: /RefactoringSamples/Before/Encapsulate/EncapsulateField.description.include.md -->
 ## Context
@@ -27,17 +28,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 ## Steps to improve the code <!-- endInclude -->
 
-## UML before and after
+## Example
 
-**Before refactoring**
-
-![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
-
-**After refactoring**
-
-![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
-
-## Code before and after
+### Code
 
 **Before refactoring**
 
@@ -73,6 +66,16 @@ public class EncapsulateField
 ```
 <sup><a href='/RefactoringSamples/After/Encapsulate/EncapsulateField.cs#L3-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-encapsulatefield-after' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+### UML
+
+**Before refactoring**
+
+![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
+
+**After refactoring**
+
+![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
 
 -----
 
