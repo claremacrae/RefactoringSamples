@@ -42,7 +42,7 @@ def get_per_refactoring_templates():
 
 # TODO Move code above in to this class, and start using it
 class Refactoring:
-    templates = get_per_refactoring_templates()
+    templates = None
 
     def __init__(self, title):
         self.title = title
@@ -59,6 +59,14 @@ class Refactoring:
         refactoring['source_file'] = remove_spaces(self.title)
         refactoring['title'] = self.title
         return refactoring
+
+    @staticmethod
+    def create_templates():
+        return get_per_refactoring_templates()
+
+
+Refactoring.templates = Refactoring.create_templates()
+
 
 class RefactoringCategory:
     def __init__(self, title, refactorings):
