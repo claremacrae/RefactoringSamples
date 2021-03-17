@@ -32,6 +32,5 @@ class RefactoringCategory:
             'source_file': 'README',
             'category': self.category,
             'title': self.title,
-            'refactorings': [x for x in self.refactorings],
             'refactorings_and_titles': zip(self.refactorings, self.titles)
         }
