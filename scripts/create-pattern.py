@@ -13,8 +13,6 @@ def remove_spaces(text):
 
 
 def create_files(category_title, titles):
-    files = Refactoring.templates
-
     for title in titles:
         r = Refactoring(title)
         r.create_files(category_title)
