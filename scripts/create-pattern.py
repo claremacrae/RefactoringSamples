@@ -17,13 +17,18 @@ def create_files(category_title, titles):
 
     for title in titles:
         r = Refactoring(title)
-        refactoring = {}
-        refactoring['category'] = remove_spaces(category_title)
-        refactoring['category_title'] = category_title
-        refactoring['source_file'] = remove_spaces(r.title)
-        refactoring['title'] = r.title
+        refactoring = refactoring_as_dictionary(r, category_title)
         for f in files.files:
             f.create_file(refactoring)
+
+
+def refactoring_as_dictionary(r, category_title):
+    refactoring = {}
+    refactoring['category'] = remove_spaces(category_title)
+    refactoring['category_title'] = category_title
+    refactoring['source_file'] = remove_spaces(r.title)
+    refactoring['title'] = r.title
+    return refactoring
 
 
 def get_per_refactoring_templates():
