@@ -32,8 +32,5 @@ class AllRefactorings:
     def as_dictionary(self):
         refactoring = dict()
         refactoring['source_file'] = 'README'
-        categories = []
-        for category in self.categories:
-            categories.append(category.as_dictionary())
-        refactoring['categories'] = categories
+        refactoring['categories'] = [category.as_dictionary() for category in self.categories]
         return refactoring
