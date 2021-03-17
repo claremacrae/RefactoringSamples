@@ -17,7 +17,7 @@ def create_files(category_title, titles):
 
     for title in titles:
         r = Refactoring(title)
-        create_files_for_refactoring(category_title, files, r)
+        r.create_files(category_title)
 
 
 def create_files_for_refactoring(category_title, files, r):
@@ -54,7 +54,7 @@ class Refactoring:
         self.title = title
 
     def create_files(self, category_title):
-        pass
+        create_files_for_refactoring(category_title, Refactoring.templates, self)
 
     def as_dictionary(self, category_title):
         refactoring = {}
