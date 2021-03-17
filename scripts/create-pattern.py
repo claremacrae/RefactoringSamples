@@ -31,8 +31,6 @@ def get_per_refactoring_templates():
     for stage in [before, after]:
         files.add_file(Inputs('refactoring-pattern.cs', 'cs', stage, do_not_overwrite), outputs)
 
-    files.add_file(Inputs('refactoring-pattern.md', 'include.md', before, overwrite_if_exists), outputs)
-
     files.add_file(Inputs('refactoring-pattern.description.md', 'description.include.md', before,
                                  do_not_overwrite), outputs)
 
