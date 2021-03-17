@@ -8,6 +8,10 @@ from scripts.output_files import OutputFiles
 from scripts.outputs import Outputs
 
 
+def remove_spaces(text):
+    return text.replace(' ', '')
+
+
 def create_files(category, category_title, titles):
     files = get_per_refactoring_templates()
 
@@ -16,7 +20,7 @@ def create_files(category, category_title, titles):
         refactoring = {}
         refactoring['category'] = category
         refactoring['category_title'] = category_title
-        refactoring['source_file'] = r.title.replace(' ', '')
+        refactoring['source_file'] = remove_spaces(r.title)
         refactoring['title'] = r.title
         for f in files.files:
             f.create_file(refactoring)
@@ -55,10 +59,10 @@ class Refactoring:
 
 class RefactoringCategory:
     def __init__(self, title, refactorings):
-        self.category = title.replace(' ', '')
+        self.category = remove_spaces(title)
         self.title = title
         self.titles = refactorings
-        self.refactorings = [x.replace(' ', '') for x in refactorings]
+        self.refactorings = [remove_spaces(x) for x in refactorings]
 
     def create_files(self):
         self.create_category_readme()
