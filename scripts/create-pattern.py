@@ -12,12 +12,6 @@ def remove_spaces(text):
     return text.replace(' ', '')
 
 
-def create_files(category_title, titles):
-    for title in titles:
-        r = Refactoring(title)
-        r.create_files(category_title)
-
-
 # TODO Move code above in to this class, and start using it
 class Refactoring:
     templates = None
@@ -71,7 +65,9 @@ class RefactoringCategory:
 
     def create_files(self):
         self.create_category_readme()
-        create_files(self.title, self.titles)
+        for title in self.titles:
+            r = Refactoring(title)
+            r.create_files(self.title)
 
     def create_category_readme(self):
         inputs = Inputs('doc-category.md', 'source.md', '', overwrite_if_exists)
