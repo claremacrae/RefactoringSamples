@@ -28,10 +28,10 @@ class RefactoringCategory:
         template.create_file(refactoring)
 
     def as_dictionary(self):
-        refactoring = dict()
-        refactoring['source_file'] = 'README'
-        refactoring['category'] = self.category
-        refactoring['title'] = self.title
-        refactoring['refactorings'] = [x for x in self.refactorings]
-        refactoring['refactorings_and_titles'] = zip(self.refactorings, self.titles)
-        return refactoring
+        return {
+            'source_file': 'README',
+            'category': self.category,
+            'title': self.title,
+            'refactorings': [x for x in self.refactorings],
+            'refactorings_and_titles': zip(self.refactorings, self.titles)
+        }
