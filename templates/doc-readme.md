@@ -2,8 +2,9 @@
 
 ## Categories
 
-{% for category,title in data.categories_and_titles %}
-* [{{ title }}]({{ category }}/){% endfor %}
+{% for category in data.categories %}
+* [{{ category.title }}]({{ category.category }}/){% for refactoring,title in category.refactorings_and_titles %}
+  * [{{ title }}]({{ refactoring }}.md){% endfor %}{% endfor %}
 
 ## Reference
 

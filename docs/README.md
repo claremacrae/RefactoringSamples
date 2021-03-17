@@ -11,9 +11,15 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 
 * [Encapsulate](Encapsulate/)
+  * [Encapsulate Field](EncapsulateField.md)
 * [Extract](Extract/)
+  * [Extract Class](ExtractClass.md)
+  * [Extract Interface](ExtractInterface.md)
+  * [Extract Superclass](ExtractSuperclass.md)
 * [If Statements](IfStatements/)
+  * [Remove Redundant Else](RemoveRedundantElse.md)
 * [Introduce](Introduce/)
+  * [Introduce Field](IntroduceField.md)
 
 ## Reference
 

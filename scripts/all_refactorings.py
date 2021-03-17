@@ -34,4 +34,8 @@ class AllRefactorings:
         refactoring['source_file'] = 'README'
         refactoring['categories_and_titles'] = zip([x.category for x in self.categories],
                                                    [x.title for x in self.categories])
+        categories = []
+        for category in self.categories:
+            categories.append(category.as_dictionary())
+        refactoring['categories'] = categories
         return refactoring
