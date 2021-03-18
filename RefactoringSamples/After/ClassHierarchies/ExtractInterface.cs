@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.After.Extract
+﻿namespace RefactoringSamples.After.ClassHierarchies
 {
     // begin-snippet: ExtractInterface-After
     public interface IExtractInterface

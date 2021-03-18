@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.After.Extract
+﻿namespace RefactoringSamples.After.ClassHierarchies
 {
     // begin-snippet: ExtractSuperclass-After
     public class ExtractSuperclassBase

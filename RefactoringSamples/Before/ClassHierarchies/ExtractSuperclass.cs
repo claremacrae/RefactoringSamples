@@ -1,7 +1,7 @@
-﻿namespace RefactoringSamples.Before.Extract
+﻿namespace RefactoringSamples.Before.ClassHierarchies
 {
-    // begin-snippet: ExtractInterface-Before
-    public class ExtractInterface
+    // begin-snippet: ExtractSuperclass-Before
+    public class ExtractSuperclass
     {
         public int method1()
         {

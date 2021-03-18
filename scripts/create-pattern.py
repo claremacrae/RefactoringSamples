@@ -8,6 +8,10 @@ if __name__ == '__main__':
     all.add_category(
         RefactoringCategory('Extract', [
             'Extract Class',
+        ]))
+
+    all.add_category(
+        RefactoringCategory('Class Hierarchies', [
             'Extract Interface',
             'Extract Superclass',
         ]))
