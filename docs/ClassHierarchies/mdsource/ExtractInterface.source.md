@@ -1,6 +1,6 @@
 # Extract Interface
 
-[Top](../README.md) / [Extract](./README.md) / **Extract Interface**
+[Top](../README.md) / [Class Hierarchies](./README.md) / **Extract Interface**
 
 toc
 
@@ -22,11 +22,11 @@ snippet: ExtractInterface-After
 
 **Before refactoring**
 
-![ExtractInterface - Before](../../uml/Before/Extract/ExtractInterface.svg?raw=true)
+![ExtractInterface - Before](../../uml/Before/ClassHierarchies/ExtractInterface.svg?raw=true)
 
 **After refactoring**
 
-![ExtractInterface - After](../../uml/After/Extract/ExtractInterface.svg?raw=true)
+![ExtractInterface - After](../../uml/After/ClassHierarchies/ExtractInterface.svg?raw=true)
 
 *[Key](../../uml/Keys/FullKey.svg)*
 

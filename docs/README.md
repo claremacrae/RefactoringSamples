@@ -12,8 +12,9 @@ To change this file edit the source file and then execute ./run_markdown_templat
 
 * [Extract](Extract//README.md)
   * [Extract Class](Extract/ExtractClass.md)
-  * [Extract Interface](Extract/ExtractInterface.md)
-  * [Extract Superclass](Extract/ExtractSuperclass.md)
+* [Class Hierarchies](ClassHierarchies//README.md)
+  * [Extract Interface](ClassHierarchies/ExtractInterface.md)
+  * [Extract Superclass](ClassHierarchies/ExtractSuperclass.md)
 * [If Statements](IfStatements//README.md)
   * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
 * [Fields](Fields//README.md)

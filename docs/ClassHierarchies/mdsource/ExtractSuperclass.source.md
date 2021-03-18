@@ -1,6 +1,6 @@
 # Extract Superclass
 
-[Top](../README.md) / [Extract](./README.md) / **Extract Superclass**
+[Top](../README.md) / [Class Hierarchies](./README.md) / **Extract Superclass**
 
 toc
 
@@ -22,11 +22,11 @@ snippet: ExtractSuperclass-After
 
 **Before refactoring**
 
-![ExtractSuperclass - Before](../../uml/Before/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - Before](../../uml/Before/ClassHierarchies/ExtractSuperclass.svg?raw=true)
 
 **After refactoring**
 
-![ExtractSuperclass - After](../../uml/After/Extract/ExtractSuperclass.svg?raw=true)
+![ExtractSuperclass - After](../../uml/After/ClassHierarchies/ExtractSuperclass.svg?raw=true)
 
 *[Key](../../uml/Keys/FullKey.svg)*
 
