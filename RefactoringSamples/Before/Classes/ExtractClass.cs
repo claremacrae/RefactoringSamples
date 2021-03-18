@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.Before.Extract
+﻿namespace RefactoringSamples.Before.Classes
 {
     // begin-snippet: ExtractClass-Before
     public class ExtractClass

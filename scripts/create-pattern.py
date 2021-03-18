@@ -6,7 +6,7 @@ if __name__ == '__main__':
     all = AllRefactorings()
 
     all.add_category(
-        RefactoringCategory('Extract', [
+        RefactoringCategory('Classes', [
             'Extract Class',
         ]))
 
