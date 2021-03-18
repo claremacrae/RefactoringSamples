@@ -4,8 +4,6 @@
 set -e
 set -o pipefail
 
-find . \( -name \*.puml -o -name \*.svg \) -exec rm {} \;
-
 # https://github.com/pierre3/PlantUmlClassDiagramGenerator
 puml-gen RefactoringSamples uml -dir -excludePaths RefactoringSamples\out
 
