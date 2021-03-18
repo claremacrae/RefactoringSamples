@@ -3,8 +3,8 @@
 ## Categories
 
 
-* [Extract](Extract//README.md)
-  * [Extract Class](Extract/ExtractClass.md)
+* [Classes](Classes//README.md)
+  * [Extract Class](Classes/ExtractClass.md)
 * [Class Hierarchies](ClassHierarchies//README.md)
   * [Extract Interface](ClassHierarchies/ExtractInterface.md)
   * [Extract Superclass](ClassHierarchies/ExtractSuperclass.md)

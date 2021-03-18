@@ -1,6 +1,6 @@
 # Extract Class
 
-[Top](../README.md) / [Extract](./README.md) / **Extract Class**
+[Top](../README.md) / [Classes](./README.md) / **Extract Class**
 
 toc
 
@@ -22,11 +22,11 @@ snippet: ExtractClass-After
 
 **Before refactoring**
 
-![ExtractClass - Before](../../uml/Before/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - Before](../../uml/Before/Classes/ExtractClass.svg?raw=true)
 
 **After refactoring**
 
-![ExtractClass - After](../../uml/After/Extract/ExtractClass.svg?raw=true)
+![ExtractClass - After](../../uml/After/Classes/ExtractClass.svg?raw=true)
 
 *[Key](../../uml/Keys/FullKey.svg)*
 
