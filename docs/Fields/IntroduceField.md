@@ -12,6 +12,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 <!-- toc -->
 ## Contents
 
+  * [Summary](#summary)
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code](#steps-to-improve-the-code)
@@ -20,6 +21,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
     * [UML](#uml)<!-- endToc -->
 
  <!-- include: IntroduceField.description. path: /RefactoringSamples/Before/Fields/IntroduceField.description.include.md -->
+## Summary
+
 ## Context
 
 You have a variable or expression in a method, and you want to make it a field.

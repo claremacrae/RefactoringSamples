@@ -12,6 +12,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
 <!-- toc -->
 ## Contents
 
+  * [Summary](#summary)
   * [Context](#context)
   * [See Also](#see-also)
   * [Steps to improve the code <!-- endInclude -->](#steps-to-improve-the-code----endinclude---)
@@ -20,6 +21,8 @@ To change this file edit the source file and then execute ./run_markdown_templat
     * [UML](#uml)<!-- endToc -->
 
  <!-- include: ExtractInterface.description. path: /RefactoringSamples/Before/ClassHierarchies/ExtractInterface.description.include.md -->
+## Summary
+
 ## Context
 
 ## See Also
