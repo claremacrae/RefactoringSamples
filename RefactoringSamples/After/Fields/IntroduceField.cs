@@ -1,4 +1,4 @@
-﻿namespace RefactoringSamples.After.Introduce
+﻿namespace RefactoringSamples.After.Fields
 {
     // begin-snippet: IntroduceField-After
     public class IntroduceField

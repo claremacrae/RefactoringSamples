@@ -4,10 +4,6 @@ from scripts.refactoring_category import RefactoringCategory
 
 if __name__ == '__main__':
     all = AllRefactorings()
-    all.add_category(
-        RefactoringCategory('Encapsulate', [
-            'Encapsulate Field',
-        ]))
 
     all.add_category(
         RefactoringCategory('Extract', [
@@ -22,8 +18,9 @@ if __name__ == '__main__':
         ]))
 
     all.add_category(
-        RefactoringCategory('Introduce', [
+        RefactoringCategory('Fields', [
             'Introduce Field',
+            'Encapsulate Field',
         ]))
 
     all.create_files()
