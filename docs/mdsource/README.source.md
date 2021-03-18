@@ -3,16 +3,15 @@
 ## Categories
 
 
-* [Encapsulate](Encapsulate//README.md)
-  * [Encapsulate Field](Encapsulate/EncapsulateField.md)
 * [Extract](Extract//README.md)
   * [Extract Class](Extract/ExtractClass.md)
   * [Extract Interface](Extract/ExtractInterface.md)
   * [Extract Superclass](Extract/ExtractSuperclass.md)
 * [If Statements](IfStatements//README.md)
   * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
-* [Introduce](Introduce//README.md)
-  * [Introduce Field](Introduce/IntroduceField.md)
+* [Fields](Fields//README.md)
+  * [Introduce Field](Fields/IntroduceField.md)
+  * [Encapsulate Field](Fields/EncapsulateField.md)
 
 ## Reference
 

@@ -1,6 +1,6 @@
 # Encapsulate Field
 
-[Top](../README.md) / [Encapsulate](./README.md) / **Encapsulate Field**
+[Top](../README.md) / [Fields](./README.md) / **Encapsulate Field**
 
 toc
 
@@ -22,11 +22,11 @@ snippet: EncapsulateField-After
 
 **Before refactoring**
 
-![EncapsulateField - Before](../../uml/Before/Encapsulate/EncapsulateField.svg?raw=true)
+![EncapsulateField - Before](../../uml/Before/Fields/EncapsulateField.svg?raw=true)
 
 **After refactoring**
 
-![EncapsulateField - After](../../uml/After/Encapsulate/EncapsulateField.svg?raw=true)
+![EncapsulateField - After](../../uml/After/Fields/EncapsulateField.svg?raw=true)
 
 *[Key](../../uml/Keys/FullKey.svg)*
 

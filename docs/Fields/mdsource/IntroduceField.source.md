@@ -1,6 +1,6 @@
 # Introduce Field
 
-[Top](../README.md) / [Introduce](./README.md) / **Introduce Field**
+[Top](../README.md) / [Fields](./README.md) / **Introduce Field**
 
 toc
 
@@ -22,11 +22,11 @@ snippet: IntroduceField-After
 
 **Before refactoring**
 
-![IntroduceField - Before](../../uml/Before/Introduce/IntroduceField.svg?raw=true)
+![IntroduceField - Before](../../uml/Before/Fields/IntroduceField.svg?raw=true)
 
 **After refactoring**
 
-![IntroduceField - After](../../uml/After/Introduce/IntroduceField.svg?raw=true)
+![IntroduceField - After](../../uml/After/Fields/IntroduceField.svg?raw=true)
 
 *[Key](../../uml/Keys/FullKey.svg)*
 
