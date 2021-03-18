@@ -1,4 +1,6 @@
 
+## Summary
+
 ## Context
 
 The IDE works out that the `else` statements are redundant,

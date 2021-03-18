@@ -1,4 +1,6 @@
 
+## Summary
+
 ## Context
 
 You have a variable or expression in a method, and you want to make it a field.
