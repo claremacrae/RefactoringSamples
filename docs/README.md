@@ -15,11 +15,11 @@ To change this file edit the source file and then execute ./run_markdown_templat
 * [Class Hierarchies](ClassHierarchies//README.md)
   * [Extract Interface](ClassHierarchies/ExtractInterface.md)
   * [Extract Superclass](ClassHierarchies/ExtractSuperclass.md)
-* [If Statements](IfStatements//README.md)
-  * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
 * [Fields](Fields//README.md)
   * [Introduce Field](Fields/IntroduceField.md)
   * [Encapsulate Field](Fields/EncapsulateField.md)
+* [If Statements](IfStatements//README.md)
+  * [Remove Redundant Else](IfStatements/RemoveRedundantElse.md)
 
 ## Reference
 

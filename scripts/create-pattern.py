@@ -17,14 +17,14 @@ if __name__ == '__main__':
         ]))
 
     all.add_category(
-        RefactoringCategory('If Statements', [
-            'Remove Redundant Else',
-        ]))
-
-    all.add_category(
         RefactoringCategory('Fields', [
             'Introduce Field',
             'Encapsulate Field',
+        ]))
+
+    all.add_category(
+        RefactoringCategory('If Statements', [
+            'Remove Redundant Else',
         ]))
 
     all.create_files()
