@@ -15,6 +15,7 @@ To change this file edit the source file and then execute ./run_markdown_templat
   * [Purpose](#purpose)
   * [Key](#key)
   * [The Refactorings](#the-refactorings)
+  * [Tools Used](#tools-used)
   * [Appendix](#appendix)
     * [Creating a new pair of files](#creating-a-new-pair-of-files)
     * [Ideas](#ideas)<!-- endToc -->
@@ -30,6 +31,12 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 ## The Refactorings
 
 See the [List of Refactorings](docs/README.md#top).
+
+## Tools Used
+
+* Hirotada Kobayashi's [PlantUmlClassDiagramGenerator](https://github.com/pierre3/PlantUmlClassDiagramGenerator)
+* [PlantUML](https://plantuml.com)
+* SimonCropp's [MarkdownSnippets](https://github.com/SimonCropp/MarkdownSnippets)
 
 ## Appendix
 

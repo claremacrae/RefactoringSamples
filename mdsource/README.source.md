@@ -16,6 +16,12 @@ To provide visualisations of micro-refactorings in C# code, using UML diagrams g
 
 See the [List of Refactorings](docs/README.md#top).
 
+## Tools Used
+
+* Hirotada Kobayashi's [PlantUmlClassDiagramGenerator](https://github.com/pierre3/PlantUmlClassDiagramGenerator)
+* [PlantUML](https://plantuml.com)
+* SimonCropp's [MarkdownSnippets](https://github.com/SimonCropp/MarkdownSnippets)
+
 ## Appendix
 
 ### Creating a new pair of files
