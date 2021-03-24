@@ -19,6 +19,7 @@ Having introduced one or more fields, you can then "Extract Class" to group them
 ## See Also
 
 * [Introduce Field refactoring](https://www.jetbrains.com/help/rider/Refactorings__Introduce_Field.html) (JetBrains Rider)
+* [Encapsulate Variable/Encapsulate Field](https://refactoring.com/catalog/encapsulateVariable.html) (Refactoring.com)
 
 ## Steps to improve the code
 
