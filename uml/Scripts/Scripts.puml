@@ -2,6 +2,8 @@
 
 * scripts
 **  "update-docs.sh"
+***  "create-uml.sh"
+***  "run_markdown_templates.sh"
 **  "scripts/refactoring.py"
 **  "scripts/constants.py"
 **  "scripts/__init__.py"
@@ -13,7 +15,5 @@
 **  "scripts/file_from_template.py"
 **  "scripts/refactoring_category.py"
 **  "scripts/outputs.py"
-**  "create-uml.sh"
-**  "run_markdown_templates.sh"
 
 @endwbs
