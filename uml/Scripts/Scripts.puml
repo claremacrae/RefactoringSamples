@@ -3,6 +3,8 @@
 * scripts
 ** "update-docs.sh"
 *** "scripts/create-pattern.py" (TODO)
+**** "scripts/all_refactorings.py"
+**** "refactoring_category.py"
 *** "create-uml.sh"
 **** puml-gen
 **** plantuml
@@ -13,11 +15,9 @@
 *** "constants.py"
 *** "__init__.py"
 *** "inputs.py"
-*** "all_refactorings.py"
 *** "output_files.py"
 *** "helpers.py"
 *** "file_from_template.py"
-*** "refactoring_category.py"
 *** "outputs.py"
 
 @endwbs
