@@ -1,24 +1,24 @@
 @startwbs
 
 * scripts
-** "update-docs.sh"
-*** "scripts/create-pattern.py" (TODO)
-**** "scripts/all_refactorings.py"
-**** "refactoring_category.py"
-*** "create-uml.sh"
+** update-docs.sh
+*** scripts/create-pattern.py (TODO)
+**** scripts/all_refactorings.py
+**** refactoring_category.py
+*** create-uml.sh
 **** puml-gen
 **** plantuml
-*** "run_markdown_templates.sh"
+*** run_markdown_templates.sh
 **** mdsnippets
 ** scripts/
-*** "refactoring.py"
-*** "constants.py"
-*** "__init__.py"
-*** "inputs.py"
-*** "output_files.py"
-*** "helpers.py"
-*** "file_from_template.py"
+*** refactoring.py
+*** constants.py
+*** __init__.py
+*** inputs.py
+*** output_files.py
+*** helpers.py
+*** file_from_template.py
 **** jinja2
-*** "outputs.py"
+*** outputs.py
 
 @endwbs
