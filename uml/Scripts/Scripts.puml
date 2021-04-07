@@ -6,6 +6,7 @@
 **** puml-gen
 **** plantuml
 *** "run_markdown_templates.sh"
+**** mdsnippets
 ** "scripts/refactoring.py"
 ** "scripts/constants.py"
 ** "scripts/__init__.py"
