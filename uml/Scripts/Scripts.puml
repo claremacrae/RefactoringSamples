@@ -2,23 +2,22 @@
 
 * update-docs.sh
 ** scripts/create-pattern.py (TODO)
-*** scripts/all_refactorings.py
-*** refactoring_category.py
+*** Implementation Details
+**** scripts/all_refactorings.py
+**** scripts/refactoring_category.py
+**** scripts/refactoring.py
+**** scripts/constants.py
+**** scripts/__init__.py
+**** scripts/inputs.py
+**** scripts/output_files.py
+**** scripts/helpers.py
+**** scripts/file_from_template.py
+***** jinja2
+**** scripts/outputs.py
 ** create-uml.sh
 *** puml-gen
 *** plantuml
 ** run_markdown_templates.sh
 *** mdsnippets
-** Other scripts
-*** scripts/
-**** refactoring.py
-**** constants.py
-**** __init__.py
-**** inputs.py
-**** output_files.py
-**** helpers.py
-**** file_from_template.py
-***** jinja2
-**** outputs.py
 
 @endwbs
