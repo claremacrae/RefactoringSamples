@@ -1,21 +1,21 @@
 @startwbs
 
 * scripts
-**  "update-docs.sh"
-***  "create-uml.sh"
+** "update-docs.sh"
+*** "create-uml.sh"
 **** puml-gen
 **** plantuml
-***  "run_markdown_templates.sh"
-**  "scripts/refactoring.py"
-**  "scripts/constants.py"
-**  "scripts/__init__.py"
-**  "scripts/create-pattern.py"
-**  "scripts/inputs.py"
-**  "scripts/all_refactorings.py"
-**  "scripts/output_files.py"
-**  "scripts/helpers.py"
-**  "scripts/file_from_template.py"
-**  "scripts/refactoring_category.py"
-**  "scripts/outputs.py"
+*** "run_markdown_templates.sh"
+** "scripts/refactoring.py"
+** "scripts/constants.py"
+** "scripts/__init__.py"
+** "scripts/create-pattern.py"
+** "scripts/inputs.py"
+** "scripts/all_refactorings.py"
+** "scripts/output_files.py"
+** "scripts/helpers.py"
+** "scripts/file_from_template.py"
+** "scripts/refactoring_category.py"
+** "scripts/outputs.py"
 
 @endwbs
