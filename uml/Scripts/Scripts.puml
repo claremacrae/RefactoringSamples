@@ -3,7 +3,7 @@
 * update-docs.sh
 ** scripts/create-pattern.py\n(TODO\nCurrently needs to be called manually,\ndue to Python path problem)
 *** Implementation Details
-**** scripts/__init__.py
+**** scripts/~__init__.py
 **** scripts/all_refactorings.py
 **** scripts/constants.py
 **** scripts/file_from_template.py
