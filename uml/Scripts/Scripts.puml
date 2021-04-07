@@ -1,7 +1,7 @@
 @startwbs
 
 * update-docs.sh
-** scripts/create-pattern.py (TODO)
+** scripts/create-pattern.py\n(TODO\nCurrently needs to be called manually,\ndue to Python path problem)
 *** Implementation Details
 **** scripts/__init__.py
 **** scripts/all_refactorings.py
