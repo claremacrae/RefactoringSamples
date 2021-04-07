@@ -8,15 +8,16 @@
 **** plantuml
 *** "run_markdown_templates.sh"
 **** mdsnippets
-** "scripts/refactoring.py"
-** "scripts/constants.py"
-** "scripts/__init__.py"
-** "scripts/inputs.py"
-** "scripts/all_refactorings.py"
-** "scripts/output_files.py"
-** "scripts/helpers.py"
-** "scripts/file_from_template.py"
-** "scripts/refactoring_category.py"
-** "scripts/outputs.py"
+** scripts/
+*** "refactoring.py"
+*** "constants.py"
+*** "__init__.py"
+*** "inputs.py"
+*** "all_refactorings.py"
+*** "output_files.py"
+*** "helpers.py"
+*** "file_from_template.py"
+*** "refactoring_category.py"
+*** "outputs.py"
 
 @endwbs
