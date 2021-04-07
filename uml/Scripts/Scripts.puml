@@ -2,6 +2,7 @@
 
 * scripts
 ** "update-docs.sh"
+*** "scripts/create-pattern.py" (TODO)
 *** "create-uml.sh"
 **** puml-gen
 **** plantuml
@@ -10,7 +11,6 @@
 ** "scripts/refactoring.py"
 ** "scripts/constants.py"
 ** "scripts/__init__.py"
-** "scripts/create-pattern.py"
 ** "scripts/inputs.py"
 ** "scripts/all_refactorings.py"
 ** "scripts/output_files.py"
