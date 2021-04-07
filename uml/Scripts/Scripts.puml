@@ -1,18 +1,19 @@
 @startuml
-(*) --> xxx
-xxx -> update-docs.sh
-xxx -> scripts/refactoring.py
-xxx -> scripts/constants.py
-xxx -> scripts/__init__.py
-xxx -> scripts/create-pattern.py
-xxx -> scripts/inputs.py
-xxx -> scripts/all_refactorings.py
-xxx -> scripts/output_files.py
-xxx -> scripts/helpers.py
-xxx -> scripts/file_from_template.py
-xxx -> scripts/refactoring_category.py
-xxx -> scripts/outputs.py
-xxx -> create-uml.sh
-xxx -> run_markdown_templates.sh
-xxx --> (*)
+(*top) -> update-docs.sh
+-> create-uml.sh
+-> run_markdown_templates.sh
+-> (*)
+
+(*) -> scripts/refactoring.py
+(*) -> scripts/constants.py
+(*) -> scripts/__init__.py
+(*) -> scripts/create-pattern.py
+(*) -> scripts/inputs.py
+(*) -> scripts/all_refactorings.py
+(*) -> scripts/output_files.py
+(*) -> scripts/helpers.py
+(*) -> scripts/file_from_template.py
+(*) -> scripts/refactoring_category.py
+(*) -> scripts/outputs.py
+(*) -> run_markdown_templates.sh
 @enduml
