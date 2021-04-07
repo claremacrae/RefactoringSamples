@@ -1,20 +1,19 @@
-@startuml
+@startwbs
 
-skinparam roundcorner 25
+* scripts
+**  "update-docs.sh"
+**  "scripts/refactoring.py"
+**  "scripts/constants.py"
+**  "scripts/__init__.py"
+**  "scripts/create-pattern.py"
+**  "scripts/inputs.py"
+**  "scripts/all_refactorings.py"
+**  "scripts/output_files.py"
+**  "scripts/helpers.py"
+**  "scripts/file_from_template.py"
+**  "scripts/refactoring_category.py"
+**  "scripts/outputs.py"
+**  "create-uml.sh"
+**  "run_markdown_templates.sh"
 
-rectangle "update-docs.sh"
-rectangle "scripts/refactoring.py"
-rectangle "scripts/constants.py"
-rectangle "scripts/__init__.py"
-rectangle "scripts/create-pattern.py"
-rectangle "scripts/inputs.py"
-rectangle "scripts/all_refactorings.py"
-rectangle "scripts/output_files.py"
-rectangle "scripts/helpers.py"
-rectangle "scripts/file_from_template.py"
-rectangle "scripts/refactoring_category.py"
-rectangle "scripts/outputs.py"
-rectangle "create-uml.sh"
-rectangle "run_markdown_templates.sh"
-
-@enduml
+@endwbs
