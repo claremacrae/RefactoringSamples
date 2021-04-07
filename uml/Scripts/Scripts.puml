@@ -1,19 +1,18 @@
 @startuml
-(*top) -> update-docs.sh
--> create-uml.sh
--> run_markdown_templates.sh
--> (*)
 
-(*) -> scripts/refactoring.py
-(*) -> scripts/constants.py
-(*) -> scripts/__init__.py
-(*) -> scripts/create-pattern.py
-(*) -> scripts/inputs.py
-(*) -> scripts/all_refactorings.py
-(*) -> scripts/output_files.py
-(*) -> scripts/helpers.py
-(*) -> scripts/file_from_template.py
-(*) -> scripts/refactoring_category.py
-(*) -> scripts/outputs.py
-(*) -> run_markdown_templates.sh
+"update-docs.sh"
+"scripts/refactoring.py"
+"scripts/constants.py"
+"scripts/__init__.py"
+"scripts/create-pattern.py"
+"scripts/inputs.py"
+"scripts/all_refactorings.py"
+"scripts/output_files.py"
+"scripts/helpers.py"
+"scripts/file_from_template.py"
+"scripts/refactoring_category.py"
+"scripts/outputs.py"
+"create-uml.sh"
+"run_markdown_templates.sh"
+
 @enduml
