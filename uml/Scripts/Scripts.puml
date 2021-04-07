@@ -1,0 +1,18 @@
+@startuml
+(*) --> xxx
+xxx -> update-docs.sh
+xxx -> scripts_refactoring.py
+xxx -> scripts_constants.py
+xxx -> scripts___init__.py
+xxx -> scripts_create-pattern.py
+xxx -> scripts_inputs.py
+xxx -> scripts_all_refactorings.py
+xxx -> scripts_output_files.py
+xxx -> scripts_helpers.py
+xxx -> scripts_file_from_template.py
+xxx -> scripts_refactoring_category.py
+xxx -> scripts_outputs.py
+xxx -> create-uml.sh
+xxx -> run_markdown_templates.sh
+xxx --> (*)
+@enduml
