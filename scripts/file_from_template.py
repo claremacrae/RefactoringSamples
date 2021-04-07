@@ -12,7 +12,6 @@ class FileFromTemplate(object):
     env = Environment(loader=file_loader)
 
     def __init__(self, inputs: Inputs, outputs: Outputs) -> None:
-
         self.inputs = inputs
         self.outputs = outputs
 
